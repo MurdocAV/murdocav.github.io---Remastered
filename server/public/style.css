@@ -1,7 +1,7 @@
 html {
   /* Colours are Harley Davidson Orange and Ruby Pink (With varying opacities) */
   background: linear-gradient(130deg, #dd4814, #e0115f);
-  background-size: 400% 400%;
+  background-size: 700% 700%;
 
   -webkit-animation: AnimationName 22s ease infinite;
   -moz-animation: AnimationName 22s ease infinite;
@@ -11,6 +11,7 @@ html {
 html {
   display: block;
   text-align: center;
+  overflow: hidden;
 }
 
 @-webkit-keyframes AnimationName {
