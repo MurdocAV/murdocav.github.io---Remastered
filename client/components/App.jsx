@@ -1,18 +1,18 @@
-import React from 'react'
-import CenterContent from './CenterContent'
+import React from "react";
 
 class App extends React.Component {
-  
-  render () {
+  render() {
     return (
       <React.Fragment>
         <h1 className="name">MurdocAV</h1>
-        <img className="profilePhoto" src="https://via.placeholder.com/185" alt="Photo of a developer #KanyeWest2020"/>
-        {/* <CenterContent></CenterContent> */}
+        <img
+          className="profilePhoto"
+          src="https://via.placeholder.com/185"
+          alt="A developer #KanyeWest2020"
+        />
       </React.Fragment>
-    )
+    );
   }
 }
 
-export default App
-
+export default App;
