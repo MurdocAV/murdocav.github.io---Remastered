@@ -1,5 +1,5 @@
 import React from 'react'
-import Center from './CenterContent'
+import Center from './Center'
 
 //TODO: Test out Material U.I.; 
 //  1. Use Material's grid to make layered mobile first Responsive U.I.
@@ -9,15 +9,14 @@ import Center from './CenterContent'
 
 
 class App extends React.Component {
-  render() {
+  render () {
     return (
       <React.Fragment>
-        
         <h1 className="name">MurdocAV</h1>
         <img className="profilePhoto" src="https://via.placeholder.com/185" alt="Photo of a developer #KanyeWest2020"/>
         <Center />
       </React.Fragment>
-    );
+    )
   }
 }
 

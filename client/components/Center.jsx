@@ -1,13 +1,13 @@
 import React from "react";
 
 class Center extends React.Component {
-  render() {
+  render () {
     return (
-      <React.Component>
+      <React.Fragment>
         <h1>Hello</h1>
-      </React.Component>
+      </React.Fragment>
     )
   }
 }
 
-export default Center;
+export default Center
