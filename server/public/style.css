@@ -3,6 +3,7 @@ html {
   /* Colours are Harley Davidson Orange and Ruby Pink (With varying opacities) */
   background: linear-gradient(130deg, #dd4814, #e0115f);
   background-size: 700% 700%;
+  text-align: center;
   -webkit-animation: AnimationName 22s ease infinite;
   animation: AnimationName 22s ease infinite;
 }
@@ -59,7 +60,7 @@ p, h1 {
 .nav a {
   color: #07038C;
   text-decoration: none;
-  padding: 1em;
+  padding: 3em;
 }
 
 .nav a:hover {
