@@ -5,6 +5,7 @@ import Center from './CenterContent'
 //  1. Use Material's grid to make layered mobile first Responsive U.I.
 //  1.1. Allow user to see the mobile view on desktop
 //  2. Use 'Drawer' component to switch between different components(pages)
+//  Optional (Strech) --> Use breadcrumbs to do complex navigations.
 
 
 class App extends React.Component {
