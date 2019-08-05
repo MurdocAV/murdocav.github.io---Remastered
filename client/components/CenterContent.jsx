@@ -6,7 +6,7 @@ class Center extends React.Component {
       <React.Component>
         <h1>Hello</h1>
       </React.Component>
-    );
+    )
   }
 }
 
