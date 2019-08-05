@@ -1,8 +1,10 @@
 html {
   /* Colours are Harley Davidson Orange and Ruby Pink (With varying opacities) */
   background: linear-gradient(130deg, #dd4814, #e0115f);
-  background-size: 400% 400%;
+  background-size: 700% 700%;
+
   -webkit-animation: AnimationName 22s ease infinite;
+  -moz-animation: AnimationName 22s ease infinite;
   animation: AnimationName 22s ease infinite;
 }
 
@@ -13,27 +15,19 @@ html {
 }
 
 @-webkit-keyframes AnimationName {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
-
-@keyframes AnimationName {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 
 .profilePhoto {
@@ -48,4 +42,3 @@ html {
 p, h1 {
   text-align: center;
 }
-/*# sourceMappingURL=style.css.map */

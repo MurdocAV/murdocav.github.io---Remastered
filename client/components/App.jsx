@@ -1,5 +1,5 @@
 import React from 'react'
-import CenterContent from './CenterContent'
+import Center from './CenterContent'
 
 class App extends React.Component {
   
@@ -8,7 +8,7 @@ class App extends React.Component {
       <React.Fragment>
         <h1 className="name">MurdocAV</h1>
         <img className="profilePhoto" src="https://via.placeholder.com/185" alt="Photo of a developer #KanyeWest2020"/>
-        {/* <CenterContent></CenterContent> */}
+        <Center />
       </React.Fragment>
     )
   }
