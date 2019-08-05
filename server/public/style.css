@@ -1,7 +1,8 @@
+@import url("https://fonts.googleapis.com/css?family=B612&display=swap");
 html {
   /* Colours are Harley Davidson Orange and Ruby Pink (With varying opacities) */
   background: linear-gradient(130deg, #dd4814, #e0115f);
-  background-size: 400% 400%;
+  background-size: 700% 700%;
   -webkit-animation: AnimationName 22s ease infinite;
   animation: AnimationName 22s ease infinite;
 }
@@ -47,5 +48,26 @@ html {
 
 p, h1 {
   text-align: center;
+}
+
+/* Navigation */
+.nav {
+  font-family: 'B612', sans-serif;
+  font-size: 1.5em;
+}
+
+.nav a {
+  color: #07038C;
+  text-decoration: none;
+  padding: 1em;
+}
+
+.nav a:hover {
+  color: #056CF2;
+  opacity: 0.7;
+}
+
+.nav .active {
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

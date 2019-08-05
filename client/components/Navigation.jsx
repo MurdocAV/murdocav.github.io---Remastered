@@ -6,16 +6,16 @@ class Navigation extends React.Component {
     render() {
         return (
             <div className="header">
-                <div className="title">
-                    <h1 className="titleHeader">Name Placeholder</h1>
-                </div>
                 <div className="nav">
-                    <NavLink className="homeLink" activeClassName="active" to={'/Home'}>Home</NavLink>
+                    <NavLink className="projectsLink" activeClassName="active" to={'/Projects'}>Projects</NavLink>
                     <NavLink
-                        className="discographyLink"
+                        className="homeLink"
                         activeClassName="active"
-                        to={'/Discography'}>Discography</NavLink>
-                    <NavLink className="contactLink" activeClassName="active" to={'/Contact'}>Contact</NavLink>
+                        to={'/Home'}>Home</NavLink>
+                    <NavLink className="documentLink" activeClassName="active" to={'/Documentation'}>Documentation</NavLink>
+                </div>
+                <div className="title">
+                    <h1 className="titleHeader">MurdocAV</h1>
                 </div>
             </div>
         )

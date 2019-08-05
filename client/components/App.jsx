@@ -1,7 +1,7 @@
 import React from 'react'
 import Center from './Center'
 import Navigation from './Navigation'
-import {Router} from 'react-router-dom'
+import {HashRouter, Route} from 'react-router-dom'
 
 //TODO: Test out Material U.I.; 
 //  1. Use Material's grid to make layered mobile first Responsive U.I.
@@ -14,14 +14,15 @@ import {Router} from 'react-router-dom'
 class App extends React.Component {
   render () {
     return (
-      <Router>
-        <Navigation></Navigation>
-        <h1 className="name">MurdocAV</h1>
-        <img className="profilePhoto" src="https://via.placeholder.com/185" alt="Photo of a developer #KanyeWest2020"/>
-        <Center />
-      </Router>
+      <HashRouter>
+        <Navigation />
+        <Route exact path="/" component={Center} />
+        <Route exact path="/Projects" component={Center} />
+        <Route exact path="/Home" component={Center} />
+        <Route exact path="/Documentation" component={Center} />
+      </HashRouter>
     )
   }
 }
 
-export default App;
+export default App
