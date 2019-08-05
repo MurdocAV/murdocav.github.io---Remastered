@@ -1,24 +1,13 @@
-import React from 'react'
-import { Row, Col, DemoBox } from 'elemental' 
+import React from "react";
 
 class Center extends React.Component {
-  
-  render () {
+  render() {
     return (
-      <Row>
-        <Col sm="1/3">
-          <DemoBox>One Third</DemoBox>
-        </Col>
-        <Col sm="1/3">
-          <DemoBox>One Third</DemoBox>
-        </Col>
-        <Col sm="1/3">
-          <DemoBox>One Third</DemoBox>
-        </Col>
-      </Row>
-    )
+      <React.Component>
+        <h1>Hello</h1>
+      </React.Component>
+    );
   }
 }
 
-export default Center
-
+export default Center;
