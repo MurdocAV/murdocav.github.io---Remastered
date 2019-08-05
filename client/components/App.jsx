@@ -1,5 +1,7 @@
 import React from 'react'
 import Center from './Center'
+import Navigation from './Navigation'
+import {Router} from 'react-router-dom'
 
 //TODO: Test out Material U.I.; 
 //  1. Use Material's grid to make layered mobile first Responsive U.I.
@@ -12,11 +14,12 @@ import Center from './Center'
 class App extends React.Component {
   render () {
     return (
-      <React.Fragment>
+      <Router>
+        <Navigation></Navigation>
         <h1 className="name">MurdocAV</h1>
         <img className="profilePhoto" src="https://via.placeholder.com/185" alt="Photo of a developer #KanyeWest2020"/>
         <Center />
-      </React.Fragment>
+      </Router>
     )
   }
 }
