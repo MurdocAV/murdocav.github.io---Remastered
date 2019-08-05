@@ -6,7 +6,7 @@ import Center from './Center'
 //  1.1. Allow user to see the mobile view on desktop
 //  2. Use 'Drawer' component to switch between different components(pages)
 //  S1. Optional (Strech) --> Use breadcrumbs to do complex navigations.
-//  S2. (Strech) --> Grid list with titlebars (images of worked projects)
+//  S2. (Strech) --> Advanced Grid list with titlebars (images of worked projects)
 
 
 class App extends React.Component {
