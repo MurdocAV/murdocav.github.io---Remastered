@@ -24,7 +24,7 @@ html {
   text-align: center;
   // animation: AnimationName 22s ease infinite;
   text-align: center;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 body {
@@ -38,8 +38,8 @@ body {
   grid-template-areas: "header header header header"
                        "main  main main main"
                        "projects  projects projects projects";
-  grid-template-rows: 1fr 2fr 3fr;
-  grid-template-columns: 1fr 2fr 3fr;
+  grid-template-rows: 1fr 2fr 4fr;
+  grid-template-columns: 1fr 2fr 4fr;
 }
 
 @keyframes AnimationName { 
@@ -107,6 +107,7 @@ body {
 
 .imageDrawer {
   display: flex;
+  justify-content: space-around;
   width: 400px;
   height: 400px;
   grid-area: projects;
