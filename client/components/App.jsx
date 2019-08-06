@@ -16,6 +16,7 @@ class App extends React.Component {
     return (
       <HashRouter>
         <Navigation />
+        <br />
         <Route exact path="/" component={Center} />
         <Route exact path="/Projects" component={Center} />
         <Route exact path="/Home" component={Center} />

@@ -1,17 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=B612&display=swap");
+/* ===============================
+  Contents:
+
+    1. Globals
+=============================== */
+/* 1. Globals */
 html {
   /* Colours are Harley Davidson Orange and Ruby Pink (With varying opacities) */
   background: linear-gradient(130deg, #dd4814, #e0115f);
   background-size: 700% 700%;
   text-align: center;
   -webkit-animation: AnimationName 22s ease infinite;
-  animation: AnimationName 22s ease infinite;
-}
-
-html {
-  display: block;
+          animation: AnimationName 22s ease infinite;
   text-align: center;
   overflow: hidden;
+  display: -ms-grid;
+  display: grid;
 }
 
 @-webkit-keyframes AnimationName {
@@ -70,5 +74,9 @@ p, h1 {
 
 .nav .active {
   color: white;
+}
+
+.homeLink {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
