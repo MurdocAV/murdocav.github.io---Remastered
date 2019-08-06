@@ -27,6 +27,10 @@ html {
   overflow: hidden;
 }
 
+body {
+  margin: 0;
+}
+
 #app {
   display: grid;
   width: 100%;
@@ -34,7 +38,7 @@ html {
   grid-template-areas: "header header header header"
                        "main  main main main"
                        "projects  projects projects projects";
-  grid-template-rows: 1fr fr 1fr;
+  grid-template-rows: 1fr 2fr 3fr;
   grid-template-columns: 1fr 2fr 3fr;
 }
 
@@ -48,10 +52,18 @@ html {
 
 
 .navigation {
+  background-color: orangered;
+  opacity: 0.3;
   grid-area: header;
-
   font-family: 'B612', sans-serif;
-  font-size: 1.5em;
+  font-size: 1em;
+  /* remove the padding on smaller screen sizes */
+  padding-top: 5vh;
+  padding-left: 25vw;
+  padding-right: 25vw;
+
+  display: flex;
+  justify-content: space-around;
 
   a {
     color: #07038C;
@@ -79,11 +91,11 @@ html {
 
 /* 4. Projects */
 
-.projects {
-  grid-area: projects;
-  background-color: yellow;
-  opacity: 0.3;
-}
+// .projects {
+//   grid-area: projects;
+//   background-color: yellow;
+//   opacity: 0.3;
+// }
 
 /* Blank */
 
@@ -91,4 +103,13 @@ html {
   grid-area: blank;
   // background-color:;
   opacity: 0.3;
+}
+
+.imageDrawer {
+  display: flex;
+  width: 400px;
+  height: 400px;
+  grid-area: projects;
+  // background-color: yellow;
+  // opacity: 0.3;
 }

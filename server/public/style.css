@@ -15,14 +15,18 @@ html {
   overflow: hidden;
 }
 
+body {
+  margin: 0;
+}
+
 #app {
   display: -ms-grid;
   display: grid;
   width: 100%;
   height: 100vh;
       grid-template-areas: "header header header header" "main  main main main" "projects  projects projects projects";
-  -ms-grid-rows: 1fr fr 1fr;
-      grid-template-rows: 1fr fr 1fr;
+  -ms-grid-rows: 1fr 2fr 3fr;
+      grid-template-rows: 1fr 2fr 3fr;
   -ms-grid-columns: 1fr 2fr 3fr;
       grid-template-columns: 1fr 2fr 3fr;
 }
@@ -53,12 +57,23 @@ html {
 
 /* 2. Navigation */
 .navigation {
+  background-color: orangered;
+  opacity: 0.3;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-area: header;
   font-family: 'B612', sans-serif;
-  font-size: 1.5em;
+  font-size: 1em;
+  /* remove the padding on smaller screen sizes */
+  padding-top: 5vh;
+  padding-left: 25vw;
+  padding-right: 25vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .navigation a {
@@ -86,18 +101,21 @@ html {
 }
 
 /* 4. Projects */
-.projects {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-area: projects;
-  background-color: yellow;
-  opacity: 0.3;
-}
-
 /* Blank */
 .blank {
   grid-area: blank;
   opacity: 0.3;
+}
+
+.imageDrawer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: projects;
 }
 /*# sourceMappingURL=style.css.map */
