@@ -114,3 +114,11 @@ body {
   background-color: yellow;
   padding-bottom: 2.5vh;
 }
+
+.MuiGridListTile-tile {
+  box-shadow: 
+  inset 5px 0 10px -5px #635e61,
+  inset -5px 0 10px -5px #635e61,
+  inset 0px -5px 10px -2px #635e61,
+  0 0 1px 2px #635e61, 0 0 1px 2px #635e61;
+}
