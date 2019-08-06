@@ -5,7 +5,7 @@ class Center extends React.Component {
     return (
       <React.Fragment>
         <div className='mainComponent'>
-          <img src="https://via.placeholder.com/150" alt=""/>
+          <img src="https://via.placeholder.com/650x150" alt=""/>
         </div>
       </React.Fragment>
     )
