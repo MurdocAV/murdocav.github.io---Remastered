@@ -18,18 +18,18 @@ class App extends React.Component {
   render () {
     return (
       <HashRouter>
-        {/* <Navigation />
+        <Navigation />
         <br />
         <Projects />
         <Blank />
         <Blank />
         <Blank />
-        <Blank /> */}
+        <Blank />
         <div className='imageDrawer'><ImageDrawer /></div>
-        {/* <Route exact path="/" component={Center} />
+        <Route exact path="/" component={Center} />
         <Route exact path="/Projects" component={Center} />
         <Route exact path="/Home" component={Center} />
-        <Route exact path="/Documentation" component={Center} /> */}
+        <Route exact path="/Documentation" component={Center} />
       </HashRouter>
     )
   }
