@@ -3,19 +3,28 @@
   Contents:
 
     1. Globals
+    2. Navigation
+    3. Main content
 =============================== */
 /* 1. Globals */
 html {
   /* Colours are Harley Davidson Orange and Ruby Pink (With varying opacities) */
-  background: linear-gradient(130deg, #dd4814, #e0115f);
   background-size: 700% 700%;
   text-align: center;
-  -webkit-animation: AnimationName 22s ease infinite;
-          animation: AnimationName 22s ease infinite;
   text-align: center;
   overflow: hidden;
+}
+
+#app {
   display: -ms-grid;
   display: grid;
+  width: 100%;
+  height: 100vh;
+      grid-template-areas: "header header header header" "main  main main main" "projects  projects projects projects";
+  -ms-grid-rows: 1fr fr 1fr;
+      grid-template-rows: 1fr fr 1fr;
+  -ms-grid-columns: 1fr 2fr 3fr;
+      grid-template-columns: 1fr 2fr 3fr;
 }
 
 @-webkit-keyframes AnimationName {
@@ -42,41 +51,53 @@ html {
   }
 }
 
-.profilePhoto {
-  border: 5px inset green;
-}
-
-.name {
-  padding-top: 2.5vh;
-  padding-bottom: 2.5vh;
-}
-
-p, h1 {
-  text-align: center;
-}
-
-/* Navigation */
-.nav {
+/* 2. Navigation */
+.navigation {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: header;
   font-family: 'B612', sans-serif;
   font-size: 1.5em;
 }
 
-.nav a {
+.navigation a {
   color: #07038C;
   text-decoration: none;
-  padding: 3em;
 }
 
-.nav a:hover {
+.navigation a:hover {
   color: #056CF2;
   opacity: 0.7;
 }
 
-.nav .active {
-  color: white;
+.navigation .active {
+  color: pink;
 }
 
-.homeLink {
-  text-align: center;
+/* 3. Main component */
+.mainComponent {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: main;
+  background-color: green;
+  opacity: 0.3;
+}
+
+/* 4. Projects */
+.projects {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: projects;
+  background-color: yellow;
+  opacity: 0.3;
+}
+
+/* Blank */
+.blank {
+  grid-area: blank;
+  opacity: 0.3;
 }
 /*# sourceMappingURL=style.css.map */

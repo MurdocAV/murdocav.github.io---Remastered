@@ -1,6 +1,8 @@
 import React from 'react'
 import Center from './Center'
 import Navigation from './Navigation'
+import Projects from './Projects'
+import Blank from './Blank'
 import {HashRouter, Route} from 'react-router-dom'
 
 //TODO: Test out Material U.I.; 
@@ -17,6 +19,11 @@ class App extends React.Component {
       <HashRouter>
         <Navigation />
         <br />
+        <Projects />
+        <Blank />
+        <Blank />
+        <Blank />
+        <Blank />
         <Route exact path="/" component={Center} />
         <Route exact path="/Projects" component={Center} />
         <Route exact path="/Home" component={Center} />

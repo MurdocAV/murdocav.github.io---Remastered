@@ -5,65 +5,57 @@
   Contents:
 
     1. Globals
+    2. Navigation
+    3. Main content
 =============================== */
 
 /* 1. Globals */
 
+// * {
+//   border-color: red;
+//   border-style: solid;
+//   border-width: 5px;
+// }
 
 html {
   /* Colours are Harley Davidson Orange and Ruby Pink (With varying opacities) */
-  background: linear-gradient(130deg, #dd4814, #e0115f);
+  // background: linear-gradient(130deg, #dd4814, #e0115f);
   background-size: 700% 700%;
   text-align: center;
-  animation: AnimationName 22s ease infinite;
+  // animation: AnimationName 22s ease infinite;
   text-align: center;
   overflow: hidden;
-  display: grid;
 }
 
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+#app {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-areas: "header header header header"
+                       "main  main main main"
+                       "projects  projects projects projects";
+  grid-template-rows: 1fr fr 1fr;
+  grid-template-columns: 1fr 2fr 3fr;
 }
-@-moz-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
+
 @keyframes AnimationName { 
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
 
-.profilePhoto {
-  border: 5px inset green;
-}
-
-.name {
-  padding-top: 2.5vh;
-  padding-bottom: 2.5vh;
-}
-
-p, h1 {
-  text-align: center;
-}
+/* 2. Navigation */
 
 
-/* Navigation */
+.navigation {
+  grid-area: header;
 
-.header {
-
-}
-
-.nav {
   font-family: 'B612', sans-serif;
   font-size: 1.5em;
+
   a {
     color: #07038C;
     text-decoration: none;
-    padding: 3em;
   }
 
   a:hover {
@@ -72,10 +64,31 @@ p, h1 {
   }
 
   .active {
-    color: white;
+    // color: white;
+    color: pink;
   }
 }
 
-.homeLink {
-  text-align: center;
+/* 3. Main component */
+
+.mainComponent {
+  grid-area: main;
+  background-color: green;
+  opacity: 0.3;
+}
+
+/* 4. Projects */
+
+.projects {
+  grid-area: projects;
+  background-color: yellow;
+  opacity: 0.3;
+}
+
+/* Blank */
+
+.blank {
+  grid-area: blank;
+  // background-color:;
+  opacity: 0.3;
 }
