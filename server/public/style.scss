@@ -1,13 +1,21 @@
-@import url('https://fonts.googleapis.com/css?family=B612&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Ma+Shan+Zheng&display=swap');
 
 /* ===============================
   Contents:
-
+    0. Mixins & Variables
     1. Globals
     2. Navigation
     3. Main content
 =============================== */
+
+/* 0. Mixins & Variables */
+
+$text: #05AFF2;
+$highlight: #F28705;
+$active: #BF3604;
+$color1: #0554F2;
+$color2: #0460D9;
+
 
 /* 1. Globals */
 
@@ -22,6 +30,7 @@ html {
   // background: linear-gradient(130deg, #dd4814, #e0115f);
   background-size: 700% 700%;
   text-align: center;
+  font-family: 'Ma Shan Zheng', cursive;
   // animation: AnimationName 22s ease infinite;
   text-align: center;
   // overflow: hidden;
@@ -55,10 +64,10 @@ body {
   background-color: orangered;
   opacity: 0.3;
   grid-area: header;
-  font-family: 'B612', sans-serif;
-  font-size: 1em;
+  // font-family: 'B612', sans-serif;
+  font-size: 2em;
   /* remove the padding on smaller screen sizes */
-  padding-top: 5vh;
+  padding-top: 2.5vh;
   padding-left: 25vw;
   padding-right: 25vw;
 
@@ -66,18 +75,18 @@ body {
   justify-content: space-around;
 
   a {
-    color: #07038C;
+    color: $text;
     text-decoration: none;
   }
 
   a:hover {
-    color: #056CF2;
+    color: $highlight;
     opacity: 0.7;
   }
 
   .active {
     // color: white;
-    color: pink;
+    color: $active;
   }
 }
 
@@ -86,14 +95,14 @@ body {
 .mainComponent {
   grid-area: main;
   background-color: green;
-  opacity: 0.3;
+  opacity: 0.7;
 }
 
 /* 4. Projects */
 
 // .projects {
-//   grid-area: projects;
-//   background-color: yellow;
+//   grid-area: main;
+//   background-color: green;
 //   opacity: 0.3;
 // }
 

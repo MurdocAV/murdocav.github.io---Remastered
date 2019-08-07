@@ -1,16 +1,18 @@
-@import url("https://fonts.googleapis.com/css?family=B612&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Ma+Shan+Zheng&display=swap");
 /* ===============================
   Contents:
-
+    0. Mixins & Variables
     1. Globals
     2. Navigation
     3. Main content
 =============================== */
+/* 0. Mixins & Variables */
 /* 1. Globals */
 html {
   /* Colours are Harley Davidson Orange and Ruby Pink (With varying opacities) */
   background-size: 700% 700%;
   text-align: center;
+  font-family: 'Ma Shan Zheng', cursive;
   text-align: center;
 }
 
@@ -62,10 +64,9 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-area: header;
-  font-family: 'B612', sans-serif;
-  font-size: 1em;
+  font-size: 2em;
   /* remove the padding on smaller screen sizes */
-  padding-top: 5vh;
+  padding-top: 2.5vh;
   padding-left: 25vw;
   padding-right: 25vw;
   display: -webkit-box;
@@ -76,17 +77,17 @@ body {
 }
 
 .navigation a {
-  color: #07038C;
+  color: #05AFF2;
   text-decoration: none;
 }
 
 .navigation a:hover {
-  color: #056CF2;
+  color: #F28705;
   opacity: 0.7;
 }
 
 .navigation .active {
-  color: pink;
+  color: #BF3604;
 }
 
 /* 3. Main component */
@@ -96,7 +97,7 @@ body {
   -ms-grid-column-span: 4;
   grid-area: main;
   background-color: green;
-  opacity: 0.3;
+  opacity: 0.7;
 }
 
 /* 4. Projects */
