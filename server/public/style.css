@@ -14,12 +14,15 @@ html {
   text-align: center;
   font-family: 'Ma Shan Zheng', cursive;
   text-align: center;
+  overflow: hidden;
+}
+
+.appBar {
+  width: 100vw;
 }
 
 body {
   margin: 0;
-  background-color: #e7ffa1;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg stroke='%23ebffb3' stroke-width='0' %3E%3Crect fill='%23ffffff' x='-60' y='-60' width='110' height='240'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 #app {
@@ -99,9 +102,9 @@ body {
 }
 
 .placeholderImg {
+  font-size: 2em;
   margin: 1em;
   padding: 1em;
-  background-color: pink;
 }
 
 /* 4. Projects */
