@@ -5,6 +5,18 @@ const tileData = [
     author: 'MurdocAV',
     cols: 2,
     featured: true
+  },
+  {
+    img: '/images/DrinksRecomendation.png',
+    title: 'Drink Recomendation',
+    author: 'MurdocAV',
+    featured: true
+  },
+  {
+    img: '/images/PokeName.png',
+    title: 'PokeName',
+    author: 'MurdocAV',
+    featured: true
   }
 ]
 
