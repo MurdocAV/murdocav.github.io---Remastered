@@ -1,6 +1,6 @@
 const tileData = [
   {
-    img: '/images/image1.jpg',
+    img: '/images/LukeMitchells.png',
     title: 'Luke Mitchells',
     author: 'MurdocAV',
     cols: 2,
