@@ -60,9 +60,10 @@ export default function AdvancedGridList() {
             <img src={tile.img} alt={tile.title} />
             <GridListTileBar
               title={tile.title}
-              titlePosition="top"
+              titlePosition="bottom"
+              subtitle={tile.subtitle}
               actionIcon={
-                <IconButton aria-label={`star ${tile.title}`} className={classes.icon}>
+                <IconButton href={tile.url} className="spotThis" onClick={() => console.log('helloThere')} aria-label={`star ${tile.title}`} className={classes.icon}>
                   <StarBorderIcon />
                 </IconButton>
               }
