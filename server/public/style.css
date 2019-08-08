@@ -10,8 +10,6 @@
 /* 1. Globals */
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 html {
-  /* Colours are Harley Davidson Orange and Ruby Pink (With varying opacities) */
-  background-size: 700% 700%;
   text-align: center;
   font-family: 'Ma Shan Zheng', cursive;
   text-align: center;
@@ -69,7 +67,6 @@ body {
   -ms-grid-column-span: 4;
   grid-area: header;
   font-size: 2em;
-  /* remove the padding on smaller screen sizes */
   padding-top: 2.5vh;
   padding-left: 25vw;
   padding-right: 25vw;
@@ -112,7 +109,7 @@ body {
 /* Blank */
 .blank {
   grid-area: blank;
-  opacity: 0.3;
+  display: none;
 }
 
 .imageDrawer {
@@ -148,7 +145,6 @@ html {
 body {
   color: rgba(255, 255, 255, 0.75);
   font-family: 'Anonymous Pro', monospace;
-  background-color: #191919;
 }
 
 .line-1 {
@@ -205,5 +201,12 @@ body {
   to {
     border-right-color: transparent;
   }
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 /*# sourceMappingURL=style.css.map */

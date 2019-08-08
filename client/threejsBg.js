@@ -1,15 +1,3 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import App from './components/App'
-import * as THREE from 'three';
-
-document.addEventListener('DOMContentLoaded', () => {
-  ReactDOM.render(
-    <App />,
-    document.getElementById('app')
-  )
-})
-
 /* 
 
 ThreeJs custom waves
@@ -52,7 +40,7 @@ function init() {
 	particles = new Array();
 
 	var PI2 = Math.PI * 2;
-	var material = new THREE.SpriteMaterial( {
+	var material = new THREE.SpriteCanvasMaterial( {
 
 		color: 0xffffff, //changes color of particles
 		program: function ( context ) {
@@ -80,7 +68,7 @@ function init() {
 
 	}
 
-	renderer = new THREE.WebGLRenderer();
+	renderer = new THREE.CanvasRenderer();
 	renderer.setSize( window.innerWidth, window.innerHeight );
   renderer.setClearColor( 0x3B3C40, 1);
 	container.appendChild( renderer.domElement );
