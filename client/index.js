@@ -14,120 +14,120 @@ document.addEventListener('DOMContentLoaded', () => {
 
 ThreeJs custom waves
 Original script by ThreeJS : https://threejs.org/examples/canvas_particles_waves.html
-Modified version for Cloudoru by Kevin Rajaram : http://kevinrajaram.com
-Date: 08/14/2014
-
 
 */
 
-var SEPARATION = 50, AMOUNTX = 60, AMOUNTY = 30;
+// var SEPARATION = 50, AMOUNTX = 60, AMOUNTY = 30;
 
-var container;
-var camera, scene, renderer;
+// var container;
+// var camera, scene, renderer;
 
-var particles, particle, count = 0;
+// var particles, particle, count = 0;
 
-var windowHalfX = window.innerWidth / 2;
-var windowHalfY = window.innerHeight / 2;
+// function init() {
 
-init();
-animate();
+// 	container = document.createElement( 'div' );
+// 	document.body.appendChild( container );
+// 	if(container) {
+//     	container.className += container.className ? ' waves' : 'waves';
+// 	}
 
-function init() {
-
-	container = document.createElement( 'div' );
-	document.body.appendChild( container );
-	if(container) {
-    	container.className += container.className ? ' waves' : 'waves';
-	}
-
-	camera = new THREE.PerspectiveCamera( 120, window.innerWidth / window.innerHeight, 1, 10000 );
-	camera.position.y = 180; //changes how far back you can see i.e the particles towards horizon
-	camera.position.z = 20; //This is how close or far the particles are seen
+// 	camera = new THREE.PerspectiveCamera( 120, window.innerWidth / window.innerHeight, 1, 10000 );
+// 	camera.position.y = 180; //changes how far back you can see i.e the particles towards horizon
+// 	camera.position.z = 20; //This is how close or far the particles are seen
 	
-	camera.rotation.x = 0.35;
+// 	camera.rotation.x = 0.35;
 	
-	scene = new THREE.Scene();
+// 	scene = new THREE.Scene();
 
-	particles = new Array();
+// 	particles = new Array();
 
-	var PI2 = Math.PI * 2;
-	var material = new THREE.SpriteMaterial( {
+// 	var PI2 = Math.PI * 2;
+// 	var material = new THREE.SpriteMaterial( {
 
-		color: 0xffffff, //changes color of particles
-		program: function ( context ) {
+// 		color: 0x7e1918, //changes color of particles
+// 		program: function ( context ) {
 
-			context.beginPath();
-			context.arc( 0, 0, 0.5, 0, PI2, true );
-			context.fill();
+// 			context.beginPath();
+// 			context.arc( 0, 0, 0.5, 0, PI2, true );
+// 			context.fill();
 
-		}
+// 		}
 
-	} );
+// 	} );
 
-	var i = 0;
+// 	var i = 0;
 
-	for ( var ix = 0; ix < AMOUNTX; ix ++ ) {
+// 	for ( var ix = 0; ix < AMOUNTX; ix ++ ) {
 
-		for ( var iy = 0; iy < AMOUNTY; iy ++ ) {
+// 		for ( var iy = 0; iy < AMOUNTY; iy ++ ) {
 
-			particle = particles[ i ++ ] = new THREE.Sprite( material );
-			particle.position.x = ix * SEPARATION - ( ( AMOUNTX * SEPARATION ) / 2 );
-			particle.position.z = iy * SEPARATION - ( ( AMOUNTY * SEPARATION ) - 10 );
-			scene.add( particle );
+// 			particle = particles[ i ++ ] = new THREE.Mesh(new THREE.SphereGeometry(0,0.0,0.1),
+// 			new THREE.MeshBasicMaterial({color:0xff0000}) );
 
-		}
 
-	}
 
-	renderer = new THREE.WebGLRenderer();
-	renderer.setSize( window.innerWidth, window.innerHeight );
-  renderer.setClearColor( 0x3B3C40, 1);
-	container.appendChild( renderer.domElement );
 
-	window.addEventListener( 'resize', onWindowResize, false );
 
-}
+// 			particle.position.x = ix * SEPARATION - ( ( AMOUNTX * SEPARATION ) / 2 );
+// 			particle.position.z = iy * SEPARATION - ( ( AMOUNTY * SEPARATION ) - 10 );
+// 			scene.add( particle );
 
-function onWindowResize() {
+// 		}
 
-	windowHalfX = window.innerWidth / 2;
-	windowHalfY = window.innerHeight / 2;
+// 	}
 
-	camera.aspect = window.innerWidth / window.innerHeight;
-	camera.updateProjectionMatrix();
+// 	renderer = new THREE.WebGLRenderer();
+// 	renderer.setSize( window.innerWidth, window.innerHeight );
+//   renderer.setClearColor( 0x3B3C40, 1);
+// 	container.appendChild( renderer.domElement );
 
-	renderer.setSize( window.innerWidth, window.innerHeight );
+// 	window.addEventListener( 'resize', onWindowResize, false );
 
-}
+// }
 
-function animate() {
+// function onWindowResize() {
 
-	requestAnimationFrame( animate );
+// 	windowHalfX = window.innerWidth / 2;
+// 	windowHalfY = window.innerHeight / 2;
 
-	render();
+// 	camera.aspect = window.innerWidth / window.innerHeight;
+// 	camera.updateProjectionMatrix();
 
-}
+// 	renderer.setSize( window.innerWidth, window.innerHeight );
 
-function render() {
+// }
 
-	var i = 0;
+// function animate() {
 
-	for ( var ix = 0; ix < AMOUNTX; ix ++ ) {
+// 	requestAnimationFrame( animate );
 
-		for ( var iy = 0; iy < AMOUNTY; iy ++ ) {
+// 	render();
 
-			particle = particles[ i++ ];
-			particle.position.y = ( Math.sin( ( ix + count ) * 0.5 ) * 15 ) + ( Math.sin( ( iy + count ) * 0.5 ) * 15 );
-			particle.scale.x = particle.scale.y = ( Math.sin( ( ix + count ) * 0.5 ) + 2 ) * 4 + ( Math.sin( ( iy + count ) * 0.5 ) + 1 ) * 4;
+// }
 
-		}
+// function render() {
 
-	}
+// 	var i = 0;
 
-	renderer.render( scene, camera );
+// 	for ( var ix = 0; ix < AMOUNTX; ix ++ ) {
 
-	// This increases or decreases speed
-	count += 0.05;
+// 		for ( var iy = 0; iy < AMOUNTY; iy ++ ) {
 
-}
+// 			particle = particles[ i++ ];
+// 			particle.position.y = ( Math.sin( ( ix + count ) * 0.5 ) * 15 ) + ( Math.sin( ( iy + count ) * 0.5 ) * 15 );
+// 			particle.scale.x = particle.scale.y = ( Math.sin( ( ix + count ) * 0.5 ) + 2 ) * 4 + ( Math.sin( ( iy + count ) * 0.5 ) + 1 ) * 4;
+
+// 		}
+
+// 	}
+
+// 	renderer.render( scene, camera );
+
+// 	// This increases or decreases speed
+// 	count += 0.065;
+
+// }
+
+// init();
+// animate();

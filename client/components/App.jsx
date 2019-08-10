@@ -1,10 +1,10 @@
 import React from 'react'
 import Center from './Center'
+import Header from './Appbar/Header'
 import Navigation from './Navigation'
 import Projects from './Projects'
 import Blank from './Blank'
 import ImageDrawer from './ImageDrawer'
-import AppBar from './AppBar'
 import {HashRouter, Route} from 'react-router-dom'
 
 //TODO: Test out Material U.I.; 
@@ -19,9 +19,10 @@ class App extends React.Component {
   render () {
     return (
       <HashRouter>
-        <AppBar className="appBar"></AppBar>
-        <Center></Center>
-        <div className='imageDrawer'><ImageDrawer /></div>
+        <Header />
+        <p>Hello</p>
+        {/* <Center></Center> */}
+        {/* <div className='imageDrawer'><ImageDrawer /></div> */}
       </HashRouter>
     )
   }
