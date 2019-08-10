@@ -17,117 +17,130 @@ Original script by ThreeJS : https://threejs.org/examples/canvas_particles_waves
 
 */
 
-// var SEPARATION = 50, AMOUNTX = 60, AMOUNTY = 30;
+var SEPARATION = 100, AMOUNTX = 30, AMOUNTY = 30;
 
-// var container;
-// var camera, scene, renderer;
+var container;
+var camera, scene, renderer;
 
-// var particles, particle, count = 0;
+var particles, particle, count = 0;
 
-// function init() {
+function init() {
 
-// 	container = document.createElement( 'div' );
-// 	document.body.appendChild( container );
-// 	if(container) {
-//     	container.className += container.className ? ' waves' : 'waves';
-// 	}
+	container = document.createElement( 'div' );
+	document.body.appendChild( container );
+	if(container) {
+    	container.className += container.className ? ' waves' : 'waves';
+	}
 
-// 	camera = new THREE.PerspectiveCamera( 120, window.innerWidth / window.innerHeight, 1, 10000 );
-// 	camera.position.y = 180; //changes how far back you can see i.e the particles towards horizon
-// 	camera.position.z = 20; //This is how close or far the particles are seen
+	camera = new THREE.PerspectiveCamera( 120, window.innerWidth / window.innerHeight, 1, 10000 );
+	camera.position.y = 180; //changes how far back you can see i.e the particles towards horizon
+	camera.position.z = 20; //This is how close or far the particles are seen
 	
-// 	camera.rotation.x = 0.35;
+	camera.rotation.x = 0.35;
 	
-// 	scene = new THREE.Scene();
+	scene = new THREE.Scene();
 
-// 	particles = new Array();
+	particles = new Array();
 
-// 	var PI2 = Math.PI * 2;
-// 	var material = new THREE.SpriteMaterial( {
+	var PI2 = Math.PI * 2;
+	var material = new THREE.SpriteMaterial( {
 
-// 		color: 0x7e1918, //changes color of particles
-// 		program: function ( context ) {
+		color: 0x7e1918, //changes color of particles
+		program: function ( context ) {
 
-// 			context.beginPath();
-// 			context.arc( 0, 0, 0.5, 0, PI2, true );
-// 			context.fill();
+			context.beginPath();
+			context.arc( 0, 0, 0.5, 0, PI2, true );
+			context.fill();
 
-// 		}
-
-// 	} );
-
-// 	var i = 0;
-
-// 	for ( var ix = 0; ix < AMOUNTX; ix ++ ) {
-
-// 		for ( var iy = 0; iy < AMOUNTY; iy ++ ) {
-
-// 			particle = particles[ i ++ ] = new THREE.Mesh(new THREE.SphereGeometry(0,0.0,0.1),
-// 			new THREE.MeshBasicMaterial({color:0xff0000}) );
+		}
 
 
+	} );
 
+	// var heartShape = new THREE.Shape();
 
+	// heartShape.moveTo( 25, 25 );
+	// heartShape.bezierCurveTo( 25, 25, 20, 0, 0, 0 );
+	// heartShape.bezierCurveTo( 30, 0, 30, 35,30,35 );
+	// heartShape.bezierCurveTo( 30, 55, 10, 77, 25, 95 );
+	// heartShape.bezierCurveTo( 60, 77, 80, 55, 80, 35 );
+	// heartShape.bezierCurveTo( 80, 35, 80, 0, 50, 0 );
+	// heartShape.bezierCurveTo( 35, 0, 25, 25, 25, 25 );
+	
+	// var extrudeSettings = { amount: 8, bevelEnabled: true, bevelSegments: 2, steps: 2, bevelSize: 1, bevelThickness: 1 };
+	
+	// var geometry = new THREE.ExtrudeGeometry( heartShape, extrudeSettings );
+	
+	// var material = new THREE.Mesh( geometry, new THREE.MeshPhongMaterial() );
 
-// 			particle.position.x = ix * SEPARATION - ( ( AMOUNTX * SEPARATION ) / 2 );
-// 			particle.position.z = iy * SEPARATION - ( ( AMOUNTY * SEPARATION ) - 10 );
-// 			scene.add( particle );
+	var i = 0;
 
-// 		}
+	for ( var ix = 0; ix < AMOUNTX; ix ++ ) {
 
-// 	}
+		for ( var iy = 0; iy < AMOUNTY; iy ++ ) {
 
-// 	renderer = new THREE.WebGLRenderer();
-// 	renderer.setSize( window.innerWidth, window.innerHeight );
-//   renderer.setClearColor( 0x3B3C40, 1);
-// 	container.appendChild( renderer.domElement );
+			particle = particles[ i ++ ] = new THREE.Mesh(new THREE.SphereGeometry(0,0.0,0.1),
+			new THREE.MeshBasicMaterial({color:0xff0000}) );
 
-// 	window.addEventListener( 'resize', onWindowResize, false );
+			particle.position.x = ix * SEPARATION - ( ( AMOUNTX * SEPARATION ) / 2 );
+			particle.position.z = iy * SEPARATION - ( ( AMOUNTY * SEPARATION ) - 10 );
+			scene.add( particle );
 
-// }
+		}
 
-// function onWindowResize() {
+	}
 
-// 	windowHalfX = window.innerWidth / 2;
-// 	windowHalfY = window.innerHeight / 2;
+	renderer = new THREE.WebGLRenderer();
+	renderer.setSize( window.innerWidth, window.innerHeight );
+  renderer.setClearColor( 0x3B3C40, 1);
+	container.appendChild( renderer.domElement );
 
-// 	camera.aspect = window.innerWidth / window.innerHeight;
-// 	camera.updateProjectionMatrix();
+	window.addEventListener( 'resize', onWindowResize, false );
 
-// 	renderer.setSize( window.innerWidth, window.innerHeight );
+}
 
-// }
+function onWindowResize() {
 
-// function animate() {
+	windowHalfX = window.innerWidth / 2;
+	windowHalfY = window.innerHeight / 2;
 
-// 	requestAnimationFrame( animate );
+	camera.aspect = window.innerWidth / window.innerHeight;
+	camera.updateProjectionMatrix();
 
-// 	render();
+	renderer.setSize( window.innerWidth, window.innerHeight );
 
-// }
+}
 
-// function render() {
+function animate() {
 
-// 	var i = 0;
+	requestAnimationFrame( animate );
 
-// 	for ( var ix = 0; ix < AMOUNTX; ix ++ ) {
+	render();
 
-// 		for ( var iy = 0; iy < AMOUNTY; iy ++ ) {
+}
 
-// 			particle = particles[ i++ ];
-// 			particle.position.y = ( Math.sin( ( ix + count ) * 0.5 ) * 15 ) + ( Math.sin( ( iy + count ) * 0.5 ) * 15 );
-// 			particle.scale.x = particle.scale.y = ( Math.sin( ( ix + count ) * 0.5 ) + 2 ) * 4 + ( Math.sin( ( iy + count ) * 0.5 ) + 1 ) * 4;
+function render() {
 
-// 		}
+	var i = 0;
 
-// 	}
+	for ( var ix = 0; ix < AMOUNTX; ix ++ ) {
 
-// 	renderer.render( scene, camera );
+		for ( var iy = 0; iy < AMOUNTY; iy ++ ) {
 
-// 	// This increases or decreases speed
-// 	count += 0.065;
+			particle = particles[ i++ ];
+			particle.position.y = ( Math.sin( ( ix + count ) * 0.5 ) * 15 ) + ( Math.sin( ( iy + count ) * 0.5 ) * 15 );
+			particle.scale.x = particle.scale.y = ( Math.sin( ( ix + count ) * 0.5 ) + 2 ) * 4 + ( Math.sin( ( iy + count ) * 0.5 ) + 1 ) * 4;
 
-// }
+		}
 
-// init();
-// animate();
+	}
+
+	renderer.render( scene, camera );
+
+	// This increases or decreases speed
+	count += 0.065;
+
+}
+
+init();
+animate();

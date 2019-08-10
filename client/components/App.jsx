@@ -20,9 +20,8 @@ class App extends React.Component {
     return (
       <HashRouter>
         <Header />
-        <p>Hello</p>
-        {/* <Center></Center> */}
-        {/* <div className='imageDrawer'><ImageDrawer /></div> */}
+        <Center></Center>
+        <div className='imageDrawer'><ImageDrawer /></div>
       </HashRouter>
     )
   }

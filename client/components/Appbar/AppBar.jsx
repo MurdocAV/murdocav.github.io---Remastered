@@ -21,13 +21,13 @@ const useStyles = makeStyles(theme => ({
 
 export default function ButtonAppBar(props) {
   const classes = useStyles();
-  console.log(props)
+  props.open
   return (
     <div className='appBar'>
       <AppBar position="static">
         <Toolbar>
-          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-            <MenuIcon onClick={props.launchDrawer()} />
+          <IconButton onClick={props.launchDrawer} edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+            <MenuIcon />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
             MurdocAV
