@@ -24,7 +24,7 @@ export default function ButtonAppBar(props) {
   props.open
   return (
     <div className='appBar'>
-      <AppBar position="static">
+      <AppBar position="static" color='secondary'>
         <Toolbar>
           <IconButton onClick={props.launchDrawer} edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
             <MenuIcon />

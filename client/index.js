@@ -17,12 +17,12 @@ Original script by ThreeJS : https://threejs.org/examples/canvas_particles_waves
 
 */
 
-const SEPARATION = 2100, AMOUNTX = 20, AMOUNTY = 20;
+const SEPARATION = 150, AMOUNTX = 20, AMOUNTY = 20;
 
-var container;
-var camera, scene, renderer;
+let container;
+let camera, scene, renderer;
 
-var particles, particle, count = 0;
+let particles, particle, count = 0;
 
 function init() {
 
@@ -36,76 +36,75 @@ function init() {
 	camera.position.y = 180; //changes how far back you can see i.e the particles towards horizon
 	camera.position.z = 20; //This is how close or far the particles are seen
 	
-	camera.rotation.x = 0.35;
+	camera.rotation.x = 0.2;
 	
 	scene = new THREE.Scene();
 
 	particles = new Array();
 
-	var PI2 = Math.PI * 2;
+	let PI2 = Math.PI * 2;
 
-var x = 0, y = 0;
+let x = 0, y = 0;
 
-var heartShape = new THREE.Shape();
+// let triangleShape = new THREE.Shape();
+// triangleShape.moveTo( 20, 5 );
+// triangleShape.lineTo( 8, 20 );
+// triangleShape.lineTo( 25, 20 );
+// triangleShape.lineTo( 20, 5 ); // close path
 
-heartShape.moveTo( x + 5, y + 5 );
-heartShape.bezierCurveTo( x + 5, y + 5, x + 4, y, x, y );
-heartShape.bezierCurveTo( x - 6, y, x - 6, y + 7,x - 6, y + 7 );
-heartShape.bezierCurveTo( x - 6, y + 11, x - 3, y + 15.4, x + 5, y + 19 );
-heartShape.bezierCurveTo( x + 12, y + 15.4, x + 16, y + 11, x + 16, y + 7 );
-heartShape.bezierCurveTo( x + 16, y + 7, x + 16, y, x + 10, y );
-heartShape.bezierCurveTo( x + 7, y, x + 5, y + 5, x + 5, y + 5 );
+// let geometry = new THREE.ShapeGeometry( triangleShape );
+// let material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+// let mesh = new THREE.Mesh( geometry, material ) ;
+// scene.add( mesh );
 
-var geometry = new THREE.ShapeGeometry( heartShape );
-var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-var mesh = new THREE.Mesh( geometry, material ) ;
-scene.add( mesh );
+// let i = 0;
 
 
+// let smileyShape = new THREE.Shape();
+// smileyShape.moveTo( 80, 40 );
+// smileyShape.absarc( 40, 40, 40, 0, Math.PI * 2, false );
+// let smileyEye1Path = new THREE.Path();
+// smileyEye1Path.moveTo( 35, 20 );
+// smileyEye1Path.absellipse( 25, 20, 10, 10, 0, Math.PI * 2, true );
+// smileyShape.holes.push( smileyEye1Path );
+// let smileyEye2Path = new THREE.Path();
+// smileyEye2Path.moveTo( 65, 20 );
+// smileyEye2Path.absarc( 55, 20, 10, 0, Math.PI * 2, true );
+// smileyShape.holes.push( smileyEye2Path );
+// let smileyMouthPath = new THREE.Path();
+// smileyMouthPath.moveTo( 20, 40 );
+// smileyMouthPath.quadraticCurveTo( 40, 60, 60, 40 );
+// smileyMouthPath.bezierCurveTo( 70, 45, 70, 50, 60, 60 );
+// smileyMouthPath.quadraticCurveTo( 40, 80, 20, 60 );
+// smileyMouthPath.quadraticCurveTo( 5, 50, 20, 40 );
+// smileyShape.holes.push( smileyMouthPath );
 
-var triangleShape = new THREE.Shape();
-triangleShape.moveTo( 20, 5 );
-triangleShape.lineTo( 8, 20 );
-triangleShape.lineTo( 25, 20 );
-triangleShape.lineTo( 20, 5 ); // close path
-
-var geometry = new THREE.ShapeGeometry( triangleShape );
-var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-var mesh = new THREE.Mesh( geometry, material ) ;
-scene.add( mesh );
-
-var i = 0;
+// let geometry = new THREE.ShapeGeometry( smileyShape );
+// let material = new THREE.MeshBasicMaterial( { color: 0xffffff} );
+// geometry.scale(0.025,0.025,0.025)
+// geometry.rotateZ(Math.PI)
 
 
-var smileyShape = new THREE.Shape();
-smileyShape.moveTo( 80, 40 );
-smileyShape.absarc( 40, 40, 40, 0, Math.PI * 2, false );
-var smileyEye1Path = new THREE.Path();
-smileyEye1Path.moveTo( 35, 20 );
-smileyEye1Path.absellipse( 25, 20, 10, 10, 0, Math.PI * 2, true );
-smileyShape.holes.push( smileyEye1Path );
-var smileyEye2Path = new THREE.Path();
-smileyEye2Path.moveTo( 65, 20 );
-smileyEye2Path.absarc( 55, 20, 10, 0, Math.PI * 2, true );
-smileyShape.holes.push( smileyEye2Path );
-var smileyMouthPath = new THREE.Path();
-smileyMouthPath.moveTo( 20, 40 );
-smileyMouthPath.quadraticCurveTo( 40, 60, 60, 40 );
-smileyMouthPath.bezierCurveTo( 70, 45, 70, 50, 60, 60 );
-smileyMouthPath.quadraticCurveTo( 40, 80, 20, 60 );
-smileyMouthPath.quadraticCurveTo( 5, 50, 20, 40 );
-smileyShape.holes.push( smileyMouthPath );
+let fishShape = new THREE.Shape();
+fishShape.moveTo( x, y );
+fishShape.quadraticCurveTo( x + 50, y - 80, x + 90, y - 10 );
+fishShape.quadraticCurveTo( x + 100, y - 10, x + 115, y - 40 );
+fishShape.quadraticCurveTo( x + 115, y, x + 115, y + 40 );
+fishShape.quadraticCurveTo( x + 100, y + 10, x + 90, y + 10 );
+fishShape.quadraticCurveTo( x + 50, y + 80, x, y );
 
-var geometry = new THREE.ShapeGeometry( smileyShape );
-var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-var xAxis = new THREE.Vector3(1,0,0);
-rotateAroundWorldAxis(mesh, xAxis, Math.PI / 180);
+let geometry = new THREE.ShapeGeometry( fishShape );
+let material = new THREE.MeshBasicMaterial( { color: 0xDD4814} );
 
-var mesh = new THREE.Mesh( geometry, material ) ;
+geometry.scale(0.025,0.025,0.025)
+geometry.rotateZ(Math.PI)
 
-	for ( var ix = 0; ix < AMOUNTX; ix ++ ) {
+let i = 0
+let mesh = new THREE.Mesh( geometry, material ) ;
 
-		for ( var iy = 0; iy < AMOUNTY; iy ++ ) {
+	for ( let ix = 0; ix < AMOUNTX; ix ++ ) {
+
+		for ( let iy = 0; iy < AMOUNTY; iy ++ ) {
 
 			particle = particles[ i ++ ] = new THREE.Mesh(geometry,
 				material);
@@ -120,7 +119,7 @@ var mesh = new THREE.Mesh( geometry, material ) ;
 
 	renderer = new THREE.WebGLRenderer();
 	renderer.setSize( window.innerWidth, window.innerHeight );
-  renderer.setClearColor( 0x3B3C40, 1);
+  renderer.setClearColor( 0x007fff, 1);
 	container.appendChild( renderer.domElement );
 
 	window.addEventListener( 'resize', onWindowResize, false );
@@ -149,11 +148,11 @@ function animate() {
 
 function render() {
 
-	var i = 0;
+	let i = 0;
 
-	for ( var ix = 0; ix < AMOUNTX; ix ++ ) {
+	for ( let ix = 0; ix < AMOUNTX; ix ++ ) {
 
-		for ( var iy = 0; iy < AMOUNTY; iy ++ ) {
+		for ( let iy = 0; iy < AMOUNTY; iy ++ ) {
 
 			particle = particles[ i++ ];
 			particle.position.y = ( Math.sin( ( ix + count ) * 0.5 ) * 15 ) + ( Math.sin( ( iy + count ) * 0.5 ) * 15 );
