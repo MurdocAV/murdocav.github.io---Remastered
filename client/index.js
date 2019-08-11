@@ -17,7 +17,7 @@ Original script by ThreeJS : https://threejs.org/examples/canvas_particles_waves
 
 */
 
-var SEPARATION = 100, AMOUNTX = 30, AMOUNTY = 30;
+const SEPARATION = 2100, AMOUNTX = 20, AMOUNTY = 20;
 
 var container;
 var camera, scene, renderer;
@@ -43,44 +43,72 @@ function init() {
 	particles = new Array();
 
 	var PI2 = Math.PI * 2;
-	var material = new THREE.SpriteMaterial( {
 
-		color: 0x7e1918, //changes color of particles
-		program: function ( context ) {
+var x = 0, y = 0;
 
-			context.beginPath();
-			context.arc( 0, 0, 0.5, 0, PI2, true );
-			context.fill();
+var heartShape = new THREE.Shape();
 
-		}
+heartShape.moveTo( x + 5, y + 5 );
+heartShape.bezierCurveTo( x + 5, y + 5, x + 4, y, x, y );
+heartShape.bezierCurveTo( x - 6, y, x - 6, y + 7,x - 6, y + 7 );
+heartShape.bezierCurveTo( x - 6, y + 11, x - 3, y + 15.4, x + 5, y + 19 );
+heartShape.bezierCurveTo( x + 12, y + 15.4, x + 16, y + 11, x + 16, y + 7 );
+heartShape.bezierCurveTo( x + 16, y + 7, x + 16, y, x + 10, y );
+heartShape.bezierCurveTo( x + 7, y, x + 5, y + 5, x + 5, y + 5 );
+
+var geometry = new THREE.ShapeGeometry( heartShape );
+var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+var mesh = new THREE.Mesh( geometry, material ) ;
+scene.add( mesh );
 
 
-	} );
 
-	// var heartShape = new THREE.Shape();
+var triangleShape = new THREE.Shape();
+triangleShape.moveTo( 20, 5 );
+triangleShape.lineTo( 8, 20 );
+triangleShape.lineTo( 25, 20 );
+triangleShape.lineTo( 20, 5 ); // close path
 
-	// heartShape.moveTo( 25, 25 );
-	// heartShape.bezierCurveTo( 25, 25, 20, 0, 0, 0 );
-	// heartShape.bezierCurveTo( 30, 0, 30, 35,30,35 );
-	// heartShape.bezierCurveTo( 30, 55, 10, 77, 25, 95 );
-	// heartShape.bezierCurveTo( 60, 77, 80, 55, 80, 35 );
-	// heartShape.bezierCurveTo( 80, 35, 80, 0, 50, 0 );
-	// heartShape.bezierCurveTo( 35, 0, 25, 25, 25, 25 );
-	
-	// var extrudeSettings = { amount: 8, bevelEnabled: true, bevelSegments: 2, steps: 2, bevelSize: 1, bevelThickness: 1 };
-	
-	// var geometry = new THREE.ExtrudeGeometry( heartShape, extrudeSettings );
-	
-	// var material = new THREE.Mesh( geometry, new THREE.MeshPhongMaterial() );
+var geometry = new THREE.ShapeGeometry( triangleShape );
+var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+var mesh = new THREE.Mesh( geometry, material ) ;
+scene.add( mesh );
 
-	var i = 0;
+var i = 0;
+
+
+var smileyShape = new THREE.Shape();
+smileyShape.moveTo( 80, 40 );
+smileyShape.absarc( 40, 40, 40, 0, Math.PI * 2, false );
+var smileyEye1Path = new THREE.Path();
+smileyEye1Path.moveTo( 35, 20 );
+smileyEye1Path.absellipse( 25, 20, 10, 10, 0, Math.PI * 2, true );
+smileyShape.holes.push( smileyEye1Path );
+var smileyEye2Path = new THREE.Path();
+smileyEye2Path.moveTo( 65, 20 );
+smileyEye2Path.absarc( 55, 20, 10, 0, Math.PI * 2, true );
+smileyShape.holes.push( smileyEye2Path );
+var smileyMouthPath = new THREE.Path();
+smileyMouthPath.moveTo( 20, 40 );
+smileyMouthPath.quadraticCurveTo( 40, 60, 60, 40 );
+smileyMouthPath.bezierCurveTo( 70, 45, 70, 50, 60, 60 );
+smileyMouthPath.quadraticCurveTo( 40, 80, 20, 60 );
+smileyMouthPath.quadraticCurveTo( 5, 50, 20, 40 );
+smileyShape.holes.push( smileyMouthPath );
+
+var geometry = new THREE.ShapeGeometry( smileyShape );
+var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+var xAxis = new THREE.Vector3(1,0,0);
+rotateAroundWorldAxis(mesh, xAxis, Math.PI / 180);
+
+var mesh = new THREE.Mesh( geometry, material ) ;
 
 	for ( var ix = 0; ix < AMOUNTX; ix ++ ) {
 
 		for ( var iy = 0; iy < AMOUNTY; iy ++ ) {
 
-			particle = particles[ i ++ ] = new THREE.Mesh(new THREE.SphereGeometry(0,0.0,0.1),
-			new THREE.MeshBasicMaterial({color:0xff0000}) );
+			particle = particles[ i ++ ] = new THREE.Mesh(geometry,
+				material);
 
 			particle.position.x = ix * SEPARATION - ( ( AMOUNTX * SEPARATION ) / 2 );
 			particle.position.z = iy * SEPARATION - ( ( AMOUNTY * SEPARATION ) - 10 );
