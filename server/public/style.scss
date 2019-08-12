@@ -89,7 +89,8 @@ body {
   grid-area: main;
 }
 
-.placeholderImg {
+.typewriter {
+  padding: 0px;
   font-size: 2em;
   margin: 1em;
   padding: 1em;
@@ -112,7 +113,7 @@ body {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 450px;
+  height: 47.5vh;
   grid-area: projects;
   padding-bottom: 2.5vh;
 }
