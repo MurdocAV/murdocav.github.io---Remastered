@@ -17,7 +17,7 @@ Original script by ThreeJS : https://threejs.org/examples/canvas_particles_waves
 
 */
 
-const SEPARATION = 150, AMOUNTX = 20, AMOUNTY = 20;
+const SEPARATION = 100, AMOUNTX = 60, AMOUNTY = 60;
 
 let container;
 let camera, scene, renderer;
@@ -85,16 +85,25 @@ let x = 0, y = 0;
 // geometry.rotateZ(Math.PI)
 
 
-let fishShape = new THREE.Shape();
-fishShape.moveTo( x, y );
-fishShape.quadraticCurveTo( x + 50, y - 80, x + 90, y - 10 );
-fishShape.quadraticCurveTo( x + 100, y - 10, x + 115, y - 40 );
-fishShape.quadraticCurveTo( x + 115, y, x + 115, y + 40 );
-fishShape.quadraticCurveTo( x + 100, y + 10, x + 90, y + 10 );
-fishShape.quadraticCurveTo( x + 50, y + 80, x, y );
+// let fishShape = new THREE.Shape();
+// fishShape.moveTo( x, y );
+// fishShape.quadraticCurveTo( x + 50, y - 80, x + 90, y - 10 );
+// fishShape.quadraticCurveTo( x + 100, y - 10, x + 115, y - 40 );
+// fishShape.quadraticCurveTo( x + 115, y, x + 115, y + 40 );
+// fishShape.quadraticCurveTo( x + 100, y + 10, x + 90, y + 10 );
+// fishShape.quadraticCurveTo( x + 50, y + 80, x, y );
 
-let geometry = new THREE.ShapeGeometry( fishShape );
-let material = new THREE.MeshBasicMaterial( { color: 0xDD4814} );
+var circleRadius = 40;
+var circleShape = new THREE.Shape();
+circleShape.moveTo( 0, circleRadius );
+circleShape.quadraticCurveTo( circleRadius, circleRadius, circleRadius, 0 );
+circleShape.quadraticCurveTo( circleRadius, - circleRadius, 0, - circleRadius );
+circleShape.quadraticCurveTo( - circleRadius, - circleRadius, - circleRadius, 0 );
+circleShape.quadraticCurveTo( - circleRadius, circleRadius, 0, circleRadius );
+
+
+let geometry = new THREE.ShapeGeometry( circleShape );
+let material = new THREE.MeshBasicMaterial( { color: 0x260104} );
 
 geometry.scale(0.025,0.025,0.025)
 geometry.rotateZ(Math.PI)
@@ -119,7 +128,7 @@ let mesh = new THREE.Mesh( geometry, material ) ;
 
 	renderer = new THREE.WebGLRenderer();
 	renderer.setSize( window.innerWidth, window.innerHeight );
-  renderer.setClearColor( 0x007fff, 1);
+  renderer.setClearColor( 0x0D0D0D, 1);
 	container.appendChild( renderer.domElement );
 
 	window.addEventListener( 'resize', onWindowResize, false );

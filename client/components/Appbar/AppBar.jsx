@@ -24,15 +24,15 @@ export default function ButtonAppBar(props) {
   props.open
   return (
     <div className='appBar'>
-      <AppBar position="static" color='secondary'>
-        <Toolbar>
-          <IconButton onClick={props.launchDrawer} edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+      <AppBar position="static" className='appBarStart' color='inherit'>
+        <Toolbar className='toolBar'>
+          <IconButton onClick={props.launchDrawer} edge="start" className={`${classes.menuButton} appBarText`} color="inherit" aria-label="menu">
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" className={classes.title}>
+          <Typography variant="h6" className={`${classes.title} appBarText`}>
             MurdocAV
           </Typography>
-          <Button color="inherit">Documentation</Button>
+          <Button className='appBarText'>Documentation</Button>
         </Toolbar>
       </AppBar>
     </div>
