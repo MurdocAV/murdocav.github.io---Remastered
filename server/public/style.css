@@ -99,7 +99,8 @@ body {
   grid-area: main;
 }
 
-.placeholderImg {
+.typewriter {
+  padding: 0px;
   font-size: 2em;
   margin: 1em;
   padding: 1em;
@@ -133,6 +134,14 @@ body {
           box-shadow: inset 5px 0 10px -5px #635e61, inset -5px 0 10px -5px #635e61, inset 0px -5px 10px -2px #635e61, 0 0 1px 2px #635e61, 0 0 1px 2px #635e61;
   -webkit-box-shadow: 5px 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
           box-shadow: 5px 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.toolBar {
+  background-color: #40010D;
+}
+
+.appBarText {
+  color: white !important;
 }
 
 /* Google Fonts */

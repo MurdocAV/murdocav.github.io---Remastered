@@ -5,7 +5,7 @@ class Center extends React.Component {
     return (
       <React.Fragment>
         <div className='mainComponent'>
-          <p className="placeholderImg line-1 anim-typewriter">Specializing in all things Web</p>
+          <p className="typewriter line-1 anim-typewriter">Specializing in all things Web</p>
         </div>
       </React.Fragment>
     )
