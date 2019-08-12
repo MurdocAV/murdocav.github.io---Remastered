@@ -136,15 +136,12 @@ let mesh = new THREE.Mesh( geometry, material ) ;
 }
 
 function onWindowResize() {
-
-	windowHalfX = window.innerWidth / 2;
-	windowHalfY = window.innerHeight / 2;
-
-	camera.aspect = window.innerWidth / window.innerHeight;
-	camera.updateProjectionMatrix();
-
-	renderer.setSize( window.innerWidth, window.innerHeight );
-
+	
+		camera.aspect = window.innerWidth / window.innerHeight;
+		camera.updateProjectionMatrix();
+		renderer.setSize( window.innerWidth, window.innerHeight );
+		init()
+		animate()
 }
 
 function animate() {
