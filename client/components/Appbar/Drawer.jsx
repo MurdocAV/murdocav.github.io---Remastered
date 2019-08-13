@@ -9,8 +9,11 @@ import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
+import {ShopRounded} from '@material-ui/icons';
+import AccountBalanceRounded from '@material-ui/icons/AccountBalanceRounded';
+import {RecordVoiceOverRounded} from '@material-ui/icons'
+import {AccountBalanceWalletRounded} from '@material-ui/icons'
+import {ClassRounded, FaceRounded, PermMediaRounded, EmailRounded} from '@material-ui/icons'
 
 const useStyles = makeStyles({
   list: {
@@ -38,6 +41,40 @@ export default function TemporaryDrawer() {
     setState({ ...state, [side]: open });
   };
 
+  function returnSublistIcon(index) {
+    console.log('index is: ', index)
+    switch(index) {
+      case 0:
+        return (<RecordVoiceOverRounded />)
+        break;
+      case 1:
+        return (<ClassRounded />)
+        break;
+      case 2:
+        return (<AccountBalanceWalletRounded />)
+          break;
+      default:
+        return (<ShopRounded />)
+    }
+  }
+
+  function returnMainlistIcon(index) {
+    console.log('index is: ', index)
+    switch(index) {
+      case 0:
+        return (<FaceRounded />)
+        break;
+      case 1:
+        return (<PermMediaRounded />)
+        break;
+      case 2:
+        return (<EmailRounded />)
+          break;
+      default:
+        return (<EmailRounded />)
+    }
+  }
+
   const sideList = side => (
     <div
       className={classes.list}
@@ -48,7 +85,7 @@ export default function TemporaryDrawer() {
       <List>
         {['About', 'Projects', 'Email'].map((text, index) => (
           <ListItem button key={text}>
-            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
+            <ListItemIcon>{returnMainlistIcon(index)}</ListItemIcon>
             <ListItemText primary={text} />
           </ListItem>
         ))}
@@ -57,7 +94,7 @@ export default function TemporaryDrawer() {
       <List>
         {['References', 'Use Case', 'Hiring'].map((text, index) => (
           <ListItem button key={text}>
-            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
+            <ListItemIcon>{returnSublistIcon(index)}</ListItemIcon>
             <ListItemText primary={text} />
           </ListItem>
         ))}

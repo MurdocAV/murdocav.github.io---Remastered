@@ -1,9 +1,9 @@
 import React from 'react'
 import Center from './Center'
 import Header from './Appbar/Header'
-import Navigation from './Navigation'
-import Projects from './Projects'
-import Blank from './Blank'
+// import Navigation from './Navigation'
+// import Projects from './Projects'
+// import Blank from './Blank'
 import ImageDrawer from './ImageDrawer'
 import {HashRouter, Route} from 'react-router-dom'
 
