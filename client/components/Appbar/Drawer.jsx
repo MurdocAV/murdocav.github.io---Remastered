@@ -9,11 +9,7 @@ import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import {ShopRounded} from '@material-ui/icons';
-import AccountBalanceRounded from '@material-ui/icons/AccountBalanceRounded';
-import {RecordVoiceOverRounded} from '@material-ui/icons'
-import {AccountBalanceWalletRounded} from '@material-ui/icons'
-import {ClassRounded, FaceRounded, PermMediaRounded, EmailRounded} from '@material-ui/icons'
+import {ShopRounded, ClassRounded, AccountBalanceWalletRounded, RecordVoiceOverRounded, FaceRounded, PermMediaRounded, EmailRounded} from '@material-ui/icons'
 
 const useStyles = makeStyles({
   list: {
@@ -48,7 +44,7 @@ export default function TemporaryDrawer() {
         return (<RecordVoiceOverRounded />)
         break;
       case 1:
-        return (<ClassRounded />)
+        return (<EmailRounded />)
         break;
       case 2:
         return (<AccountBalanceWalletRounded />)
@@ -68,7 +64,7 @@ export default function TemporaryDrawer() {
         return (<PermMediaRounded />)
         break;
       case 2:
-        return (<EmailRounded />)
+        return (<ClassRounded />)
           break;
       default:
         return (<EmailRounded />)
@@ -83,7 +79,7 @@ export default function TemporaryDrawer() {
       onKeyDown={toggleDrawer(side, false)}
     >
       <List>
-        {['About', 'Projects', 'Email'].map((text, index) => (
+        {['About', 'Projects', 'Use Case'].map((text, index) => (
           <ListItem button key={text}>
             <ListItemIcon>{returnMainlistIcon(index)}</ListItemIcon>
             <ListItemText primary={text} />
@@ -92,7 +88,7 @@ export default function TemporaryDrawer() {
       </List>
       <Divider />
       <List>
-        {['References', 'Use Case', 'Hiring'].map((text, index) => (
+        {['References', 'Email', 'Hiring'].map((text, index) => (
           <ListItem button key={text}>
             <ListItemIcon>{returnSublistIcon(index)}</ListItemIcon>
             <ListItemText primary={text} />
