@@ -85,7 +85,7 @@ export default function TemporaryDrawer() {
       <Divider />
       <List>
         {['References', 'Email', 'Hiring'].map((text, index) => (
-          <ListItem button key={text}>
+          <ListItem button onClick={() => console.log(text)} key={text}>
             <ListItemIcon>{returnSublistIcon(index)}</ListItemIcon>
             <ListItemText primary={text} />
           </ListItem>
