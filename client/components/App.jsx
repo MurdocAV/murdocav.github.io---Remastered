@@ -1,5 +1,4 @@
 import React from 'react'
-import Center from './Center'
 import About from './About'
 import Home from './Home/Home'
 import {HashRouter, Route} from 'react-router-dom'
