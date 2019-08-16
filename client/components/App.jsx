@@ -1,9 +1,7 @@
 import React from 'react'
 import Center from './Center'
-import Header from './Appbar/Header'
 import About from './About'
-// import Navigation from './Navigation'
-import ImageDrawer from './ImageDrawer'
+import Home from './Home/Home'
 import {HashRouter, Route} from 'react-router-dom'
 
 //TODO: Test out Material U.I.; 
@@ -18,10 +16,8 @@ class App extends React.Component {
   render () {
     return (
       <HashRouter>
+        <Route exact path="/" component={Home} />
         <Route exact path="/About" component={About} />
-        <Header />
-        <Center></Center>
-        <div className='imageDrawer'><ImageDrawer /></div>
       </HashRouter>
     )
   }
