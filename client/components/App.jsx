@@ -1,5 +1,6 @@
 import React from 'react'
 import About from './About'
+import Header from './Appbar/Header'
 import Home from './Home/Home'
 import {HashRouter, Route} from 'react-router-dom'
 
@@ -15,6 +16,7 @@ class App extends React.Component {
   render () {
     return (
       <HashRouter>
+        <Header />
         <Route exact path="/" component={Home} />
         <Route exact path="/About" component={About} />
       </HashRouter>
