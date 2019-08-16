@@ -38,37 +38,33 @@ export default function TemporaryDrawer() {
   };
 
   function returnSublistIcon(index) {
-    console.log('index is: ', index)
     switch(index) {
       case 0:
         return (<RecordVoiceOverRounded />)
-        break;
       case 1:
         return (<EmailRounded />)
-        break;
       case 2:
         return (<AccountBalanceWalletRounded />)
-          break;
       default:
         return (<ShopRounded />)
     }
   }
 
   function returnMainlistIcon(index) {
-    console.log('index is: ', index)
     switch(index) {
       case 0:
         return (<FaceRounded />)
-        break;
       case 1:
         return (<PermMediaRounded />)
-        break;
       case 2:
         return (<ClassRounded />)
-          break;
       default:
         return (<EmailRounded />)
     }
+  }
+  
+  function logEvent(e) {
+    console.log(e)
   }
 
   const sideList = side => (

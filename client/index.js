@@ -10,13 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   )
 })
 
-/* 
-
-ThreeJs custom waves
-Original script by ThreeJS : https://threejs.org/examples/canvas_particles_waves.html
-
-*/
-
+/* Code below is for ThreeJS animation & background */
 const SEPARATION = 100, AMOUNTX = 60, AMOUNTY = 60;
 
 let container;
@@ -42,74 +36,22 @@ function init() {
 
 	particles = new Array();
 
-	let PI2 = Math.PI * 2;
-
-let x = 0, y = 0;
-
-// let triangleShape = new THREE.Shape();
-// triangleShape.moveTo( 20, 5 );
-// triangleShape.lineTo( 8, 20 );
-// triangleShape.lineTo( 25, 20 );
-// triangleShape.lineTo( 20, 5 ); // close path
-
-// let geometry = new THREE.ShapeGeometry( triangleShape );
-// let material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-// let mesh = new THREE.Mesh( geometry, material ) ;
-// scene.add( mesh );
-
-// let i = 0;
+	var circleRadius = 40;
+	var circleShape = new THREE.Shape();
+	circleShape.moveTo( 0, circleRadius );
+	circleShape.quadraticCurveTo( circleRadius, circleRadius, circleRadius, 0 );
+	circleShape.quadraticCurveTo( circleRadius, - circleRadius, 0, - circleRadius );
+	circleShape.quadraticCurveTo( - circleRadius, - circleRadius, - circleRadius, 0 );
+	circleShape.quadraticCurveTo( - circleRadius, circleRadius, 0, circleRadius );
 
 
-// let smileyShape = new THREE.Shape();
-// smileyShape.moveTo( 80, 40 );
-// smileyShape.absarc( 40, 40, 40, 0, Math.PI * 2, false );
-// let smileyEye1Path = new THREE.Path();
-// smileyEye1Path.moveTo( 35, 20 );
-// smileyEye1Path.absellipse( 25, 20, 10, 10, 0, Math.PI * 2, true );
-// smileyShape.holes.push( smileyEye1Path );
-// let smileyEye2Path = new THREE.Path();
-// smileyEye2Path.moveTo( 65, 20 );
-// smileyEye2Path.absarc( 55, 20, 10, 0, Math.PI * 2, true );
-// smileyShape.holes.push( smileyEye2Path );
-// let smileyMouthPath = new THREE.Path();
-// smileyMouthPath.moveTo( 20, 40 );
-// smileyMouthPath.quadraticCurveTo( 40, 60, 60, 40 );
-// smileyMouthPath.bezierCurveTo( 70, 45, 70, 50, 60, 60 );
-// smileyMouthPath.quadraticCurveTo( 40, 80, 20, 60 );
-// smileyMouthPath.quadraticCurveTo( 5, 50, 20, 40 );
-// smileyShape.holes.push( smileyMouthPath );
+	let geometry = new THREE.ShapeGeometry( circleShape );
+	let material = new THREE.MeshBasicMaterial( { color: 0x260104} );
 
-// let geometry = new THREE.ShapeGeometry( smileyShape );
-// let material = new THREE.MeshBasicMaterial( { color: 0xffffff} );
-// geometry.scale(0.025,0.025,0.025)
-// geometry.rotateZ(Math.PI)
+	geometry.scale(0.025,0.025,0.025)
+	geometry.rotateZ(Math.PI)
 
-
-// let fishShape = new THREE.Shape();
-// fishShape.moveTo( x, y );
-// fishShape.quadraticCurveTo( x + 50, y - 80, x + 90, y - 10 );
-// fishShape.quadraticCurveTo( x + 100, y - 10, x + 115, y - 40 );
-// fishShape.quadraticCurveTo( x + 115, y, x + 115, y + 40 );
-// fishShape.quadraticCurveTo( x + 100, y + 10, x + 90, y + 10 );
-// fishShape.quadraticCurveTo( x + 50, y + 80, x, y );
-
-var circleRadius = 40;
-var circleShape = new THREE.Shape();
-circleShape.moveTo( 0, circleRadius );
-circleShape.quadraticCurveTo( circleRadius, circleRadius, circleRadius, 0 );
-circleShape.quadraticCurveTo( circleRadius, - circleRadius, 0, - circleRadius );
-circleShape.quadraticCurveTo( - circleRadius, - circleRadius, - circleRadius, 0 );
-circleShape.quadraticCurveTo( - circleRadius, circleRadius, 0, circleRadius );
-
-
-let geometry = new THREE.ShapeGeometry( circleShape );
-let material = new THREE.MeshBasicMaterial( { color: 0x260104} );
-
-geometry.scale(0.025,0.025,0.025)
-geometry.rotateZ(Math.PI)
-
-let i = 0
-let mesh = new THREE.Mesh( geometry, material ) ;
+	let i = 0
 
 	for ( let ix = 0; ix < AMOUNTX; ix ++ ) {
 

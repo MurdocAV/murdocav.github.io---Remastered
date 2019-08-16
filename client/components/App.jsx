@@ -1,9 +1,8 @@
 import React from 'react'
 import Center from './Center'
 import Header from './Appbar/Header'
-import Navigation from './Navigation'
-import Projects from './Projects'
-import Blank from './Blank'
+import About from './About'
+// import Navigation from './Navigation'
 import ImageDrawer from './ImageDrawer'
 import {HashRouter, Route} from 'react-router-dom'
 
@@ -19,6 +18,7 @@ class App extends React.Component {
   render () {
     return (
       <HashRouter>
+        <Route exact path="/About" component={About} />
         <Header />
         <Center></Center>
         <div className='imageDrawer'><ImageDrawer /></div>

@@ -31,24 +31,6 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-/**
- * The example data is structured as follows:
- *
- * import image from 'path/to/image.jpg';
- * [etc...]
- *
- * const tileData = [
- *   {
- *     img: image,
- *     title: 'Image',
- *     author: 'author',
- *     featured: true,
- *   },
- *   {
- *     [etc...]
- *   },
- * ];
- */
 export default function AdvancedGridList() {
   const classes = useStyles();
 
@@ -63,7 +45,7 @@ export default function AdvancedGridList() {
               titlePosition="bottom"
               subtitle={tile.subtitle}
               actionIcon={
-                <IconButton href={tile.url} className="spotThis" onClick={() => console.log('helloThere')} aria-label={`star ${tile.title}`} className={classes.icon}>
+                <IconButton href={tile.url} aria-label={`star ${tile.title}`} className={classes.icon}>
                   <StarBorderIcon />
                 </IconButton>
               }
