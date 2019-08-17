@@ -31,8 +31,8 @@ export default function ButtonAppBar(props) {
           <IconButton onClick={props.launchDrawer} edge="start" className={`${classes.menuButton} appBarText`} color="inherit" aria-label="menu">
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" className={`${classes.title} appBarTitle`}>
-            <Link className="noDecoration" to={'/'} key={'Home'} replace={true}>
+          <Typography variant="h6" className={`${classes.title} `}>
+            <Link className="noDecoration appBarTitle" to={'/'} key={'Home'} replace={true}>
               MurdocAV
             </Link>
           </Typography>
