@@ -29,10 +29,11 @@ export default function ButtonAppBar(props) {
           <IconButton onClick={props.launchDrawer} edge="start" className={`${classes.menuButton} appBarText`} color="inherit" aria-label="menu">
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" className={`${classes.title} appBarText`}>
+          <Typography onClick={() => console.log('Home')}variant="h6" className={`${classes.title} appBarText appBarTitle`}>
             MurdocAV
           </Typography>
-          <Button href={'/Documentation'}className='appBarText'>Documentation</Button>
+          {/* TODO: Link with redux store */}
+          <Button href={'/#/Documentation'} className='appBarText'>Documentation</Button>
         </Toolbar>
       </AppBar>
     </div>

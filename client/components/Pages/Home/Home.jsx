@@ -1,6 +1,6 @@
 import React from 'react'
-import Center from '../Center'
-import ImageDrawer from '../ImageDrawer'
+import Center from '../../Center'
+import ImageDrawer from '../../ImageDrawer'
 // import * as THREE from 'three'
 
 

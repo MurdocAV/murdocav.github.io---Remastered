@@ -1,5 +1,5 @@
 import React from "react";
-import AboutCard from './Cards/AboutCard'
+import AboutCard from '../Cards/AboutCard'
 
 class About extends React.Component {
     render() {

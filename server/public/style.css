@@ -149,6 +149,14 @@ body {
   color: white !important;
 }
 
+.appBarTitle {
+  cursor: pointer;
+}
+
+.appBarTitle .appBarTitle:hover {
+  color: green;
+}
+
 /* Google Fonts */
 /* Global */
 html {
