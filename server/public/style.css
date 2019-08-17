@@ -99,6 +99,14 @@ body {
   grid-area: main;
 }
 
+/* dev styling for testing functionality */
+.main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: main;
+}
+
 .typewriter {
   padding: 0px;
   font-size: 2em;

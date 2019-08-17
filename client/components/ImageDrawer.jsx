@@ -7,7 +7,7 @@ import IconButton from '@material-ui/core/IconButton';
 import StarBorderIcon from '@material-ui/icons/OpenInNewRounded';
 import tileData from './tileData';
 
-//Change tileData's source images to be a lower file size in order to load faster.
+// Change tileData's source images to be a lower file size in order to load faster.
 
 const useStyles = makeStyles(theme => ({
   root: {
