@@ -1,4 +1,6 @@
 import React from 'react'
+import { connect } from 'react-redux'
+
 import About from './About'
 import Header from './Appbar/Header'
 import Home from './Home/Home'
@@ -24,4 +26,10 @@ class App extends React.Component {
   }
 }
 
-export default App
+const mapStateToProps = (state) => {
+  return {
+    currentPage: state.currentPage
+  }
+}
+
+export default connect (mapStateToProps)(App)

@@ -32,7 +32,7 @@ export default function ButtonAppBar(props) {
           <Typography variant="h6" className={`${classes.title} appBarText`}>
             MurdocAV
           </Typography>
-          <Button className='appBarText'>Documentation</Button>
+          <Button href={'/Documentation'}className='appBarText'>Documentation</Button>
         </Toolbar>
       </AppBar>
     </div>
