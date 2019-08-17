@@ -33,6 +33,9 @@ class App extends React.Component {
         <Route exact path="/" component={Home} />
         <Route exact path="/Documentation" component={Documentation} />
         <Route exact path="/About" component={About} />
+        <Route exact path="/References" component={About} />
+        <Route exact path="/Email" component={About} />
+        <Route exact path="/Hiring" component={About} />
       </HashRouter>
     )
   }

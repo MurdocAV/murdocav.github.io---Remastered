@@ -24,6 +24,11 @@ body {
   margin: 0;
 }
 
+.noDecoration {
+  color: inherit;
+  text-decoration: none;
+}
+
 #app {
   display: -ms-grid;
   display: grid;

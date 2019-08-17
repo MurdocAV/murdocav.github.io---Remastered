@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {Link} from 'react-router-dom'
 import AppBar from './AppBar'
 
 import { makeStyles } from '@material-ui/core/styles';
@@ -9,7 +9,7 @@ import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import {ShopRounded, ClassRounded, AccountBalanceWalletRounded, RecordVoiceOverRounded, FaceRounded, PermMediaRounded, EmailRounded} from '@material-ui/icons'
+import {HomeRounded, ShopRounded, ClassRounded, AccountBalanceWalletRounded, RecordVoiceOverRounded, FaceRounded, PermMediaRounded, EmailRounded} from '@material-ui/icons'
 
 const useStyles = makeStyles({
   list: {
@@ -35,7 +35,22 @@ export default function TemporaryDrawer() {
     }
 
     setState({ ...state, [side]: open });
-  };
+  }
+
+  function returnMainlistIcon(index) {
+    switch(index) {
+      case 0:
+        return (<HomeRounded />)
+      case 1:
+        return (<FaceRounded />)
+      case 2:
+        return (<PermMediaRounded />)
+      case 3:
+        return (<ClassRounded />)
+      default:
+        return (<EmailRounded />)
+    }
+  }
 
   function returnSublistIcon(index) {
     switch(index) {
@@ -50,21 +65,16 @@ export default function TemporaryDrawer() {
     }
   }
 
-  function returnMainlistIcon(index) {
-    switch(index) {
-      case 0:
-        return (<FaceRounded />)
-      case 1:
-        return (<PermMediaRounded />)
-      case 2:
-        return (<ClassRounded />)
-      default:
-        return (<EmailRounded />)
-    }
-  }
-  
   function logEvent(e) {
     console.log(e)
+  }
+
+  function linkCases(text) {
+    if (text === 'Home') {
+      return('/')
+    } else {
+      return(text)
+    }
   }
 
   const sideList = side => (
@@ -75,21 +85,26 @@ export default function TemporaryDrawer() {
       onKeyDown={toggleDrawer(side, false)}
     >
       <List>
-        {['About', 'Projects', 'Use Case'].map((text, index) => (
-          <ListItem button onClick={() => console.log(text)} key={text}>
-            <ListItemIcon>{returnMainlistIcon(index)}</ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
+        {['Home', 'About', 'Projects', 'Use Case'].map((text, index) => (
+          <Link className="noDecoration" to={linkCases(text)} 
+          key={text} replace={true}>
+            <ListItem button onClick={() => console.log(text)} key={text}>
+              <ListItemIcon>{returnMainlistIcon(index)}</ListItemIcon>
+              <ListItemText primary={text} />
+            </ListItem>
+          </Link>
         ))}
       </List>
       <Divider />
       <List>
         {['References', 'Email', 'Hiring'].map((text, index) => (
           // TODO: Checks store for ACTIVE_PAGE, dispatches an action to goToPage(to the clicked on page)
-          <ListItem button onClick={() => console.log(text)} key={text}>
-            <ListItemIcon>{returnSublistIcon(index)}</ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
+          <Link className="noDecoration" to={text} key={text} replace={true}>
+            <ListItem button onClick={() => console.log(text)} key={text}>
+              <ListItemIcon>{returnSublistIcon(index)}</ListItemIcon>
+              <ListItemText primary={text} />
+            </ListItem>
+          </Link>
         ))}
       </List>
     </div>

@@ -26,9 +26,8 @@ const useStyles = makeStyles({
 });
 
 export default function AboutCard(props) {
-  const classes = useStyles();
-  const bull = <span className={classes.bullet}>•</span>;
-  console.log(props.cardText)
+  const classes = useStyles()
+  const bull = <span className={classes.bullet}>•</span>
 
   return (
     <Card className={`classes.card cardMUI`}>

@@ -1,11 +1,13 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
+import React from 'react'
+import {Link} from 'react-router-dom'
+
+import { makeStyles } from '@material-ui/core/styles'
+import AppBar from '@material-ui/core/AppBar'
+import Toolbar from '@material-ui/core/Toolbar'
+import Typography from '@material-ui/core/Typography'
+import Button from '@material-ui/core/Button'
+import IconButton from '@material-ui/core/IconButton'
+import MenuIcon from '@material-ui/icons/Menu'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -17,10 +19,10 @@ const useStyles = makeStyles(theme => ({
   title: {
     flexGrow: 1,
   },
-}));
+}))
 
 export default function ButtonAppBar(props) {
-  const classes = useStyles();
+  const classes = useStyles()
   props.open
   return (
     <div className='appBar'>
@@ -29,14 +31,18 @@ export default function ButtonAppBar(props) {
           <IconButton onClick={props.launchDrawer} edge="start" className={`${classes.menuButton} appBarText`} color="inherit" aria-label="menu">
             <MenuIcon />
           </IconButton>
-          {/* TODO: Link with redux store */}
-          <Typography onClick={() => console.log('Home')}variant="h6" className={`${classes.title} appBarTitle`}>
-            MurdocAV
+          <Typography variant="h6" className={`${classes.title} appBarTitle`}>
+            <Link className="noDecoration" to={'/'} key={'Home'} replace={true}>
+              MurdocAV
+            </Link>
           </Typography>
-          {/* TODO: Link with redux store */}
-          <Button href={'/#/Documentation'} className='appBarText'>Documentation</Button>
+          <Button className='appBarText'>
+            <Link className="noDecoration" to={'/Documentation'} key={'Documentation'} replace={true}>
+              Documentation
+            </Link>
+          </Button>
         </Toolbar>
       </AppBar>
     </div>
-  );
+  )
 }
