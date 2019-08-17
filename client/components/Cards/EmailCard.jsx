@@ -25,7 +25,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function AboutCard(props) {
+export default function EmailCard(props) {
   const classes = useStyles()
   const bull = <span className={classes.bullet}>•</span>
 
@@ -33,7 +33,7 @@ export default function AboutCard(props) {
     <Card className={`classes.card cardMUI`}>
       <CardContent>
         <Typography className={classes.title} color="textSecondary" gutterBottom>
-          {/* Title */}
+          Email
         </Typography>
         <Typography variant="h5" component="h2">
           {props.cardText}

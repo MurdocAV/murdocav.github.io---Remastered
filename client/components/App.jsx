@@ -4,7 +4,10 @@ import {HashRouter, Route} from 'react-router-dom'
 
 import About from './Pages/About'
 import Documentation from './Pages/Documentation'
+import Email from './Pages/Email'
+import References from './Pages/References'
 import Home from './Pages/Home/Home'
+import Hiring from './Pages/Hiring'
 
 import Header from './Appbar/Header'
 
@@ -32,12 +35,11 @@ class App extends React.Component {
         <Header />
         <Route exact path="/" component={Home} />
         <Route exact path="/About" component={About} />
-        <Route exact path="/Projects" component={About} />
-        <Route exact path="/Use%20Case" component={About} />
-        <Route exact path="/Projects" component={About} />
-        <Route exact path="/References" component={About} />
-        <Route exact path="/Email" component={About} />
-        <Route exact path="/Hiring" component={About} />
+        <Route exact path="/Projects" component={Home} />
+        <Route exact path="/Uses" component={About} />
+        <Route exact path="/References" component={References} />
+        <Route exact path="/Email" component={Email} />
+        <Route exact path="/Hiring" component={Hiring} />
         <Route exact path="/Documentation" component={Documentation} />
       </HashRouter>
     )

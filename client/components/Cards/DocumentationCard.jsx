@@ -25,7 +25,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function AboutCard(props) {
+export default function DocumentationCard(props) {
   const classes = useStyles()
   const bull = <span className={classes.bullet}>•</span>
 
@@ -33,20 +33,28 @@ export default function AboutCard(props) {
     <Card className={`classes.card cardMUI`}>
       <CardContent>
         <Typography className={classes.title} color="textSecondary" gutterBottom>
-          {/* Title */}
+          Technolgies
         </Typography>
         <Typography variant="h5" component="h2">
-          {props.cardText}
+            React, Redux, React-bootstrap,
+            Material-U.I,
+            Node.js, Express, Knex, SQLite,
+            Python, ThreeJS.
+            UI/UX Design: CSS3 – Grid & Flexbox, Sass.
+            RESTful API, JWT and
+            Authentication, Javascript-ES6, Typescript, C, SQL, NoSQLDB's
+            HTML, Bootstrap, Linux/MacOS terminal, LAMP, GoLang, Ruby, PHP.
         </Typography>
         <Typography className={classes.pos} color="textSecondary">
-          {/* Summary */}
+            Teamwork: Peer Programming, Feedback, Active Listening, Git, GitHub - Projects, Pulls, Terminal|
+            Agile: Scrum, Stand ups, Retrospectives.
         </Typography>
         <Typography variant="body2" component="p">
-          {/* Footer Text */}
+          And growing by the day
         </Typography>
       </CardContent>
       <CardActions>
-        {/* <Button size="small">More</Button> */}
+        <Button size="small">What kind of car does a Jedi drive? A Toy-Yoda.</Button>
       </CardActions>
     </Card>
   );

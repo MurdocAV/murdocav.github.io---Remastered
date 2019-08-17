@@ -73,7 +73,7 @@ export default function TemporaryDrawer() {
     if (text === 'Home') {
       return('/')
     } else if (text=== 'Use Case') {
-      return('UseCase')
+      return('Uses')
     } else {
       return(text)
     }

@@ -33,10 +33,16 @@ export default function AboutCard(props) {
     <Card className={`classes.card cardMUI`}>
       <CardContent>
         <Typography className={classes.title} color="textSecondary" gutterBottom>
-          {/* Title */}
+          Available on Request
         </Typography>
         <Typography variant="h5" component="h2">
-          {props.cardText}
+          <span className={classes.bullet}>• Alice – Software/Web Developer</span>
+          <span className={classes.bullet}>• Barry – CFO</span>
+          <span className={classes.bullet}>• Don – Software Development Mentor</span>
+          <span className={classes.bullet}>• Luke – Music Producer</span>
+          <span className={classes.bullet}>• Kevin – CFO</span>
+          <span className={classes.bullet}>• Mika – Software Developer</span>
+          <span className={classes.bullet}>• Paul – Credit Controller</span>
         </Typography>
         <Typography className={classes.pos} color="textSecondary">
           {/* Summary */}
@@ -51,3 +57,4 @@ export default function AboutCard(props) {
     </Card>
   );
 }
+
