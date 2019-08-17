@@ -76,7 +76,7 @@ export default function TemporaryDrawer() {
     >
       <List>
         {['About', 'Projects', 'Use Case'].map((text, index) => (
-          <ListItem button key={text}>
+          <ListItem button onClick={() => console.log(text)} key={text}>
             <ListItemIcon>{returnMainlistIcon(index)}</ListItemIcon>
             <ListItemText primary={text} />
           </ListItem>
@@ -85,6 +85,7 @@ export default function TemporaryDrawer() {
       <Divider />
       <List>
         {['References', 'Email', 'Hiring'].map((text, index) => (
+          // TODO: Checks store for ACTIVE_PAGE, dispatches an action to goToPage(to the clicked on page)
           <ListItem button onClick={() => console.log(text)} key={text}>
             <ListItemIcon>{returnSublistIcon(index)}</ListItemIcon>
             <ListItemText primary={text} />

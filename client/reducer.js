@@ -1,5 +1,5 @@
 import {
-CURRENT_PAGE,
+ACTIVE_PAGE,
 UPDATE_PAGE
 } from './actions/index'
 
@@ -9,7 +9,7 @@ const initialPageState = {
 
 const pageReducer = (state = initialPageState, action) => {
   switch (action.type) {
-    case CURRENT_PAGE:
+    case ACTIVE_PAGE:
       return {
         page: state.page
       }

@@ -1,9 +1,9 @@
-export const CURRENT_PAGE = 'CURRENT_PAGE'
+export const ACTIVE_PAGE = 'ACTIVE_PAGE'
 export const UPDATE_PAGE = 'UPDATE_PAGE'
 
 export function activePage (page) {
   return {
-    type: CURRENT_PAGE,
+    type: ACTIVE_PAGE,
     page
   }
 }
