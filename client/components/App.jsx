@@ -31,11 +31,14 @@ class App extends React.Component {
       <HashRouter>
         <Header />
         <Route exact path="/" component={Home} />
-        <Route exact path="/Documentation" component={Documentation} />
         <Route exact path="/About" component={About} />
+        <Route exact path="/Projects" component={About} />
+        <Route exact path="/Use%20Case" component={About} />
+        <Route exact path="/Projects" component={About} />
         <Route exact path="/References" component={About} />
         <Route exact path="/Email" component={About} />
         <Route exact path="/Hiring" component={About} />
+        <Route exact path="/Documentation" component={Documentation} />
       </HashRouter>
     )
   }

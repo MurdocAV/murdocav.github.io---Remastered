@@ -72,6 +72,8 @@ export default function TemporaryDrawer() {
   function linkCases(text) {
     if (text === 'Home') {
       return('/')
+    } else if (text=== 'Use Case') {
+      return('UseCase')
     } else {
       return(text)
     }
@@ -99,7 +101,7 @@ export default function TemporaryDrawer() {
       <List>
         {['References', 'Email', 'Hiring'].map((text, index) => (
           // TODO: Checks store for ACTIVE_PAGE, dispatches an action to goToPage(to the clicked on page)
-          <Link className="noDecoration" to={text} key={text} replace={true}>
+          <Link className="noDecoration" to={linkCases(text)} key={text} replace={true}>
             <ListItem button onClick={() => console.log(text)} key={text}>
               <ListItemIcon>{returnSublistIcon(index)}</ListItemIcon>
               <ListItemText primary={text} />
