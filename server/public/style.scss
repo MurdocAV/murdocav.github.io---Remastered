@@ -138,13 +138,18 @@ body {
 
 .appBarText {
   color: white!important;
+  :hover{
+    opacity: 0.5;
+  }
 }
 
 .appBarTitle {
   cursor: pointer;
-  .appBarTitle:hover {
-    color: green;
-  }
+  color: white;
+}
+
+.appBarTitle:hover {
+  opacity: 0.5;
 }
 
 /* Google Fonts */

@@ -29,7 +29,8 @@ export default function ButtonAppBar(props) {
           <IconButton onClick={props.launchDrawer} edge="start" className={`${classes.menuButton} appBarText`} color="inherit" aria-label="menu">
             <MenuIcon />
           </IconButton>
-          <Typography onClick={() => console.log('Home')}variant="h6" className={`${classes.title} appBarText appBarTitle`}>
+          {/* TODO: Link with redux store */}
+          <Typography onClick={() => console.log('Home')}variant="h6" className={`${classes.title} appBarTitle`}>
             MurdocAV
           </Typography>
           {/* TODO: Link with redux store */}
