@@ -19,18 +19,17 @@ import {activePage, goToPage} from '../actions/index'
 
 
 class App extends React.Component {
-  state = {}
   
   promptForReduxPage = () => {
     var input = prompt("Please enter the page you want to go to", "Home");
     console.log('User input:', input)
     console.log('Before Page:', this.props.page)
-    return
+    this.switchPage('About')
   }
 
   switchPage = (pageName) =>  {
-    dispatch.goToPage('About')
-    console.log('After Page:', this.props.page)
+    const {dispatch} = this.props
+    dispatch(goToPage(pageName))
   }
   
   render () {
@@ -48,7 +47,7 @@ class App extends React.Component {
 
 const mapStateToProps = (state) => {
   return {
-    currentPage: state.page
+    page: state.page
   }
 }
 
