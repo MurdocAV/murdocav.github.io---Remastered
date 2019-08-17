@@ -19,14 +19,8 @@ import {activePage, goToPage} from '../actions/index'
 
 
 class App extends React.Component {
-  
-  promptForReduxPage = () => {
-    var input = prompt("Please enter the page you want to go to", "Home");
-    console.log('User input:', input)
-    console.log('Before Page:', this.props.page)
-    this.switchPage('About')
-  }
 
+  // Working for modifying state in the redux store but does not actually go to any pages.
   switchPage = (pageName) =>  {
     const {dispatch} = this.props
     dispatch(goToPage(pageName))
@@ -36,10 +30,9 @@ class App extends React.Component {
     return (
       <HashRouter>
         <Header />
-        {/* <Route exact path="/" component={Home} />
+        <Route exact path="/" component={Home} />
         <Route exact path="/Documentation" component={Documentation} />
-        <Route exact path="/About" component={About} /> */}
-        <button className='main' onClick={() => {this.promptForReduxPage()}}>Click me</button>
+        <Route exact path="/About" component={About} />
       </HashRouter>
     )
   }

@@ -14,7 +14,9 @@ const pageReducer = (state = initialPageState, action) => {
         page: state.page
       }
     case UPDATE_PAGE:
-      return {
+      
+    
+    return {
         page: action.page
         }
     default:
