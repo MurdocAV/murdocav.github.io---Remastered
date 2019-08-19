@@ -8,6 +8,7 @@ import Typography from '@material-ui/core/Typography'
 import Button from '@material-ui/core/Button'
 import IconButton from '@material-ui/core/IconButton'
 import MenuIcon from '@material-ui/icons/Menu'
+import Badge from '@material-ui/core/Badge';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -36,11 +37,13 @@ export default function ButtonAppBar(props) {
               MurdocAV
             </Link>
           </Typography>
-          <Button className='appBarText'>
-            <Link className="noDecoration" to={'/Documentation'} key={'Documentation'} replace={true}>
-              Documentation
-            </Link>
-          </Button>
+          <Badge className={classes.margin} badgeContent={9001} max={9000} color="primary">
+            <Button className='appBarText'>
+              <Link className="noDecoration" to={'/Documentation'} key={'Documentation'} replace={true}>
+                Documentation
+              </Link>
+            </Button>
+          </Badge>
         </Toolbar>
       </AppBar>
     </div>
