@@ -14,6 +14,7 @@ html {
   font-family: 'Ma Shan Zheng', cursive;
   text-align: center;
   overflow: hidden;
+  background-color: #3b3c40;
 }
 
 .appBar {
@@ -125,6 +126,31 @@ body {
 }
 
 /* 4. Projects */
+.projects {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: projects;
+}
+
+.formMUI {
+  grid-area: projects;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 450px;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: projects;
+  padding-bottom: 2.5vh;
+  background-color: #3b3c40 !important;
+}
+
 /* Blank */
 .blank {
   grid-area: blank;
@@ -145,6 +171,7 @@ body {
   -ms-grid-column-span: 4;
   grid-area: projects;
   padding-bottom: 2.5vh;
+  background-color: #3b3c40 !important;
 }
 
 .MuiGridListTile-tile {

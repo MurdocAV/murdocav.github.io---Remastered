@@ -8,6 +8,7 @@ import Email from './Pages/Email'
 import References from './Pages/References'
 import Home from './Pages/Home/Home'
 import Hiring from './Pages/Hiring'
+import Projects from './Pages/Projects'
 
 import Header from './Appbar/Header'
 
@@ -35,7 +36,7 @@ class App extends React.Component {
         <Header />
         <Route exact path="/" component={Home} />
         <Route exact path="/About" component={About} />
-        <Route exact path="/Projects" component={Home} />
+        <Route exact path="/Projects" component={Projects} />
         <Route exact path="/Uses" component={About} />
         <Route exact path="/References" component={References} />
         <Route exact path="/Email" component={Email} />
