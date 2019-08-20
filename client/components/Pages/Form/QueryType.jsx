@@ -8,6 +8,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import {InfoRounded, PermIdentityRounded, BuildRounded} from '@material-ui/icons'
 
 const StyledMenu = withStyles({
+  
   paper: {
     border: '1px solid #d3d4d5',
   },
@@ -38,8 +39,11 @@ const StyledMenuItem = withStyles(theme => ({
   },
 }))(MenuItem);
 
-export default function QueryType() {
-  const [anchorEl, setAnchorEl] = React.useState(null);
+export default function QueryType(props) {
+  // TODO: Set up a stateful component to handle state for the ptag 'oneHalf'
+
+  const [anchorEl, setAnchorEl] = React.useState(null)
+  const [query, setQuery] = React.useState('Select a Query Type')
 
   function handleClick(event) {
     setAnchorEl(event.currentTarget);
@@ -50,7 +54,8 @@ export default function QueryType() {
   }
 
   return (
-    <div>
+    <div className='oneHalf'>
+      <p>{query}</p>
       <Button
         aria-controls="customized-menu"
         aria-haspopup="true"
@@ -71,19 +76,19 @@ export default function QueryType() {
           <ListItemIcon>
             <InfoRounded />
           </ListItemIcon>
-          <ListItemText primary="General Query" />
+          <ListItemText onClick={() => setQuery("General Query")}  primary="General Query" />
         </StyledMenuItem>
         <StyledMenuItem>
           <ListItemIcon>
             <PermIdentityRounded />
           </ListItemIcon>
-          <ListItemText primary="Account Management" />
+          <ListItemText onClick={() => setQuery("Account Management")} primary="Account Management" />
         </StyledMenuItem>
         <StyledMenuItem>
           <ListItemIcon>
             <BuildRounded />
           </ListItemIcon>
-          <ListItemText primary="Technical Support" />
+          <ListItemText onClick={() => setQuery("Technical Support")} primary="Technical Support" />
         </StyledMenuItem>
       </StyledMenu>
     </div>

@@ -117,7 +117,7 @@ body {
   grid-area: projects;
 }
 
-.formMUI {
+.formMUIContainer {
   grid-area: projects;
   display: flex;
   justify-content: center;
@@ -126,6 +126,22 @@ body {
   grid-area: projects;
   padding-bottom: 2.5vh;
   background-color: $bgColor3!important;
+  .formMUI {
+    width: 450px;
+    .two {
+      align-self: flex-end;
+    }
+    .oneHalf {
+      align-self: center;
+    }
+    .one {
+      align-self: flex-start;
+    }
+    .message {
+      width: 400px;
+      height: 3.5625em;
+    }
+  }
 }
 
 /* Blank */
@@ -143,7 +159,6 @@ body {
   grid-area: projects;
   padding-bottom: 2.5vh;
   background-color: $bgColor3!important;
-
 }
 
 .MuiGridListTile-tile {
@@ -179,15 +194,17 @@ body {
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 
 /* Global */
-html{
+html {
   min-height: 50%;
   overflow: hidden;
 }
-body{
+
+body {
   color: rgba(255,255,255,.75);
   font-family: 'Anonymous Pro', monospace;  
 }
-.line-1{
+
+.line-1 {
     position: relative;
     top: 50%;  
     width: 2em;
@@ -201,20 +218,20 @@ body{
 }
 
 /* Animation */
-.anim-typewriter{
+.anim-typewriter {
   animation: typewriter 4s steps(44) 1s 1 normal both,
              blinkTextCursor 500ms steps(44) infinite normal;
 }
-@keyframes typewriter{
+@keyframes typewriter {
   from{width: 0;}
   to{width: 23em;}
 }
-@keyframes blinkTextCursor{
+@keyframes blinkTextCursor {
   from{border-right-color: rgba(255,255,255,.75);}
   to{border-right-color: transparent;}
 }
 
-canvas{
+canvas {
   position: absolute;
   top:0;
   left:0;

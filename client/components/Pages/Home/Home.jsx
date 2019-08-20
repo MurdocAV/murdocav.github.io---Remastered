@@ -7,7 +7,7 @@ class Home extends React.Component {
     return (
       <React.Fragment>
         <Center></Center>
-        <div className="formMUI">
+        <div className="formMUIContainer">
           <Form></Form>
         </div>
       </React.Fragment>

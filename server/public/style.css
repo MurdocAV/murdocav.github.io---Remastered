@@ -133,7 +133,7 @@ body {
   grid-area: projects;
 }
 
-.formMUI {
+.formMUIContainer {
   grid-area: projects;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -149,6 +149,31 @@ body {
   grid-area: projects;
   padding-bottom: 2.5vh;
   background-color: #3b3c40 !important;
+}
+
+.formMUIContainer .formMUI {
+  width: 450px;
+}
+
+.formMUIContainer .formMUI .two {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.formMUIContainer .formMUI .oneHalf {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.formMUIContainer .formMUI .one {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.formMUIContainer .formMUI .message {
+  width: 400px;
+  height: 3.5625em;
 }
 
 /* Blank */
