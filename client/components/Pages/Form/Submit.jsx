@@ -17,12 +17,15 @@ const theme = createMuiTheme({
   },
 });
 
-export default function OutlinedButton() {
+export default function OutlinedButton(props) {
   const classes = useStyles();
+  const {isSubmited, data} = props
 
   return (
     <React.Fragment>
-        <Button variant="contained" color="primary" className={classes.margin}>
+        <Button onClick={() => {
+          isSubmited(data)
+        }} variant="contained" color="primary" className={classes.margin}>
           Submit
         </Button>
     </React.Fragment>

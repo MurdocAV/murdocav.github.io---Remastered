@@ -1,0 +1,99 @@
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid';
+import Divider from '@material-ui/core/Divider';
+import Typography from '@material-ui/core/Typography';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
+import ListItemAvatar from '@material-ui/core/ListItemAvatar';
+import Avatar from '@material-ui/core/Avatar';
+import ImageIcon from '@material-ui/icons/Image';
+import WorkIcon from '@material-ui/icons/Work';
+import BeachAccessIcon from '@material-ui/icons/BeachAccess';
+import {CheckCircleOutlineRounded} from '@material-ui/icons'
+
+
+const useStyles = makeStyles(theme => ({
+  root: {
+    width: '100%',
+    maxWidth: 360,
+    backgroundColor: theme.palette.background.paper,
+  },
+  chip: {
+    marginRight: theme.spacing(1),
+  },
+  section1: {
+    margin: theme.spacing(3, 2),
+  },
+  section2: {
+    margin: theme.spacing(2),
+  },
+  section3: {
+    margin: theme.spacing(3, 1, 1),
+  },
+}));
+
+export default function MiddleDivider() {
+  const classes = useStyles();
+
+  return (
+    <div className={`${classes.root} insetDivider`}>
+      <div className={classes.section1}>
+        <Grid container alignItems="center">
+          <Grid item xs>
+            <Typography gutterBottom variant="h4">
+              Message
+            </Typography>
+          </Grid>
+          <Grid item>
+            <Avatar>
+              <CheckCircleOutlineRounded />
+            </Avatar>
+          </Grid>
+        </Grid>
+        <Typography color="textSecondary" variant="body2">
+          Pinstriped cornflower blue cotton blouse takes you on a walk to the park or just down the
+          hall.
+        </Typography>
+      </div>
+      <Divider variant="middle" />
+      <div className={classes.section2}>
+        <ListItem>
+          <ListItemAvatar>
+            <Avatar>
+              <ImageIcon />
+            </Avatar>
+          </ListItemAvatar>
+          <ListItemText primary="Subject" secondary="Message Subject" />
+        </ListItem>
+        <Divider variant="middle" />
+        <ListItem>
+          <ListItemAvatar>
+            <Avatar>
+              <ImageIcon />
+            </Avatar>
+          </ListItemAvatar>
+          <ListItemText primary="Query Type" secondary="Account Query" />
+        </ListItem>
+        <Divider variant="middle" />
+        <ListItem>
+          <ListItemAvatar>
+            <Avatar>
+              <WorkIcon />
+            </Avatar>
+          </ListItemAvatar>
+          <ListItemText primary="Name" secondary="John Smith with a top hat" />
+        </ListItem>
+        <Divider variant="middle" />
+        <ListItem>
+          <ListItemAvatar>
+            <Avatar>
+              <BeachAccessIcon />
+            </Avatar>
+          </ListItemAvatar>
+          <ListItemText primary="Email" secondary="jfksal;fjaskl" />
+        </ListItem>
+      </div>
+    </div>
+  );
+}

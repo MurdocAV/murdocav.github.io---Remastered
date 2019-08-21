@@ -29,7 +29,7 @@ export default function InsetDivider() {
             <ImageIcon />
           </Avatar>
         </ListItemAvatar>
-        <ListItemText primary="Photos" secondary="Jan 9, 2014" />
+        <ListItemText primary="Submited" secondary="Thanks for your response" />
       </ListItem>
       <Divider variant="inset" component="li" />
       <ListItem>
@@ -38,7 +38,7 @@ export default function InsetDivider() {
             <ImageIcon />
           </Avatar>
         </ListItemAvatar>
-        <ListItemText primary="Photos" secondary="Jan 9, 2014" />
+        <ListItemText primary="Email" secondary="email@gmail.com" />
       </ListItem>
       <Divider variant="inset" component="li" />
       <ListItem>
@@ -47,7 +47,16 @@ export default function InsetDivider() {
             <WorkIcon />
           </Avatar>
         </ListItemAvatar>
-        <ListItemText primary="Work" secondary="Jan 7, 2014" />
+        <ListItemText primary="Query Type" secondary="Account" />
+      </ListItem>
+      <Divider variant="inset" component="li" />
+      <ListItem>
+        <ListItemAvatar>
+          <Avatar>
+            <BeachAccessIcon />
+          </Avatar>
+        </ListItemAvatar>
+        <ListItemText primary="Subject" secondary="fjslakfjas" />
       </ListItem>
       <Divider variant="inset" component="li" />
       <ListItem>
@@ -58,23 +67,9 @@ export default function InsetDivider() {
         </ListItemAvatar>
         <ListItemText primary="Vacation" secondary="July 20, 2014" />
       </ListItem>
-      <Divider variant="inset" component="li" />
+      <Divider variant="full width" component="li" />
       <ListItem>
-        <ListItemAvatar>
-          <Avatar>
-            <BeachAccessIcon />
-          </Avatar>
-        </ListItemAvatar>
-        <ListItemText primary="Vacation" secondary="July 20, 2014" />
-      </ListItem>
-      <Divider variant="inset" component="li" />
-      <ListItem>
-        <ListItemAvatar>
-          <Avatar>
-            <BeachAccessIcon />
-          </Avatar>
-        </ListItemAvatar>
-        <ListItemText primary="Vacation" secondary="July 20, 2014" />
+        <ListItemText primary="Message" secondary="Lorem ipsum is availflsakfjsaklfjsalfjslkf;jasfkd;sjafklsdafj;dskalfjdkla;fjdsklafjsflkjasfjsa." />
       </ListItem>
     </List>
   );

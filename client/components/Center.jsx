@@ -1,11 +1,12 @@
 import React from "react";
 
-class Center extends React.Component {
+class Center extends React.Component {  
   render () {
+    console.log(this.props)
     return (
       <React.Fragment>
         <div className='mainComponent'>
-          <p className="typewriter line-1 anim-typewriter">Enter sign in details below...</p>
+          <p className="typewriter line-1 anim-typewriter">{this.props.typographyMessage}</p>
         </div>
       </React.Fragment>
     )

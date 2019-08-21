@@ -76,7 +76,7 @@ export default function Form(props) {
             variant="outlined"
             onChange={(e) => changeHandler('Message', e)}
           />
-          <OutlinedButton type="submit" onClick={() => isSubmited()}/>
+          <OutlinedButton type="submit" data={data} isSubmited={props.isSubmited}/>
         </div>
       </ThemeProvider>
     </form>
