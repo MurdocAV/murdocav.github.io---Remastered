@@ -32,7 +32,7 @@ export default function DialogSelect(props) {
   const handleChange = name => event => {
     setState({ ...state, [name]: (event.target.value) });
     if (event.target.value != 'Query Type') {
-      props.changeHandler('QueryType', event)
+      props.changeHandler('queryType', event)
     }
   };
 

@@ -148,6 +148,22 @@ body {
   color: black;
 }
 
+.formMessage {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 2em;
+  color: white;
+}
+
+.link:hover {
+  color: green;
+  opacity: 0.6;
+}
+
 /* Blank */
 
 .blank {

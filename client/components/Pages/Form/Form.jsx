@@ -26,21 +26,19 @@ export default function Form(props) {
   const classes = useStyles()
 
   const [data, setData] = React.useState({
-    Name: '',
-    Email: '',
-    Subject: '',
-    Message: '',
-    QueryType: ''
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
+    queryType: ''
   })
 
   function handleSubmit (event) {
     event.preventDefault()
-    console.log(data)
   }
 
   function changeHandler(label, event) {
     data[label] = event.target.value
-    console.log(data)
   }
 
   return (
@@ -52,13 +50,13 @@ export default function Form(props) {
             id={"Name"}
             label="Name"
             variant="outlined"
-            onChange={(e) => changeHandler('Name', e)}
+            onChange={(e) => changeHandler('name', e)}
           />
           <TextField
             className={`${classes.margin} one`}
             label="Email" 
             variant="outlined"
-            onChange={(e) => changeHandler('Email', e)}
+            onChange={(e) => changeHandler('email', e)}
           />
           <DialogSelect changeHandler={changeHandler} />
           {/* <QueryType className="oneHalf"></QueryType> */}
@@ -66,7 +64,7 @@ export default function Form(props) {
             className={`${classes.margin} two`}
             label="Subject"
             variant="outlined"
-            onChange={(e) => changeHandler('Subject', e)}
+            onChange={(e) => changeHandler('subject', e)}
           />
           {/* </div>
           <div className="lineTwo"> */}
@@ -74,7 +72,7 @@ export default function Form(props) {
             className={`${classes.margin} two message`}
             label="Message"
             variant="outlined"
-            onChange={(e) => changeHandler('Message', e)}
+            onChange={(e) => changeHandler('message', e)}
           />
           <OutlinedButton type="submit" data={data} isSubmited={props.isSubmited}/>
         </div>

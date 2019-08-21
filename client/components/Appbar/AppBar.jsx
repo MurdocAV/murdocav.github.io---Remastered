@@ -34,7 +34,7 @@ export default function ButtonAppBar(props) {
           </IconButton>
           <Typography variant="h6" className={`${classes.title} `}>
             <Link className="noDecoration appBarTitle" to={'/'} key={'Home'} replace={true}>
-              MurdocAV
+              Fourth Media Test Run powered by MurdocAV
             </Link>
           </Typography>
           <Badge className={classes.margin} badgeContent={9001} max={9000} color="primary">

@@ -67,7 +67,6 @@ export default function TemporaryDrawer() {
   }
 
   function logEvent(e) {
-    console.log(e)
   }
 
   function linkCases(text) {
@@ -91,7 +90,7 @@ export default function TemporaryDrawer() {
         {['Home', 'About', 'Projects', 'Use Case'].map((text, index) => (
           <Link className="noDecoration" to={linkCases(text)} 
           key={text} replace={true}>
-            <ListItem button onClick={() => console.log(text)} key={text}>
+            <ListItem button key={text}>
               <ListItemIcon>{returnMainlistIcon(index)}</ListItemIcon>
               <ListItemText primary={text} />
             </ListItem>
@@ -103,7 +102,7 @@ export default function TemporaryDrawer() {
         {['References', 'Email', 'Hiring'].map((text, index) => (
           // TODO: Checks store for ACTIVE_PAGE, dispatches an action to goToPage(to the clicked on page)
           <Link className="noDecoration" to={linkCases(text)} key={text} replace={true}>
-            <ListItem button onClick={() => console.log(text)} key={text}>
+            <ListItem button key={text}>
               <ListItemIcon>{returnSublistIcon(index)}</ListItemIcon>
               <ListItemText primary={text} />
             </ListItem>

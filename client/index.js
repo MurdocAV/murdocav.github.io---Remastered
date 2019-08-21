@@ -5,7 +5,7 @@ import * as THREE from 'three'
 
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
-import pageReducer from './reducer.js'
+import pageReducer from './reducers/index'
 
 const store = createStore(pageReducer,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()

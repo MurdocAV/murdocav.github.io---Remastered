@@ -33,9 +33,10 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function MiddleDivider() {
+export default function MiddleDivider(props) {
   const classes = useStyles();
-
+  const {name, queryType, email, message, subject} = props.data 
+  console.log(props)
   return (
     <div className={`${classes.root} insetDivider`}>
       <div className={classes.section1}>
@@ -51,9 +52,8 @@ export default function MiddleDivider() {
             </Avatar>
           </Grid>
         </Grid>
-        <Typography color="textSecondary" variant="body2">
-          Pinstriped cornflower blue cotton blouse takes you on a walk to the park or just down the
-          hall.
+        <Typography className="formMessage" color="textSecondary" variant="body2">
+          {message}
         </Typography>
       </div>
       <Divider variant="middle" />
@@ -64,7 +64,7 @@ export default function MiddleDivider() {
               <ImageIcon />
             </Avatar>
           </ListItemAvatar>
-          <ListItemText primary="Subject" secondary="Message Subject" />
+          <ListItemText primary="Subject" secondary={subject} />
         </ListItem>
         <Divider variant="middle" />
         <ListItem>
@@ -73,7 +73,7 @@ export default function MiddleDivider() {
               <ImageIcon />
             </Avatar>
           </ListItemAvatar>
-          <ListItemText primary="Query Type" secondary="Account Query" />
+          <ListItemText primary="Query Type" secondary={queryType} />
         </ListItem>
         <Divider variant="middle" />
         <ListItem>
@@ -82,7 +82,7 @@ export default function MiddleDivider() {
               <WorkIcon />
             </Avatar>
           </ListItemAvatar>
-          <ListItemText primary="Name" secondary="John Smith with a top hat" />
+          <ListItemText primary="Name" secondary={name} />
         </ListItem>
         <Divider variant="middle" />
         <ListItem>
@@ -91,7 +91,7 @@ export default function MiddleDivider() {
               <BeachAccessIcon />
             </Avatar>
           </ListItemAvatar>
-          <ListItemText primary="Email" secondary="jfksal;fjaskl" />
+          <ListItemText primary="Email" secondary={email} />
         </ListItem>
       </div>
     </div>

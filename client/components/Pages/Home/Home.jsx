@@ -1,26 +1,40 @@
 import React from 'react'
+import { connect } from 'react-redux'
 import Center from '../../Center'
 import Form from '../Form/Form'
-import InsetDivider from '../../Cards/InsetDivider'
 import MiddleDivider from '../../Cards/MiddleDivider'
+import { addItem } from '../../../actions/items'
 
 class Home extends React.Component {
   state = {
-    sumbited: false,
+    submited: false,
     typographyMessage: 'Enter sign in details below...'
   } 
 
   isSubmited = (formData) => {
-    this.setState({subited: true,
-    formData,
-    typographyMessage: 'Thanks for your response'
+    const {dispatch} = this.props
+    this.setState({submited: true,
+    typographyMessage: 'Thanks for your response',
+    formData
     })
-    console.log('Logging home state')
-    console.log(this.state)
+    dispatch(addItem(formData))
   }
 
-  renderCompletion = () => {
-    return
+  renderHandler = () => {
+    if (this.state.submited == true)  {
+      return (
+        <MiddleDivider data={this.state.formData}/>
+      )
+    } else {
+      return (
+        <Form isSubmited={this.isSubmited}></Form>
+      )
+    }
+  }
+
+  handleReduxData = (formData) => {
+    // const input = dispatch(getItems())
+    // console.log(input)
   }
 
   render () {
@@ -28,12 +42,12 @@ class Home extends React.Component {
       <React.Fragment>
         <Center typographyMessage={this.state.typographyMessage}></Center>
         <div className="formMUIContainer">
-          {/* <MiddleDivider/> */}
-          <Form isSubmited={this.isSubmited}></Form>
+          {this.renderHandler()}
+          {this.handleReduxData()}
         </div>
       </React.Fragment>
     )
   }
 }
 
-export default Home
+export default connect()(Home)
