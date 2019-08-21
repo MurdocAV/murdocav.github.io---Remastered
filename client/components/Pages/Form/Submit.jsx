@@ -1,8 +1,8 @@
 import React from 'react';
-import { createMuiTheme, withStyles, makeStyles } from '@material-ui/core/styles';
+import { createMuiTheme, makeStyles } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 import Button from '@material-ui/core/Button';
-import { green, purple } from '@material-ui/core/colors';
+import { green } from '@material-ui/core/colors';
 
 
 const useStyles = makeStyles(theme => ({
@@ -22,11 +22,9 @@ export default function OutlinedButton() {
 
   return (
     <React.Fragment>
-      <ThemeProvider theme={theme}>
         <Button variant="contained" color="primary" className={classes.margin}>
           Submit
         </Button>
-      </ThemeProvider>
     </React.Fragment>
   );
 }

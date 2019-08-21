@@ -22,7 +22,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function DialogSelect() {
+export default function DialogSelect(props) {
   const classes = useStyles();
   const [state, setState] = React.useState({
     open: false,
@@ -31,6 +31,9 @@ export default function DialogSelect() {
 
   const handleChange = name => event => {
     setState({ ...state, [name]: (event.target.value) });
+    if (event.target.value != 'Query Type') {
+      props.changeHandler('QueryType', event)
+    }
   };
 
   function handleClickOpen() {
