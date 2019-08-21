@@ -22,25 +22,20 @@ const theme = createMuiTheme({
   },
 })
 
-export default function Form() {
+export default function Form(props) {
   const classes = useStyles()
 
   const [data, setData] = React.useState({
     Name: '',
     Email: '',
     Subject: '',
-    Message: ''
+    Message: '',
+    QueryType: ''
   })
 
   function handleSubmit (event) {
     event.preventDefault()
-    // const data = new FormData(event.target)
     console.log(data)
-    
-    // fetch('/api/form-submit-url', {
-    //   method: 'POST',
-    //   body: data,
-    // })
   }
 
   function changeHandler(label, event) {
@@ -81,7 +76,7 @@ export default function Form() {
             variant="outlined"
             onChange={(e) => changeHandler('Message', e)}
           />
-          <OutlinedButton type="submit" onClick={(e) => handleSubmit(e)}/>
+          <OutlinedButton type="submit" onClick={() => isSubmited()}/>
         </div>
       </ThemeProvider>
     </form>

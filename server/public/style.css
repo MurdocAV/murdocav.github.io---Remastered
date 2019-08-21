@@ -176,6 +176,10 @@ body {
   height: 3.5625em;
 }
 
+.insetDivider {
+  color: black;
+}
+
 /* Blank */
 .blank {
   grid-area: blank;
