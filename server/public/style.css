@@ -14,6 +14,7 @@ html {
   font-family: 'Ma Shan Zheng', cursive;
   text-align: center;
   overflow: hidden;
+  background-color: #3b3c40;
 }
 
 .appBar {
@@ -125,6 +126,79 @@ body {
 }
 
 /* 4. Projects */
+.projects {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: projects;
+}
+
+.formMUIContainer {
+  color: white;
+  grid-area: projects;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 450px;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: projects;
+  padding-bottom: 2.5vh;
+}
+
+.formMUIContainer .formMUI {
+  width: 450px;
+}
+
+.formMUIContainer .formMUI .two {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.formMUIContainer .formMUI .oneHalf {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.formMUIContainer .formMUI .one {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.formMUIContainer .formMUI .message {
+  width: 400px;
+  height: 3.5625em;
+}
+
+.insetDivider {
+  color: black;
+}
+
+.formMessage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 2em;
+  color: white;
+}
+
+.link:hover {
+  color: green;
+  opacity: 0.6;
+}
+
 /* Blank */
 .blank {
   grid-area: blank;

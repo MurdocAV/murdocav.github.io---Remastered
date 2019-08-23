@@ -26,7 +26,7 @@ html {
   font-family: 'Ma Shan Zheng', cursive;
   text-align: center;
   overflow: hidden;
-  // background-color: $bgColor3;
+  background-color: $bgColor3;
 }
 
 .appBar {
@@ -113,9 +113,57 @@ body {
 
 /* 4. Projects */
 
-// .projects {
-//   grid-area: main;
-// }
+.projects {
+  grid-area: projects;
+}
+
+.formMUIContainer {
+  color: white;
+  grid-area: projects;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 450px;
+  grid-area: projects;
+  padding-bottom: 2.5vh;
+  // background-color: $bgColor3!important;
+  .formMUI {
+    width: 450px;
+    .two {
+      align-self: flex-end;
+    }
+    .oneHalf {
+      align-self: center;
+    }
+    .one {
+      align-self: flex-start;
+    }
+    .message {
+      width: 400px;
+      height: 3.5625em;
+    }
+  }
+}
+
+.insetDivider {
+  color: black;
+}
+
+.formMessage {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 2em;
+  color: white;
+}
+
+.link:hover {
+  color: green;
+  opacity: 0.6;
+}
 
 /* Blank */
 
@@ -131,6 +179,7 @@ body {
   height: 450px;
   grid-area: projects;
   padding-bottom: 2.5vh;
+  // background-color: $bgColor3!important;
 }
 
 .MuiGridListTile-tile {
@@ -166,15 +215,17 @@ body {
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 
 /* Global */
-html{
+html {
   min-height: 50%;
   overflow: hidden;
 }
-body{
+
+body {
   color: rgba(255,255,255,.75);
   font-family: 'Anonymous Pro', monospace;  
 }
-.line-1{
+
+.line-1 {
     position: relative;
     top: 50%;  
     width: 2em;
@@ -196,7 +247,7 @@ body{
   from{width: 0;}
   to{width: 23em;}
 }
-@keyframes blinkTextCursor{
+@keyframes blinkTextCursor {
   from{border-right-color: rgba(255,255,255,.75);}
   to{border-right-color: transparent;}
 }
