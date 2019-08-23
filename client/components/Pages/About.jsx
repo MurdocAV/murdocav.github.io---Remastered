@@ -3,11 +3,24 @@ import AboutCard from '../Cards/AboutCard'
 
 class About extends React.Component {
     render() {
-      const text = 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.'
+      const text = "Personally while I absolutely hate looking at a block of work, sometimes thinking I'd never be able to finish it. \
+                    I have found that tasks are often no where near as bad as I thought to complete. If the task is too hard \
+                    to tackle, taking breaks is a good way to clear your head and stay present. If I found myself in a \
+                    problem that occurred too often, i.e. Not putting in a ';', creating useful habits that solve the problem \
+                    from occuring would be my solution. \
+                    Continuing to improve beyond the level I'm currently at will be my next tough challenge I'm \
+                    heading into. Core skills are more important than technical, if you can't actually get the job \
+                    there's no point being able to do the task."
+        const title = "About Me"
+        const footer = "More of a reflection than an about me."
 
         return (
             <div className="mainComponent">
-              <AboutCard cardText={text}/>
+              <AboutCard 
+              cardText={text}
+              title={title}
+              footerText={footer}
+              />
             </div>
         )
     }

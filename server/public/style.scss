@@ -188,11 +188,11 @@ body{
 }
 
 /* Animation */
-.anim-typewriter{
+.anim-typewriter {
   animation: typewriter 4s steps(44) 1s 1 normal both,
              blinkTextCursor 500ms steps(44) infinite normal;
 }
-@keyframes typewriter{
+@keyframes typewriter {
   from{width: 0;}
   to{width: 23em;}
 }
@@ -201,7 +201,7 @@ body{
   to{border-right-color: transparent;}
 }
 
-canvas{
+canvas {
   position: absolute;
   top:0;
   left:0;

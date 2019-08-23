@@ -25,7 +25,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function AboutCard(props) {
+export default function LoremCard(props) {
   const classes = useStyles()
   const bull = <span className={classes.bullet}>•</span>
 
@@ -33,16 +33,16 @@ export default function AboutCard(props) {
     <Card className={`classes.card cardMUI`}>
       <CardContent>
         <Typography className={classes.title} color="textSecondary" gutterBottom>
-          {props.title}
+          {/* Title */}
         </Typography>
         <Typography variant="h5" component="h2">
-          {props.cardText}
+          {props.text}
         </Typography>
         <Typography className={classes.pos} color="textSecondary">
-         {props.footerText}
+          {/* Summary */}
         </Typography>
         <Typography variant="body2" component="p">
-          {/* {props.footerText} */}
+          {/* Footer Text */}
         </Typography>
       </CardContent>
       <CardActions>

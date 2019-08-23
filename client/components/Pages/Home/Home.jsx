@@ -1,8 +1,6 @@
 import React from 'react'
 import Center from '../../Center'
 import ImageDrawer from '../../ImageDrawer'
-// import * as THREE from 'three'
-
 
 class Home extends React.Component {
   render () {
