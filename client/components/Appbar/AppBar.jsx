@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-
-import { makeStyles } from '@material-ui/core/styles'
+import { makeStyles, createMuiTheme } from '@material-ui/core/styles'
+import { pink, indigo } from '@material-ui/core/colors'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
@@ -9,6 +9,7 @@ import Button from '@material-ui/core/Button'
 import IconButton from '@material-ui/core/IconButton'
 import MenuIcon from '@material-ui/icons/Menu'
 import Badge from '@material-ui/core/Badge';
+
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -21,6 +22,13 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1,
   },
 }))
+
+const theme = createMuiTheme({
+  palette: {
+    primary: pink,
+    secondary: indigo,
+  },
+})
 
 export default function ButtonAppBar(props) {
   const classes = useStyles()

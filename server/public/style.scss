@@ -18,6 +18,13 @@ $bgColor2: #54555A;
 $bgColor3: #3b3c40;
 $bgColor4: #6d6e74;
 
+$tearDropTransperant: rgba(148,208,255, 0.23);
+$tearDrop: rgb(148,208,255);
+$blueSuede: rgb(135,149,232);
+$lightPurple: rgb(173,140,255);
+$lightViolet: rgb(199,116,232);
+$vapoWavePink: rgb(255,106,213);
+
 
 /* 1. Globals */
 
@@ -191,12 +198,50 @@ body {
   box-shadow: 5px 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
+/* =============================
+ Form Styling of MU-UI form 
+  * nb styling is after
+    react components
+============================== */
+
+// Font color inside the form (focus)
+.MuiInputBase-root {
+  color: $lightViolet;
+  background-color: rgba(0,0,0,0.75);
+  border-radius: 5px;
+}
+
+// Font color without focus
+.MuiFormLabel-root {
+  color: $vapoWavePink;
+}
+
+.MuiFocused {
+  color: $blueSuede;
+}
+
+//Border color without focus
+.MuiOutlinedInput-notchedOutline {
+  border-color: $tearDropTransperant!important;
+}
+
+// .MuiOutlinedInput-notchedOutline:hover {
+//   border-color: rgba(255, 255, 255, 0.23!important);
+// }
+
+// Button
+.MuiButton-root {
+  color: $lightPurple;
+}
+
+$vapoWavePinkOpaqe: rgba(255,106,213, 0.8);
+
 .toolBar {
-  background-color: #40010D;
+  background-color: $lightViolet;
 }
 
 .appBarText {
-  color: white!important;
+  color: $tearDrop!important;
   :hover{
     opacity: 0.5;
   }
@@ -204,7 +249,7 @@ body {
 
 .appBarTitle {
   cursor: pointer;
-  color: white;
+  color: $tearDrop;
 }
 
 .appBarTitle:hover {

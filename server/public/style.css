@@ -228,12 +228,39 @@ body {
           box-shadow: 5px 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
+/* =============================
+ Form Styling of MU-UI form 
+  * nb styling is after
+    react components
+============================== */
+.MuiInputBase-root {
+  color: #c774e8;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+}
+
+.MuiFormLabel-root {
+  color: #ff6ad5;
+}
+
+.MuiFocused {
+  color: #8795e8;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: rgba(148, 208, 255, 0.23) !important;
+}
+
+.MuiButton-root {
+  color: #ad8cff;
+}
+
 .toolBar {
-  background-color: #40010D;
+  background-color: #c774e8;
 }
 
 .appBarText {
-  color: white !important;
+  color: #94d0ff !important;
 }
 
 .appBarText :hover {
@@ -242,7 +269,7 @@ body {
 
 .appBarTitle {
   cursor: pointer;
-  color: white;
+  color: #94d0ff;
 }
 
 .appBarTitle:hover {

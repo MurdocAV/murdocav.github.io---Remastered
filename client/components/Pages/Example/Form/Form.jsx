@@ -4,7 +4,7 @@ import React from 'react'
 import { makeStyles, createMuiTheme } from '@material-ui/core/styles'
 import { ThemeProvider } from '@material-ui/styles'
 import TextField from '@material-ui/core/TextField'
-import { green } from '@material-ui/core/colors'
+import { pink, indigo } from '@material-ui/core/colors'
 import DialogSelect from './Select'
 import OutlinedButton from './Submit'
 
@@ -20,7 +20,8 @@ const useStyles = makeStyles(theme => ({
 
 const theme = createMuiTheme({
   palette: {
-    primary: green,
+    primary: pink,
+    secondary: indigo,
   },
 })
 
@@ -48,14 +49,14 @@ export default function Form(props) {
       <ThemeProvider theme={theme}>
         <div className="lineOne">
           <TextField
-            className={`${classes.margin} one`}
+            className={`${classes.margin} formBox one`}
             id={"Name"}
             label="Name"
             variant="outlined"
             onChange={(e) => changeHandler('name', e)}
           />
           <TextField
-            className={`${classes.margin} one`}
+            className={`${classes.margin} formBox one`}
             label="Email" 
             variant="outlined"
             onChange={(e) => changeHandler('email', e)}
@@ -63,7 +64,7 @@ export default function Form(props) {
           <DialogSelect changeHandler={changeHandler} />
           {/* <QueryType className="oneHalf"></QueryType> */}
           <TextField
-            className={`${classes.margin} two`}
+            className={`${classes.margin} formBox two`}
             label="Subject"
             variant="outlined"
             onChange={(e) => changeHandler('subject', e)}
@@ -71,7 +72,7 @@ export default function Form(props) {
           {/* </div>
           <div className="lineTwo"> */}
           <TextField
-            className={`${classes.margin} two message`}
+            className={`${classes.margin} formBox two message`}
             label="Message"
             variant="outlined"
             onChange={(e) => changeHandler('message', e)}

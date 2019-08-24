@@ -8,7 +8,7 @@ import Email from './Pages/Email'
 import References from './Pages/References'
 import Home from './Pages/Home/Home'
 import Hiring from './Pages/Hiring'
-import UseCase from './Pages/UseCase/UseCase'
+import Example from './Pages/Example/Example'
 import Header from './Appbar/Header'
 
 import {activePage, goToPage} from '../actions/index'
@@ -36,7 +36,7 @@ class App extends React.Component {
         <Route exact path="/" component={Home} />
         <Route exact path="/About" component={About} />
         <Route exact path="/Projects" component={Home} />
-        <Route exact path="/Uses" component={UseCase} />
+        <Route exact path="/Form" component={Example} />
         <Route exact path="/References" component={References} />
         <Route exact path="/Email" component={Email} />
         <Route exact path="/Hiring" component={Hiring} />

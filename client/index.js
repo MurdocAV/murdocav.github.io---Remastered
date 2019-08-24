@@ -57,7 +57,7 @@ function init() {
 
 
 	let geometry = new THREE.ShapeGeometry( circleShape );
-	let material = new THREE.MeshBasicMaterial( { color: 0x260104} );
+	let material = new THREE.MeshBasicMaterial( { color: 0xde1738} );
 
 	geometry.scale(0.025,0.025,0.025)
 	geometry.rotateZ(Math.PI)
