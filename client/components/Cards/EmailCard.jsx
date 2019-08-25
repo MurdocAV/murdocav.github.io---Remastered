@@ -30,7 +30,7 @@ export default function EmailCard(props) {
   const bull = <span className={classes.bullet}>•</span>
 
   return (
-    <Card className={`classes.card cardMUI`}>
+    <Card className={`${classes.card} email cardMUI`}>
       <CardContent>
         <Typography className={classes.title} color="textSecondary" gutterBottom>
           Email

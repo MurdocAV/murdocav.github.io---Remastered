@@ -14,7 +14,6 @@ html {
   font-family: 'Ma Shan Zheng', cursive;
   text-align: center;
   overflow: hidden;
-  background-color: #3b3c40;
 }
 
 .appBar {
@@ -125,6 +124,10 @@ body {
   margin-top: 10vh;
 }
 
+.cardMUI.email {
+  width: auto;
+}
+
 /* 4. Projects */
 .projects {
   -ms-grid-row: 3;
@@ -174,6 +177,11 @@ body {
 .formMUIContainer .formMUI .message {
   width: 400px;
   height: 3.5625em;
+}
+
+.formMUIContainer .MuiButton-root {
+  color: #ad8cff;
+  background-color: rgba(0, 0, 0, 0.75) !important;
 }
 
 .insetDivider {
@@ -234,9 +242,10 @@ body {
     react components
 ============================== */
 .MuiInputBase-root {
-  color: #c774e8;
+  color: #ff6ad5;
   background-color: rgba(0, 0, 0, 0.75);
   border-radius: 5px;
+  font-weight: bold;
 }
 
 .MuiFormLabel-root {
@@ -251,10 +260,6 @@ body {
   border-color: rgba(148, 208, 255, 0.23) !important;
 }
 
-.MuiButton-root {
-  color: #ad8cff;
-}
-
 .toolBar {
   background-color: #c774e8;
 }
@@ -264,7 +269,7 @@ body {
 }
 
 .appBarText :hover {
-  opacity: 0.5;
+  opacity: 0.65;
 }
 
 .appBarTitle {
@@ -273,7 +278,7 @@ body {
 }
 
 .appBarTitle:hover {
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 /* Google Fonts */
@@ -284,7 +289,7 @@ html {
 }
 
 body {
-  color: rgba(255, 255, 255, 0.75);
+  color: #c774e8;
   font-family: 'Anonymous Pro', monospace;
 }
 

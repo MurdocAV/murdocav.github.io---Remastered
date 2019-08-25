@@ -81,7 +81,7 @@ function init() {
 
 	renderer = new THREE.WebGLRenderer();
 	renderer.setSize( window.innerWidth, window.innerHeight );
-  renderer.setClearColor( 0x0D0D0D, 1);
+  renderer.setClearColor( 0x6aff94, 1);
 	container.appendChild( renderer.domElement );
 
 	window.addEventListener( 'resize', onWindowResize, false );

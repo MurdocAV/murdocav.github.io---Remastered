@@ -1,5 +1,13 @@
 const tileData = [
   {
+  img: '/images/ReFlick.png',
+  title: 'ReFlick',
+  author: 'Azaan Virk, Alice Gatland, John Tapsel, Struant Wall, Eve Henare',
+  cols: 2,
+  featured: true,
+  url: 'https://github.com/MurdocAV/ReFlick'
+  },
+  {
     img: '/images/LukeMitchells.png',
     title: 'Luke Mitchells',
     author: 'MurdocAV',
@@ -19,14 +27,6 @@ const tileData = [
     title: 'PokeName',
     author: 'MurdocAV',
     url: 'https://github.com/MurdocAV/PokeName'
-  },
-  {
-    img: '/images/ReFlick.png',
-    title: 'ReFlick',
-    author: 'Azaan Virk, Alice Gatland, John Tapsel, Struant Wall, Eve Henare',
-    cols: 2,
-    featured: true,
-    url: 'https://github.com/MurdocAV/ReFlick'
   }
 ]
 

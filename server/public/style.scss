@@ -15,7 +15,7 @@ $highlight: #A1FFD2;
 $active: #5a7449;
 $bgColor1: #88898E;
 $bgColor2: #54555A;
-$bgColor3: #3b3c40;
+$bgColor3: rgb(16,215,174);
 $bgColor4: #6d6e74;
 
 $tearDropTransperant: rgba(148,208,255, 0.23);
@@ -33,7 +33,7 @@ html {
   font-family: 'Ma Shan Zheng', cursive;
   text-align: center;
   overflow: hidden;
-  background-color: $bgColor3;
+  // background-color: $bgColor3;
 }
 
 .appBar {
@@ -118,6 +118,10 @@ body {
   margin-top: 10vh;
 }
 
+.cardMUI.email {
+  width: auto;
+}
+
 /* 4. Projects */
 
 .projects {
@@ -149,6 +153,11 @@ body {
       width: 400px;
       height: 3.5625em;
     }
+  }
+// Button
+  .MuiButton-root {
+    color: $lightPurple;
+    background-color: rgba(0,0,0,0.75)!important;
   }
 }
 
@@ -206,9 +215,10 @@ body {
 
 // Font color inside the form (focus)
 .MuiInputBase-root {
-  color: $lightViolet;
+  color: $vapoWavePink;
   background-color: rgba(0,0,0,0.75);
   border-radius: 5px;
+  font-weight: bold;
 }
 
 // Font color without focus
@@ -229,10 +239,6 @@ body {
 //   border-color: rgba(255, 255, 255, 0.23!important);
 // }
 
-// Button
-.MuiButton-root {
-  color: $lightPurple;
-}
 
 $vapoWavePinkOpaqe: rgba(255,106,213, 0.8);
 
@@ -243,7 +249,7 @@ $vapoWavePinkOpaqe: rgba(255,106,213, 0.8);
 .appBarText {
   color: $tearDrop!important;
   :hover{
-    opacity: 0.5;
+    opacity: 0.65;
   }
 }
 
@@ -253,7 +259,7 @@ $vapoWavePinkOpaqe: rgba(255,106,213, 0.8);
 }
 
 .appBarTitle:hover {
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 /* Google Fonts */
@@ -266,7 +272,7 @@ html {
 }
 
 body {
-  color: rgba(255,255,255,.75);
+  color: $lightViolet;
   font-family: 'Anonymous Pro', monospace;  
 }
 
