@@ -36,7 +36,7 @@ export default function AboutCard(props) {
           Available on Request
         </Typography>
         <Typography variant="h5" component="h2">
-          <span className={classes.bullet}>• Alice – Software/Web Developer</span>
+          {/* <span className={classes.bullet}>• Alice – Software/Web Developer</span> */}
           <span className={classes.bullet}>• Barry – CFO</span>
           <span className={classes.bullet}>• Don – Software Development Mentor</span>
           <span className={classes.bullet}>• Luke – Music Producer</span>
