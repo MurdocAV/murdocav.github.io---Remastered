@@ -7,7 +7,9 @@ class Email extends React.Component {
 
         return (
             <div className="mainComponent">
-              <EmailCard cardText={text}/>
+              <div className="emailCard">
+                <EmailCard cardText={text}/>
+              </div>
             </div>
         )
     }
