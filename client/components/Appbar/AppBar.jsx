@@ -9,8 +9,8 @@ import Button from '@material-ui/core/Button'
 import IconButton from '@material-ui/core/IconButton'
 import MenuIcon from '@material-ui/icons/Menu'
 import Badge from '@material-ui/core/Badge';
-import MouseOverPopover from './MouseOver'
-
+import MouseOverPopover from './Unused/MouseOver'
+import CenteredMenu from './Menu'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -42,7 +42,8 @@ export default function ButtonAppBar(props) {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" className={`${classes.title} `}>
-            <MouseOverPopover> </MouseOverPopover>
+            <CenteredMenu></CenteredMenu>
+            {/* <MouseOverPopover> </MouseOverPopover> */}
             {/* <Link className="noDecoration appBarTitle" to={'/'} key={'Home'} replace={true}>
               MurdocAV
             </Link> */}

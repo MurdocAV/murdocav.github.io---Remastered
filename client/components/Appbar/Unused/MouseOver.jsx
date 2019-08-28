@@ -2,6 +2,7 @@ import React from 'react';
 import Popover from '@material-ui/core/Popover';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
+import DiscreteSlider  from './Slider'
 
 const useStyles = makeStyles(theme => ({
   popover: {
@@ -32,9 +33,9 @@ export default function MouseOverPopover() {
         aria-owns={open ? 'mouse-over-popover' : undefined}
         aria-haspopup="true"
         onMouseEnter={handlePopoverOpen}
-        onMouseLeave={handlePopoverClose}
+        // onMouseLeave={handlePopoverClose}
       >
-        Hover with a Popover.
+        MurdocAV
       </Typography>
       <Popover
         id="mouse-over-popover"
@@ -55,7 +56,7 @@ export default function MouseOverPopover() {
         onClose={handlePopoverClose}
         disableRestoreFocus
       >
-        <Typography>I use Popover.</Typography>
+        <DiscreteSlider></DiscreteSlider>
       </Popover>
     </div>
   );
