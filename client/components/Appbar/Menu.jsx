@@ -2,6 +2,7 @@ import React from 'react';
 import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
+import {Link} from 'react-router-dom'
 
 export default function CenteredMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -16,9 +17,11 @@ export default function CenteredMenu() {
 
   return (
     <div>
-      <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick} onMouseOver={handleClick}>
-        MurdocAV
-      </Button>
+        <Button aria-controls="simple-menu" aria-haspopup="true" onClick={() => console.log('clicked')} onMouseOver={handleClick}>
+          <Link className="noDecoration appBarTitle" to={'/'} key={'Home'} replace={true}>
+              MurdocAV
+          </Link>
+        </Button>
       <Menu
         id="simple-menu"
         anchorEl={anchorEl}
@@ -36,9 +39,9 @@ export default function CenteredMenu() {
           horizontal: 'center',
         }}
       >
+        <MenuItem onClick={handleClose}>Homepage</MenuItem>
         <MenuItem onClick={handleClose}>Theme: Original</MenuItem>
         <MenuItem onClick={handleClose}>Theme: Vaporwave</MenuItem>
-        <MenuItem onClick={handleClose}>Homepage</MenuItem>
       </Menu>
     </div>
   );

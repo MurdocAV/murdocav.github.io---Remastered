@@ -42,11 +42,8 @@ export default function ButtonAppBar(props) {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" className={`${classes.title} `}>
-            <CenteredMenu></CenteredMenu>
-            {/* <MouseOverPopover> </MouseOverPopover> */}
-            {/* <Link className="noDecoration appBarTitle" to={'/'} key={'Home'} replace={true}>
-              MurdocAV
-            </Link> */}
+            <CenteredMenu>
+            </CenteredMenu>
           </Typography>
           <Badge className={classes.margin} badgeContent={9001} max={9000} color="primary">
             <Button className='appBarText'>

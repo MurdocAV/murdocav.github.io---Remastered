@@ -33,7 +33,7 @@ body {
   display: -ms-grid;
   display: grid;
   height: 100vh;
-      grid-template-areas: "header header header header" "main  main main main" "projects  projects projects projects";
+      grid-template-areas: "header header header header" "main main main main" "projects  projects projects projects";
   -ms-grid-rows: 1fr 2fr 4fr;
       grid-template-rows: 1fr 2fr 4fr;
   -ms-grid-columns: 1fr 2fr 4fr;
@@ -130,6 +130,8 @@ body {
 }
 
 .cardMUI.email {
+  margin-left: auto;
+  margin-right: auto;
   width: 50%;
   -ms-flex-line-pack: center;
       align-content: center;
