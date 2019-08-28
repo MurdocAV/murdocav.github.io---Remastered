@@ -5,7 +5,9 @@ class References extends React.Component {
     render() {
         return (
             <div className="mainComponent">
-              <ReferencesCard/>
+                <div className="referencesCard">
+                    <ReferencesCard/>
+                </div>
             </div>
         )
     }

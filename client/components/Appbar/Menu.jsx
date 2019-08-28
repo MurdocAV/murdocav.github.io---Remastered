@@ -39,7 +39,11 @@ export default function CenteredMenu() {
           horizontal: 'center',
         }}
       >
-        <MenuItem onClick={handleClose}>Homepage</MenuItem>
+        <MenuItem>
+          <Link className="noDecoration appBarTitle" to={'/'} key={'Home'} replace={true} onClick={handleClose}>
+              Homepage
+          </Link>
+        </MenuItem>
         <MenuItem onClick={handleClose}>Theme: Original</MenuItem>
         <MenuItem onClick={handleClose}>Theme: Vaporwave</MenuItem>
       </Menu>

@@ -30,7 +30,7 @@ export default function AboutCard(props) {
   const bull = <span className={classes.bullet}>•</span>
 
   return (
-    <Card className={`classes.card cardMUI`}>
+    <Card className={`classes.card cardMUI references`}>
       <CardContent>
         <Typography className={classes.title} color="textSecondary" gutterBottom>
           Available on Request

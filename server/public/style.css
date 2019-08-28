@@ -137,6 +137,22 @@ body {
       align-content: center;
 }
 
+.cardMUI.references {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.cardMUI.hire {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
 /* 4. Projects */
 .projects {
   -ms-grid-row: 3;

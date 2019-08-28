@@ -30,7 +30,7 @@ export default function HireCard(props) {
   const bull = <span className={classes.bullet}>•</span>
 
   return (
-    <Card className={`classes.card cardMUI`}>
+    <Card className={`classes.card cardMUI hire`}>
       <CardContent>
         <Typography className={classes.title} color="textSecondary" gutterBottom>
           Hiring
