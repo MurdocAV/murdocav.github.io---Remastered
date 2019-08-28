@@ -1,6 +1,6 @@
 import * as THREE from 'three'
 
-function background () {
+function background (bgColor, shapeColor) { // Hex values only for params
 
   /* Code below is for ThreeJS animation & background */
   /* TODO --> Set time out for reseting all three animations to remove lag from resizing window. */
@@ -39,7 +39,7 @@ function background () {
 
 
     let geometry = new THREE.ShapeGeometry( circleShape );
-    let material = new THREE.MeshBasicMaterial( { color: 0xde1738} );
+    let material = new THREE.MeshBasicMaterial( { color: shapeColor} );
 
     geometry.scale(0.025,0.025,0.025)
     geometry.rotateZ(Math.PI)
@@ -63,7 +63,7 @@ function background () {
 
     renderer = new THREE.WebGLRenderer();
     renderer.setSize( window.innerWidth, window.innerHeight );
-    renderer.setClearColor( 0x6aff94, 1);
+    renderer.setClearColor(bgColor, 1);
     container.appendChild( renderer.domElement );
 
     window.addEventListener( 'resize', onWindowResize, false );

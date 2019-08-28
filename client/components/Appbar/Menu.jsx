@@ -40,7 +40,7 @@ export default function CenteredMenu() {
         }}
       >
         <MenuItem>
-          <Link className="noDecoration appBarTitle" to={'/'} key={'Home'} replace={true} onClick={handleClose}>
+          <Link className="noDecoration" to={'/'} key={'Home'} replace={true} onClick={handleClose}>
               Homepage
           </Link>
         </MenuItem>

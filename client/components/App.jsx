@@ -56,4 +56,4 @@ const mapStateToProps = (state) => {
 
 export default connect (mapStateToProps)(App)
 
-background()
+background(0x6aff94, 0xde1738)
