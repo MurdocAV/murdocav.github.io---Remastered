@@ -1,27 +1,27 @@
 import {
-ACTIVE_PAGE,
-UPDATE_PAGE
+ACTIVE_THEME,
+UPDATE_THEME
 } from './actions/index'
 
-const initialPageState = {
-  page: 'Home'
+const initialThemeState = {
+  theme: 'Vaporwave'
 }
 
-const pageReducer = (state = initialPageState, action) => {
+const themeReducer = (state = initialThemeState, action) => {
   switch (action.type) {
-    case ACTIVE_PAGE:
+    case ACTIVE_THEME:
       return {
-        page: state.page
+        theme: state.theme
       }
-    case UPDATE_PAGE:
+    case UPDATE_THEME:
       
     
     return {
-        page: action.page
+        theme: action.theme
         }
     default:
       return state
   }
 }
 
-export default pageReducer
+export default themeReducer
