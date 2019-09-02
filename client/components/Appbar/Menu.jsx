@@ -19,7 +19,7 @@ export default function CenteredMenu() {
     <div>
         <Button aria-controls="simple-menu" aria-haspopup="true" onClick={() => console.log('clicked')} onMouseOver={handleClick}>
           <Link className="noDecoration appBarTitle" to={'/'} key={'Home'} replace={true}>
-              MurdocAV
+              Murdoc_AV
           </Link>
         </Button>
       <Menu

@@ -25,6 +25,13 @@ $lightPurple: rgb(173,140,255);
 $lightViolet: rgb(199,116,232);
 $vapoWavePink: rgb(255,106,213);
 
+/* Color Theme Swatches in RGBA */
+$Super-Gradient-1-2-rgba: black;
+$Super-Gradient-1-1-rgba: $blueSuede;
+$Super-Gradient-1-3-rgba: $vapoWavePink;
+$Super-Gradient-1-4-rgba: rgba(242,149,128, 1);
+$Super-Gradient-1-5-rgba: rgba(216,27,10, 1);
+
 
 /* 1. Globals */
 
@@ -34,6 +41,30 @@ html {
   text-align: center;
   overflow: hidden;
   // background-color: $bgColor3;
+}
+
+body {
+  background-color: red;
+  
+  /* SVG fallback for IE 9 (could be data URI, or could use filter) */
+  background-image: url(fallback-gradient.svg);
+  
+  /* Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0 */
+  background-image: -webkit-gradient(linear, left top, right top, from(red), to(#f06d06));
+  
+  /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
+  background-image: -webkit-linear-gradient(left, red, #f06d06);
+  
+  /* Firefox 3.6 - 15 */
+  background-image: -moz-linear-gradient(left, red, #f06d06);
+  
+  /* Opera 11.1 - 12 */
+  background-image: -o-linear-gradient(left, red, #f06d06);
+  
+  /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
+  background-image: linear-gradient(to right, red, #f06d06);
+  margin: 0px;
+  overflow: hidden;
 }
 
 .appBar {
@@ -267,11 +298,11 @@ body {
 $vapoWavePinkOpaqe: rgba(255,106,213, 0.8);
 
 .toolBar {
-  background-color: $lightViolet;
+  background-color: #000000;
 }
 
 .appBarText {
-  color: $tearDrop!important;
+  color: white!important;
   :hover{
     opacity: 0.65;
   }
@@ -279,7 +310,7 @@ $vapoWavePinkOpaqe: rgba(255,106,213, 0.8);
 
 .appBarTitle {
   cursor: pointer;
-  color: $tearDrop;
+  color: white;
 }
 
 .appBarTitle:hover {
@@ -296,7 +327,7 @@ html {
 }
 
 body {
-  color: $lightViolet;
+  color: #000000;
   font-family: 'Anonymous Pro', monospace;  
 }
 
