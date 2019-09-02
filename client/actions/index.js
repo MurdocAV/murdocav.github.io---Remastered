@@ -1,9 +1,9 @@
-export const PAGETHEME = 'PAGETHEME'
+export const ACTIVE_THEME = 'ACTIVE_THEME'
 export const UPDATE_THEME = 'UPDATE_THEME'
 
 export function activePage () {
   return {
-    type: PAGETHEME,
+    type: ACTIVE_THEME,
   }
 }
 

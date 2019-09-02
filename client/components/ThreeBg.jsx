@@ -92,7 +92,7 @@ function background (bgColor, shapeColor) { // Hex values only for params
   function animate() {
 
     requestAnimationFrame( animate );
-
+    init()
     render();
 
   }
