@@ -183,6 +183,19 @@ body {
   grid-area: projects;
 }
 
+// Icon for projects link.
+.projectsIcon {
+  cursor: pointer;
+  font-size: 60px;
+  &.grow {
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+}
+
 .formMUIContainer {
   color: white;
   grid-area: projects;
@@ -303,6 +316,7 @@ $vapoWavePinkOpaqe: rgba(255,106,213, 0.8);
 
 .appBarText {
   color: white!important;
+  text-transform: none;
 }
 
 .appBarText:hover {
@@ -313,6 +327,7 @@ $vapoWavePinkOpaqe: rgba(255,106,213, 0.8);
   cursor: pointer;
   color: white;
   text-transform: none;
+  font-size: 1.2em;
 }
 
 .appBarTitle:hover {

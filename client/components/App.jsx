@@ -7,7 +7,8 @@ import About from './Pages/About'
 import Documentation from './Pages/Documentation'
 import Email from './Pages/Email'
 import References from './Pages/References'
-import Home from './Pages/Home/Home'
+import Home from './Pages/Home/Homepage'
+import Projects from './Pages/Projects/Projects'
 import Hiring from './Pages/Hiring'
 import Example from './Pages/Example/Example'
 import Header from './Appbar/Header'
@@ -32,12 +33,14 @@ class App extends React.Component {
   }
   
   render () {
+    // Ensures that the animation is always smooth, runnning everytime the render method is called.
+    background(0x839ce7, 0x000000)
     return (
       <HashRouter>
         <Header />
         <Route exact path="/" component={Home} />
         <Route exact path="/About" component={About} />
-        <Route exact path="/Projects" component={Home} />
+        <Route exact path="/Projects" component={Projects} />
         <Route exact path="/Form" component={Example} />
         <Route exact path="/References" component={References} />
         <Route exact path="/Email" component={Email} />
@@ -55,4 +58,3 @@ const mapStateToProps = (state) => {
 }
 
 export default connect (mapStateToProps)(App)
-background(0x839ce7, 0x000000)

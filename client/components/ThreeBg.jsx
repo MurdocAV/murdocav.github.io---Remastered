@@ -103,7 +103,6 @@ function background (bgColor, shapeColor) { // Hex values only for params
 
     // This increases or decreases speed
     count += 0.065;
-
   }
 
   init();

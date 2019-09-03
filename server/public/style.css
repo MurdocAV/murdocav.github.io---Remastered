@@ -177,6 +177,21 @@ body {
   grid-area: projects;
 }
 
+.projectsIcon {
+  cursor: pointer;
+  font-size: 60px;
+}
+
+.projectsIcon.grow {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.projectsIcon.grow:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
 .formMUIContainer {
   color: white;
   grid-area: projects;
@@ -307,6 +322,7 @@ body {
 
 .appBarText {
   color: white !important;
+  text-transform: none;
 }
 
 .appBarText:hover {
@@ -317,6 +333,7 @@ body {
   cursor: pointer;
   color: white;
   text-transform: none;
+  font-size: 1.2em;
 }
 
 .appBarTitle:hover {
