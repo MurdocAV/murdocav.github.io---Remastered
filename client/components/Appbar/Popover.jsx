@@ -31,7 +31,7 @@ export default function MouseOverPopover() {
 
   return (
     <div>
-      <Button aria-controls="simple-menu" aria-haspopup="true" onMouseEnter={handlePopoverOpen} onMouseLeave={handlePopoverClose}>
+      <Button aria-controls="simple-menu noDecoration" aria-haspopup="true" onMouseEnter={handlePopoverOpen} onMouseLeave={handlePopoverClose}>
         <Link className="noDecoration appBarTitle" to={'/'} key={'Home'} replace={true}>
               Murdoc AV
         </Link>

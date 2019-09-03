@@ -12,7 +12,6 @@ function background (bgColor, shapeColor) { // Hex values only for params
   let particles, particle, count = 0;
 
   function init() {
-
     container = document.createElement( 'div' );
     document.body.appendChild( container );
     if(container) {
@@ -47,9 +46,7 @@ function background (bgColor, shapeColor) { // Hex values only for params
     const detail = 2;
     const geometry = new THREE.PolyhedronBufferGeometry(verticesOfCube, indicesOfFaces, radius, detail);
 
-    let material = new THREE.MeshBasicMaterial({color: shapeColor});;
-    console.log(material);
-    // material.wireframe = true;
+    let material = new THREE.MeshBasicMaterial({color: shapeColor});
 
     geometry.scale(0.045,0.045,0.045)
     geometry.rotateZ(Math.PI)
@@ -57,44 +54,33 @@ function background (bgColor, shapeColor) { // Hex values only for params
     let i = 0
 
     for ( let ix = 0; ix < AMOUNTX; ix ++ ) {
-
       for ( let iy = 0; iy < AMOUNTY; iy ++ ) {
-
         particle = particles[ i ++ ] = new THREE.Mesh(geometry,
           material);
-
         particle.position.x = ix * SEPARATION - ( ( AMOUNTX * SEPARATION ) / 2 );
         particle.position.z = iy * SEPARATION - ( ( AMOUNTY * SEPARATION ) - 10 );
         scene.add( particle );
-
       }
-
     }
 
     renderer = new THREE.WebGLRenderer({ alpha: true });
     renderer.setSize( window.innerWidth, window.innerHeight );
-    // renderer.setClearColor(bgColor, 1);
     container.appendChild( renderer.domElement );
-
     window.addEventListener( 'resize', onWindowResize, false );
 
   }
 
   function onWindowResize() {
-    
       camera.aspect = window.innerWidth / window.innerHeight;
       camera.updateProjectionMatrix();
       renderer.setSize( window.innerWidth, window.innerHeight );
-      init()
       animate()
+      return
   }
 
   function animate() {
-
     requestAnimationFrame( animate );
-    init()
     render();
-
   }
 
   function render() {

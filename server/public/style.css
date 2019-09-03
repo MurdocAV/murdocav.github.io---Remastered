@@ -309,13 +309,14 @@ body {
   color: white !important;
 }
 
-.appBarText :hover {
+.appBarText:hover {
   opacity: 0.65;
 }
 
 .appBarTitle {
   cursor: pointer;
   color: white;
+  text-transform: none;
 }
 
 .appBarTitle:hover {

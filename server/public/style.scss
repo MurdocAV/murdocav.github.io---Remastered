@@ -303,14 +303,16 @@ $vapoWavePinkOpaqe: rgba(255,106,213, 0.8);
 
 .appBarText {
   color: white!important;
-  :hover{
+}
+
+.appBarText:hover {
     opacity: 0.65;
-  }
 }
 
 .appBarTitle {
   cursor: pointer;
   color: white;
+  text-transform: none;
 }
 
 .appBarTitle:hover {
