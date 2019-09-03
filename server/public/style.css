@@ -15,6 +15,7 @@ html {
   font-family: 'Ma Shan Zheng', cursive;
   text-align: center;
   overflow: hidden;
+  overflow-y: scroll;
 }
 
 body {
@@ -192,6 +193,22 @@ body {
           transform: scale(1.5);
 }
 
+.gitHubLogo {
+  width: 240px;
+  /* you can use % */
+  height: auto;
+}
+
+.gitHubLogo.grow {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.gitHubLogo.grow:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
 .formMUIContainer {
   color: white;
   grid-area: projects;
@@ -285,11 +302,9 @@ body {
   padding-bottom: 2.5vh;
 }
 
-.MuiGridListTile-tile {
-  -webkit-box-shadow: inset 5px 0 10px -5px #635e61, inset -5px 0 10px -5px #635e61, inset 0px -5px 10px -2px #635e61, 0 0 1px 2px #635e61, 0 0 1px 2px #635e61;
-          box-shadow: inset 5px 0 10px -5px #635e61, inset -5px 0 10px -5px #635e61, inset 0px -5px 10px -2px #635e61, 0 0 1px 2px #635e61, 0 0 1px 2px #635e61;
-  -webkit-box-shadow: 5px 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-          box-shadow: 5px 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+.projectBox {
+  -webkit-box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+          box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
 }
 
 /* =============================

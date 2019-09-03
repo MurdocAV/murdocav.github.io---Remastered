@@ -44,11 +44,11 @@ export default function ButtonAppBar(props) {
               <MouseOverPopover></MouseOverPopover>
           </Typography>
           <Badge className={classes.margin} badgeContent={9001} max={9000} color="primary">
+          <Link className="noDecoration" to={'/Documentation'} key={'Documentation'} replace={true}>
             <Button className='appBarText'>
-              <Link className="noDecoration" to={'/Documentation'} key={'Documentation'} replace={true}>
                 Documentation
-              </Link>
             </Button>
+          </Link>
           </Badge>
         </Toolbar>
       </AppBar>
