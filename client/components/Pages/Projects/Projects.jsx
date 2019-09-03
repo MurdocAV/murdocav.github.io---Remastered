@@ -5,7 +5,9 @@ class Projects extends React.Component {
   render () {
     return (
       <React.Fragment>
-        <div className='imageDrawer'><ImageDrawer /></div>
+        <div className='imageDrawer'>
+          <ImageDrawer></ImageDrawer>
+        </div>
       </React.Fragment>
     )
   }

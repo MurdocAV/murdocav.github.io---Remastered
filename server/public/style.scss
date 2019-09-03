@@ -375,6 +375,40 @@ body {
   to{border-right-color: transparent;}
 }
 
+// Screen sizes smaller than 500px change styling for form.
+@media only screen and (max-width: 500px)  {
+
+  .formMUIContainer {
+    color: white;
+    grid-area: projects;
+    display: flex;
+    justify-content: center;
+    width: 100%!important;
+    height: 450px;
+    grid-area: projects;
+    padding-bottom: 2.5vh;
+    // background-color: $bgColor3!important;
+    .formMUI {
+      width: 450px;
+      .two {
+        align-self: flex-end;
+      }
+      .oneHalf {
+        align-self: center;
+      }
+      .one {
+        align-self: flex-start;
+      }
+      .message {
+        width: auto;
+        display: flex;
+        height: 3.5625em;
+      }
+    }
+  }
+
+}
+
 canvas {
   position: absolute;
   top:0;
