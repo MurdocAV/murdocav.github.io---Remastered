@@ -28,6 +28,7 @@ function background (bgColor, shapeColor) { // Hex values only for params
 
     particles = new Array();
 
+    // Shpre shape made of verticies inside a cube
     const verticesOfCube = [
     -1, -1, -1,    1, -1, -1,    1,  1, -1,    -1,  1, -1,
     -1, -1,  1,    1, -1,  1,    1,  1,  1,    -1,  1,  1,
