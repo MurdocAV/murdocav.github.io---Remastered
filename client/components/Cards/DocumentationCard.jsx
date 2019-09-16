@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
+import Divider from '@material-ui/core/Divider';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
@@ -36,21 +37,25 @@ export default function DocumentationCard(props) {
           Technolgies
         </Typography>
         <Typography variant="h5" component="h2">
-            React, Redux, React-bootstrap,
-            Material-U.I,
-            Node.js, Express, Knex, SQLite,
-            Python, ThreeJS.
-            UI/UX Design: CSS3 – Grid & Flexbox, Sass.
-            RESTful API, JWT and
-            Authentication, Javascript-ES6, Typescript, C, SQL, NoSQLDB's
-            HTML, Bootstrap, Linux/MacOS terminal, LAMP, GoLang, Ruby, PHP.
+            <strong>Front-End: </strong>React, Redux, React-bootstrap, Bootstrap<br/>
+            Material-U.I.<br/>
+            <Divider variant="middle" />
+            <strong>Middleware: </strong>Node.js, Express, Knex<br/>
+            <Divider variant="middle" />
+            <strong>Principals: </strong>  Authentication, RESTful API, JWT<br/>
+            <Divider variant="middle" />
+            <strong>Design:</strong>
+            CSS3 – Grid & Flexbox, Sass, ThreeJS<br/>
+            <Divider variant="middle" />
+            <strong>Back-end & Basics: </strong>Python and Javascript-ES6, Typescript, C, Java, SQL, SQLite, NoSQLDB's<br/>
+            HTML, Linux/MacOS terminal, LAMP, GoLang, Ruby, PHP.
         </Typography>
         <Typography className={classes.pos} color="textSecondary">
-            Teamwork: Peer Programming, Feedback, Active Listening, Git, GitHub - Projects, Pulls, Terminal|
+            Teamwork: Peer Programming, Feedback, Active Listening, Git, GitHub - Projects, Pulls, Terminal<br/>
             Agile: Scrum, Stand ups, Retrospectives.
         </Typography>
         <Typography variant="body2" component="p">
-          And growing by the day
+          And growing by the day!
         </Typography>
       </CardContent>
       <CardActions>
