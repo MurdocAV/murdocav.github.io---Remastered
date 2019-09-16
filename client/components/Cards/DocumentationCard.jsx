@@ -37,18 +37,20 @@ export default function DocumentationCard(props) {
           Technolgies
         </Typography>
         <Typography variant="h5" component="h2">
-            <strong>Front-End: </strong>React, Redux, React-bootstrap, Bootstrap<br/>
-            Material-U.I.<br/>
-            <Divider variant="middle" />
-            <strong>Middleware: </strong>Node.js, Express, Knex<br/>
-            <Divider variant="middle" />
-            <strong>Principals: </strong>  Authentication, RESTful API, JWT<br/>
-            <Divider variant="middle" />
-            <strong>Design:</strong>
-            CSS3 – Grid & Flexbox, Sass, ThreeJS<br/>
-            <Divider variant="middle" />
-            <strong>Back-end & Basics: </strong>Python and Javascript-ES6, Typescript, C, Java, SQL, SQLite, NoSQLDB's<br/>
-            HTML, Linux/MacOS terminal, LAMP, GoLang, Ruby, PHP.
+            <div className='documentationContatiner'>
+              <strong>Front-End: </strong>React, Redux, React-bootstrap<br/>
+              Material-U.I.<br/>
+              <Divider variant="middle" />
+              <strong>Middleware: </strong>Node.js, Express, Knex<br/>
+              <Divider variant="middle" />
+              <strong>Principals: </strong>  Authentication, RESTful API, JWT<br/>
+              <Divider variant="middle" />
+              <strong>Design:</strong>
+              CSS3 – Grid & Flexbox, Sass, ThreeJS, Bootstrap<br/>
+              <Divider variant="middle" />
+              <strong>Back-end & Basics: </strong>Python and Javascript-ES6, Typescript, C, Java, SQL, SQLite, NoSQLDB's<br/>
+              HTML, Linux/MacOS terminal, LAMP, GoLang, Ruby, PHP.
+            </div>
         </Typography>
         <Typography className={classes.pos} color="textSecondary">
             Teamwork: Peer Programming, Feedback, Active Listening, Git, GitHub - Projects, Pulls, Terminal<br/>
@@ -58,9 +60,6 @@ export default function DocumentationCard(props) {
           And growing by the day!
         </Typography>
       </CardContent>
-      <CardActions>
-        <Button size="small">What kind of car does a Jedi drive? A Toy-Yoda.</Button>
-      </CardActions>
     </Card>
   );
 }

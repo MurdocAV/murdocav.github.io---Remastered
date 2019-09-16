@@ -178,6 +178,11 @@ body {
   align-content: center;
 }
 
+.documentationContatiner {
+  display: flex;
+  flex-direction: column;
+}
+
 /* 4. Projects */
 
 .projects {
