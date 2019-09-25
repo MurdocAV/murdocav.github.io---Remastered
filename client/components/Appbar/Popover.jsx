@@ -33,7 +33,7 @@ export default function MouseOverPopover() {
     <div>
       <Button aria-controls="simple-menu" aria-haspopup="true" onMouseEnter={handlePopoverOpen} onMouseLeave={handlePopoverClose}>
         <Link className="noDecoration appBarTitle" to={'/'} key={'Home'} replace={true}>
-              MurdocAV
+              Azaan Virk
         </Link>
       </Button>
       <Popover
@@ -55,7 +55,7 @@ export default function MouseOverPopover() {
         onClose={handlePopoverClose}
         disableRestoreFocus
       >
-        <Typography>Website made with Three.js & React by Azaan Virk</Typography>
+        <Typography>Website made using Three.js & React</Typography>
       </Popover>
     </div>
   );
