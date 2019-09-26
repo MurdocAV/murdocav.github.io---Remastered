@@ -73,8 +73,8 @@ export default function TemporaryDrawer() {
   function linkCases(text) {
     if (text === 'Home') {
       return('/')
-    } else if (text=== 'Example: Form') {
-      return('Form')
+    } else if (text=== 'Sign In Form') {
+      return('SignIn')
     } else {
       return(text)
     }
@@ -88,7 +88,7 @@ export default function TemporaryDrawer() {
       onKeyDown={toggleDrawer(side, false)}
     >
       <List>
-        {['Home', 'About', 'Projects', 'Example: Form'].map((text, index) => (
+        {['Home', 'About', 'Projects', 'Sign In Form'].map((text, index) => (
           <Link className="noDecoration" to={linkCases(text)} 
           key={text} replace={true}>
             <ListItem button onClick={() => console.log(text)} key={text}>
