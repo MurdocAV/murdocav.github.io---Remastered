@@ -11,7 +11,7 @@ const tileData = [
     img: '/images/DrinksRecomendation.png',
     title: 'Drinks Recomendation',
     author: 'MurdocAV',
-    subtitle: 'Try "salt"',
+    subtitle: 'Try some "mezcal"',
     url: 'https://ajpmi-drinks.herokuapp.com/drink'
   },
   {
