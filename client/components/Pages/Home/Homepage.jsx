@@ -9,7 +9,7 @@ class Home extends React.Component {
     return (
       <React.Fragment>
         <div className='mainComponent'>
-          <p className="typewriter line-1 anim-typewriter">Specializing in all things Web</p>
+          <p className="typewriter line-1 anim-typewriter">Full Stack Web Developer, Auckland.</p>
         </div>
         <div className='projects'>
           <Link className="noDecoration" to={'/Projects'} key={'Projects'} replace={true}>
