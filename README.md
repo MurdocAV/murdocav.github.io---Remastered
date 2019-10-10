@@ -8,3 +8,4 @@ Branch: https://github.com/MurdocAV/murdocav.github.io
 TODO: Add Redux data storage.
 TODO: Clean up cards to have an aesthetic to match the ThreeJS moving animated background.
 TODO: Research D3 and possible uses for other projects.
+TODO: Upload on to live branch!!!
