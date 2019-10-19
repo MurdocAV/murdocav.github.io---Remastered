@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
@@ -37,13 +38,13 @@ export default function DocumentationCard(props) {
           Technolgies
         </Typography>
         <Typography variant="h5" component="h2">
-            <div className='documentationContatiner'>
+          <div className='documentationContatiner'>
               <strong>Front-End: </strong>React, Redux, React-bootstrap<br/>
               Material-U.I.<br/>
               <Divider variant="middle" />
               <strong>Middleware: </strong>Node.js, Express, Knex<br/>
               <Divider variant="middle" />
-              <strong>Principals: </strong>  Authentication, RESTful API, JWT<br/>
+              <strong>Principals: </strong>  Authentication, Representational State Transfer/REST Paradigms for APIs, JWT<br/>
               <Divider variant="middle" />
               <strong>Design:</strong>
               CSS3 – Grid & Flexbox, Sass, ThreeJS, Bootstrap<br/>
@@ -53,13 +54,16 @@ export default function DocumentationCard(props) {
             </div>
         </Typography>
         <Typography className={classes.pos} color="textSecondary">
-            Teamwork: Peer Programming, Feedback, Active Listening, Git, GitHub - Projects, Pulls, Terminal<br/>
+            Teamwork: Peer Programming, Feedback, Active Listening, Git, GitHub - Projects, Pulls, Terminal.<br/>
             Agile: Scrum, Stand ups, Retrospectives.
         </Typography>
         <Typography variant="body2" component="p">
-          And growing by the day!
+          And growing by the day
         </Typography>
       </CardContent>
+      <CardActions>
+        <Button size="small">What kind of car does a Jedi drive? A Toy-Yoda.</Button>
+      </CardActions>
     </Card>
   );
 }
