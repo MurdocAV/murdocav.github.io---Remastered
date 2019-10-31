@@ -12,3 +12,5 @@ TODO: Clean up cards to have an aesthetic to match the ThreeJS moving animated b
 TODO: Research D3 and possible uses for other projects.
 TODO: Upload on to live branch!!!
 TODO: Blog post template. For upcomming blogs on random things.
+
+31/10/19 : Halloween Update!
