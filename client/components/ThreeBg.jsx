@@ -19,8 +19,8 @@ function background (bgColor, shapeColor) { // Hex values only for params
     }
 
     camera = new THREE.PerspectiveCamera( 120, window.innerWidth / window.innerHeight, 1, 10000 );
-    camera.position.y = 180; //changes how far back you can see i.e the particles towards horizon
-    camera.position.z = 20; //This is how close or far the particles are seen
+    camera.position.y = 180; // Changes how far back you can see i.e the particles towards horizon
+    camera.position.z = 20; // This is how close or far the particles are seen
     
     camera.rotation.x = 0.2;
     
@@ -28,7 +28,7 @@ function background (bgColor, shapeColor) { // Hex values only for params
 
     particles = new Array();
 
-    // Shpre shape made of verticies inside a cube
+    // Sphere shape made of verticies inside a cube
     const verticesOfCube = [
     -1, -1, -1,    1, -1, -1,    1,  1, -1,    -1,  1, -1,
     -1, -1,  1,    1, -1,  1,    1,  1,  1,    -1,  1,  1,
