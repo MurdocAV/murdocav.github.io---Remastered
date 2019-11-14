@@ -216,6 +216,19 @@ body {
   }
 }
 
+.cvLogo {
+  width: 120px; /* you can use % */
+  height: auto;
+  &.grow {
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.15);
+    }
+  }
+  padding-bottom: 20px;
+}
+
 .formMUIContainer {
   color: white;
   grid-area: projects;
