@@ -13,4 +13,6 @@ TODO: Research D3 and possible uses for other projects.
 TODO: Upload on to live branch!!!
 TODO: Blog post template. For upcomming blogs on random things.
 
+TODO: Enable cors and get secure website check.
+
 31/10/19 : Halloween Update!
