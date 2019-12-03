@@ -180,6 +180,14 @@ body {
   align-content: center;
 }
 
+.cardMUI.about {
+  // TODO: Create Flex box with right width
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  align-content: center;
+}
+
 .documentationContatiner {
   display: flex;
   flex-direction: column;
