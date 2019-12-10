@@ -12,6 +12,7 @@ import Projects from './Pages/Projects/Projects'
 import Hiring from './Pages/Hiring'
 import Example from './Pages/Example/Example'
 import Header from './Appbar/Header'
+import Navigation from './Header/Navigation'
 
 import {activePage, goToPage} from '../actions/index'
 
