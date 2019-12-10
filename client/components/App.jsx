@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import {HashRouter, Route} from 'react-router-dom'
+import {HashRouter, Route, Redirect} from 'react-router-dom'
 import background from './ThreeBg'
 
 import About from './Pages/About'

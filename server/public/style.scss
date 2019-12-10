@@ -170,14 +170,14 @@ body {
 }
 
 .homeActive {
-  color: #f2f2f2 !important;   /* Since home is always active at route '/' */
+  color: #f2f2f2;   /* Since home is always active at route '/' */
 }
 
 .active {
-  color: #f2f2f2 !important;
+  color: #f2f2f2;
 }
 
-a:hover {
+.Link:hover {
   color: #bfbfbf;
 }
 
