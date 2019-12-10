@@ -4,6 +4,7 @@
     0. Mixins & Variables
     1. Globals
     2. Navigation
+      2.1 Mobile Rendering
     3. Main content
 =============================== */
 /* 0. Mixins & Variables */
@@ -176,6 +177,7 @@ body {
   text-transform: uppercase;
 }
 
+/* 2.1 Mobile Rendering */
 /* 3. Main component */
 .mainComponent {
   -ms-grid-row: 2;

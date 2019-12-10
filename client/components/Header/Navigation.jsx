@@ -1,7 +1,7 @@
 import React from 'react'
 import {NavLink, IndexLink} from 'react-router-dom'
 
-class Navigation extends React.Component {
+class  extends React.Component {
 
     render() {
         return (

@@ -71,9 +71,9 @@ export default function TemporaryDrawer() {
 
   function linkCases(text) {
     if (text === 'Home') {
-      return('/')
-    } else if (text=== 'Sign In Form') {
-      return('SignIn')
+      return('Home')
+    } else if (text=== 'Example Form') {
+      return('ExampleForm')
     } else {
       return(text)
     }
