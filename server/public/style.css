@@ -130,7 +130,7 @@ body {
 }
 
 .Link {
-  color: rgba(89, 89, 89, 0.9);
+  color: #677b68;
   opacity: 1;
   text-align: right;
   text-decoration: none;
@@ -160,7 +160,7 @@ body {
 }
 
 .Link:hover {
-  color: #bab5f3;
+  color: #68677b;
 }
 
 /* Title */
