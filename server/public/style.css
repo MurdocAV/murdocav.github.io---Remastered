@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Ma+Shan+Zheng&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cinzel&display=swap");
 /* ===============================
   Contents:
     0. Mixins & Variables
@@ -85,6 +86,8 @@ body {
 
 /* 2. Navigation */
 .header {
+  padding-top: 1vh;
+  padding-bottom: 2.5vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,8 +114,8 @@ body {
   -ms-grid-row: 1;
   -ms-grid-column: 4;
   grid-area: nav;
-  float: right;
-  padding-top: 4vh;
+  display: inline;
+  padding-top: 3vh;
   padding-bottom: 2.5vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -124,13 +127,13 @@ body {
 }
 
 .Link {
-  font-size: 22px;
+  font-size: 1.7rem;
   margin-left: 1.45vw;
   text-transform: uppercase;
 }
 
 .Link {
-  color: #677b68;
+  color: #f2f2f2;
   opacity: 1;
   text-align: right;
   text-decoration: none;
@@ -150,22 +153,23 @@ body {
   color: pink;
 }
 
-.homeActive {
-  color: #f2f2f2;
-  /* Since home is always active at route '/' */
-}
-
 .active {
-  color: #f2f2f2;
+  color: #000000;
 }
 
-.Link:hover {
-  color: #68677b;
+.Link.grow {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.Link.grow:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  color: gray;
 }
 
 /* Title */
 .title {
-  margin-left: 0px;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: title;
@@ -178,8 +182,12 @@ body {
   text-transform: uppercase;
 }
 
-.header {
-  font-family: 'Lobster', cursive;
+.header .title {
+  font-family: 'Cinzel', serif;
+}
+
+.header .nav {
+  font-family: 'Libre Barcode 39 Text', cursive;
 }
 
 /* 2.1 Mobile Rendering */
@@ -242,6 +250,14 @@ body {
 }
 
 .cardMUI.about {
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.cardMUI.documentation {
   margin-left: auto;
   margin-right: auto;
   width: 85%;

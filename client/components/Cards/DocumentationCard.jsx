@@ -32,7 +32,7 @@ export default function DocumentationCard(props) {
   const bull = <span className={classes.bullet}>•</span>
 
   return (
-    <Card className={`classes.card cardMUI`}>
+    <Card className={`classes.card cardMUI documentation`}>
       <CardContent>
         <Typography className={classes.title} color="textSecondary" gutterBottom>
           Technolgies

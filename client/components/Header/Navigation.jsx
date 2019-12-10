@@ -10,17 +10,17 @@ class Navigation  extends React.Component {
                     <h1 className="titleHeader">Azaan Virk</h1>
                 </div>
                 <div className="nav">
-                    <NavLink className="home Link" activeClassName="active" to={'/Home'}>Home</NavLink>
+                    <NavLink className="home Link grow grow" activeClassName="active" to={'/Home'}>Home</NavLink>
                     <NavLink
-                        className="about Link"
+                        className="about Link grow"
                         activeClassName="active"
                         to={'/About'}>About</NavLink>
-                    <NavLink className="projects Link" activeClassName="active" to={'/Projects'}>Projects</NavLink>
-                    <NavLink className="exampleForm Link" activeClassName="active" to={'/ExampleForm'}>Example Form</NavLink>
-                    <NavLink className="references Link" activeClassName="active" to={'/References'}>References</NavLink>
-                    <NavLink className="email Link" activeClassName="active" to={'/Email'}>Email</NavLink>
-                    <NavLink className="hiring Link" activeClassName="active" to={'/Hiring'}>Hiring</NavLink>
-                    <NavLink className="documentation Link" activeClassName="active" to={'/Documentation'}>Documentation</NavLink>
+                    <NavLink className="projects Link grow" activeClassName="active" to={'/Projects'}>Projects</NavLink>
+                    <NavLink className="exampleForm Link grow" activeClassName="active" to={'/ExampleForm'}>Example Form</NavLink>
+                    <NavLink className="references Link grow" activeClassName="active" to={'/References'}>References</NavLink>
+                    <NavLink className="email Link grow" activeClassName="active" to={'/Email'}>Email</NavLink>
+                    <NavLink className="hiring Link grow" activeClassName="active" to={'/Hiring'}>Hiring</NavLink>
+                    <NavLink className="documentation Link grow" activeClassName="active" to={'/Documentation'}>Documentation</NavLink>
                 </div>
             </div>
         )
