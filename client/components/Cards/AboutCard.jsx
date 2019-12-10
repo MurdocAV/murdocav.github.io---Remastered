@@ -42,11 +42,9 @@ export default function AboutCard(props) {
          {props.footerText}
         </Typography>
         <Typography variant="body2" component="p">
-          {/* {props.footerText} */}
         </Typography>
       </CardContent>
       <CardActions>
-        {/* <Button size="small">More</Button> */}
       </CardActions>
     </Card>
   );

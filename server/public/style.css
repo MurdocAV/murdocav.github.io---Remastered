@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Cinzel&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Special+Elite&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
 /* ===============================
   Contents:
     0. Mixins & Variables
@@ -183,12 +185,12 @@ body {
 .titleHeader {
   float: left;
   margin-left: 2.0vw;
-  color: #f2f2f2;
+  color: #000000;
   text-transform: uppercase;
 }
 
 .header .title {
-  font-family: 'Cinzel', serif;
+  font-family: 'Special Elite', cursive;
 }
 
 .header .nav {
@@ -213,6 +215,7 @@ body {
 }
 
 .typewriter {
+  font-family: 'Press Start 2P', cursive;
   padding: 0px;
   font-size: 2em;
   margin: 1em;

@@ -46,7 +46,6 @@ export default function HireCard(props) {
         </Typography>
       </CardContent>
       <CardActions>
-        {/* <Button size="small">More</Button> */}
       </CardActions>
     </Card>
   );

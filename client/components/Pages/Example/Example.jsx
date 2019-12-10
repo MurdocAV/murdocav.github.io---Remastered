@@ -9,13 +9,13 @@ import MiddleDivider from '../../Cards/MiddleDivider'
 class UseCase extends React.Component {
   state = {
     submited: false,
-    typographyMessage: 'Enter sign in details below...'
+    typographyMessage: 'Enter sign in details'
   } 
 
   isSubmited = (formData) => {
     // const {dispatch} = this.props
     this.setState({submited: true,
-    typographyMessage: 'Thanks for your response',
+    typographyMessage: 'Response Submitted',
     formData
     })
     // dispatch(addItem(formData))
