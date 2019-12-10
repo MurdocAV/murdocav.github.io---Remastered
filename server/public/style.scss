@@ -169,6 +169,10 @@ body {
   color: pink;
 }
 
+.homeActive {
+  color: #f2f2f2 !important;   /* Since home is always active at route '/' */
+}
+
 .active {
   color: #f2f2f2 !important;
 }
