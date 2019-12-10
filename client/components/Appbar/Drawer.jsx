@@ -87,7 +87,7 @@ export default function TemporaryDrawer() {
       onKeyDown={toggleDrawer(side, false)}
     >
       <List>
-        {['Home', 'About', 'Projects', 'Sign In Form'].map((text, index) => (
+        {['Home', 'About', 'Projects', 'Example Form'].map((text, index) => (
           <Link className="noDecoration" to={linkCases(text)} 
           key={text} replace={true}>
             <ListItem button onClick={() => console.log(text)} key={text}>

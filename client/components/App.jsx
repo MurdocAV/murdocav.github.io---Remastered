@@ -41,7 +41,7 @@ class App extends React.Component {
 
     let width = window.innerWidth;
 
-    if (width > 768) {
+    if (width < 768) {
       return (
         // Desktop sizes
         <HashRouter>
