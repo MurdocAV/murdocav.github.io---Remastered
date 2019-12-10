@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Ma+Shan+Zheng&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Abel');
 
 /* ===============================
   Contents:
@@ -195,6 +196,12 @@ body {
   margin-left: 2.0vw;
   color: #f2f2f2;
   text-transform: uppercase;
+}
+
+.header {
+  .title .nav {
+    font-family: 'Abel', sans-serif;
+  }
 }
 
 /* 2.1 Mobile Rendering */
