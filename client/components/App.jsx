@@ -11,7 +11,6 @@ import Home from './Pages/Home/Homepage'
 import Projects from './Pages/Projects/Projects'
 import Hiring from './Pages/Hiring'
 import Example from './Pages/Example/Example'
-import Header from './Appbar/Header'
 import Navigation from './Header/Navigation'
 
 import {activePage, goToPage} from '../actions/index'
@@ -39,7 +38,10 @@ class App extends React.Component {
     return (
       <HashRouter>
         <Navigation />
-        <Route exact path="/" component={Home} />
+        <Route exact path="/">
+          <Redirect to="/Home"/>
+        </Route>
+        <Route exact path="/Home" component={Home} />
         <Route exact path="/About" component={About} />
         <Route exact path="/Projects" component={Projects} />
         <Route exact path="/ExampleForm" component={Example} />
