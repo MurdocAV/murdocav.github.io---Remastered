@@ -10,7 +10,7 @@ class Navigation extends React.Component {
                     <h1 className="titleHeader">Azaan Virk</h1>
                 </div>
                 <div className="nav">
-                    <NavLink className="home Link" activeClassName="active" to={'/Home'}>Home</NavLink>
+                    <NavLink className="home Link" activeClassName="active" to={'/'}>Home</NavLink>
                     <NavLink
                         className="about Link"
                         activeClassName="active"
