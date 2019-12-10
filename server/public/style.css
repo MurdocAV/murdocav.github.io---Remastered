@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Ma+Shan+Zheng&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Abel");
+@import url("https://fonts.googleapis.com/css?family=Lobster&display=swap");
 /* ===============================
   Contents:
     0. Mixins & Variables
@@ -178,8 +178,8 @@ body {
   text-transform: uppercase;
 }
 
-.header .title .nav {
-  font-family: 'Abel', sans-serif;
+.header {
+  font-family: 'Lobster', cursive;
 }
 
 /* 2.1 Mobile Rendering */
