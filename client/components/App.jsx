@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import {HashRouter, Route, Redirect} from 'react-router-dom'
 import background from './ThreeBg'
 
-import About from './Pages/About'
+import About from './Pages/About/About'
 import Documentation from './Pages/Documentation'
 import Email from './Pages/Email'
 import References from './Pages/References'
