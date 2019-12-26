@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import Carousel from 'react-material-ui-carousel'
 import Paper from '@material-ui/core'
  
@@ -8,11 +8,10 @@ const Item = function (props) {
         <Paper>
             <h2>{props.item.name}</h2>
             <p>{props.item.description}</p>
- 
             <Button className="CheckButton">
                 Check it out!
             </Button>
-        <Paper/>
+        </Paper>
     )
 }
 
@@ -33,9 +32,9 @@ export default function Example(props)
         <Carousel>
             {
                 items.map( item => {
-                    <Item item={item}>
+                    <Item item={item}/>
                 })
             }
-        <Carousel/>
+        </Carousel>
     )
 }
