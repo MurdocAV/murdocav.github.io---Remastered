@@ -10,7 +10,7 @@ class UseCase extends React.Component {
   state = {
     submited: false,
     typographyMessage: 'Enter sign in details'
-  } 
+  }
 
   isSubmited = (formData) => {
     // const {dispatch} = this.props

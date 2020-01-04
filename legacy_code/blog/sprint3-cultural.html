@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sprint 3 Cultural</title>
+	<meta charset="UTF-8">
+	<link href="styles/main.css" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" type="image/png" href="../favicon.png"/>	
+	<script>
+
+		function main() {
+			changeTitle(newTitle);
+			revealText();
+		}
+
+		function changeTitle(newTitle) {
+			var mainElement = document.querySelector("#title");
+			mainElement.innerHTML = newTitle;
+		}
+
+		function revealText(){
+			var hiddenElements = document.querySelectorAll(".hideInitailly")
+			hiddenElements.forEach(function(currElement) {
+			currElement.style.transition = "opacity 0.5s linear 0s";
+			currElement.style.opacity = 1;
+			});
+		}
+
+		var newTitle ="How can I Improve my Skills?";
+
+	</script>
+
+</head>
+<body>
+
+	<div id="changeTitleDiv">
+		<h1 id="title">What is Emotional Intelligence?</h1>
+		<button id="changeTitleBtn" onclick="main()">Start your learning</button>
+	</div><br>
+	
+	<p class="hideInitailly">
+		<strong>Emotional Intelligence is the capacity to be aware of, control, and express one's emotions, 
+		and to handle interpersonal relationships judiciously and empathetically.</strong>
+	</p>
+	
+	<p class="hideInitailly">
+		This means to have a good sense of judgment and a ready comprehension of other people's states.
+	</p><br>
+	
+	<p class="hideInitailly">
+		<strong><em>More importantly, how can we improve our emotional intelligence?</strong></em>
+	</p>
+
+	<p class="hideInitailly">
+		<strong>Attention Training:</strong>
+	</p>
+	<p class="hideInitailly">
+		Become aware of yourself, your body, your emotions, your presence. This can help you better organize your thoughts and attention.
+	</p>
+	
+	<p class="hideInitailly">
+		<strong>Self Knowledge & Mastery:</strong>
+	</p>
+			
+	<p class="hideInitailly">
+		Know what is occupying you internally, more importantly what is occupying your mind. This allows you to understand what's going on,
+		allowing you to be more present (and hopefully better engage) in the situation.
+	</p>
+	
+	<p class="hideInitailly">
+		<strong>Creating Useful Mental Habits:</strong>
+	</p>
+	
+	<p class="hideInitailly">
+		Habits are (almost) like functions! Usefully you can defend against what is known as
+		the "Super Ego", the critical judging part of your mind. Defending against it while being present allows you to clearly
+		see your strengths and weaknesses.
+	</p><br>	
+	
+	<p class="hideInitailly">
+		Emotional intelligence has been studied to be influential for a lot of positive traits. Daniel Goleman, goes on about it's impact and the results of his studies, in his 1996 book. 
+		Goleman goes on to describes Emotional Intelligence. He found that many higher ups throughout society possessed a good grasp of skills that require emotional intelligence, furthermore he
+		found that one can improve it to better themselves. In his experimental studies he found that emotional abilities influenced consumers when they were deciding to buy products.
+		One would be foolish to dismiss this knowledge and not read more into it.
+	</p>
+	
+	<p class="hideInitailly">
+		Cultivating emotional intelligence requires one to interact with the world while holding the knowledge that they have skills that can be improved. Having a growth mindset with the idea that 
+		our brains are like muscles that can be changed is vital. We find Neuroplasticity as a useful concept to promote this idea. You need discipline *or to train it* in order to improve your emotional intelligence skills.
+		Those that weren't blessed with good role models can still learn it.
+	</p>
+f
+	<a class="hideInitailly returnS3c" style="opacity: 1;" id="returnAnchor" href="../learning.html">Take Me Back</a>
+	
+</body>
+</html>

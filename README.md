@@ -12,7 +12,6 @@ TODO: Research D3 and possible uses for other projects.
 TODO: Upload on to live branch!!!
 TODO: Blog post template. For upcomming blogs.
 TODO: Enable cors and get secure website check.
-
 02/01/20: TODO-Reflick New image. --> Bonus: Use new project display format (Slider cards tray?)
 
 31/10/19 : Halloween Update!

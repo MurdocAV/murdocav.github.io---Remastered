@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sprint 4 Cultural</title>
+	<meta charset="UTF-8">
+  <link href="styles/main.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" type="image/png" href="../favicon.png"/>	
+	
+	<script>
+
+		function malleable() {
+      var hintText = document.querySelector(".hintText");
+      hintText.innerHTML = "You're right! Research is now suggesting (a fair amount of it and furthermore intuitively) that you can improve your intelligence. Our brains are constantly being reshaped by our daily experiences."
+      unhideText(hintText);
+      revealAllText();
+		}
+
+    function unhideText(hiddenElement){
+      hiddenElement.style.transition = "opacity 0.5s linear 0s";
+			hiddenElement.style.opacity = 1;
+    }
+
+    function revealAllText(){
+			var hiddenElements = document.querySelectorAll(".hideInitailly")
+			hiddenElements.forEach(function(currElement) {
+			currElement.style.transition = "opacity 0.5s linear 0s";
+			currElement.style.opacity = 1;
+		  });
+    }
+
+		function fixed(){
+      var hintText = document.querySelector(".hintText");
+      hintText.style.opacity = 0;
+      hintText.innerHTML = "Hint: You're wrong. Why? Try again.";
+			unhideText(hintText);
+		}
+
+	</script>
+	
+</head>
+<body>
+  <h1>Neuroplasticity and Growth Mindset</h1>
+	<p style="text-algin: center;">
+    <strong>Do you think intelligence is...</strong>
+	</p>
+	<button class="NeuroChoice fixed" onclick="fixed()">It's innate, fixed! You can't improve it.</button>
+  <button id="NeuroChoice malleable" onclick="malleable()">Oh come on! It's malleable, changes when you learn. Improve it, damn!</button>
+  
+  <p class="hideInitailly hintText">
+    This text never appears on the website
+  </p><br>
+
+  <p class="hideInitailly">
+    What does this mean for me?
+  </p>
+  <p class="hideInitailly">
+    It means that your brain wasn't hardwired to be specifically smart for at a set skill level when you were born. It means that practicing something makes you better at it. It means... and, get this, you got to work hard at something to improve on it. But wait, don't uninstall yet. It does get easier and we're here to give you some tips and tricks fresh from MurdocAV Industries&trade;.
+  </p><br>
+  <p class="hideInitailly">
+    <strong><em> Mr Murdoc, if that's even your real name, How do we improve it?</strong></em>
+  </p>
+  <p class="hideInitailly">
+    Well, Patron, let me tell you what I've learned in my journeys. Simply put: <em>Abilities can be developed</em> and being in a mindset where you actually believe that rather than thinking you're trapped in this low skill level is important. Studies have shown that students who engaged deeply, who process and correct errors had leaped in both morale and grade points compared to people who had fixed mindsets, ultimately improving their skills. Put the information you learn in context with other information you already possess, build a foundation of knowledge. If you want to go down the philosophy tree a bit, question your knowledge and figure out improvements on already existing knowledge and cement it into you H.D.D, the one <em>they</em> call the brain.
+  </p>
+  <p class="hideInitailly">
+    <strong>TLDR:</strong> Our beliefs about ourselves, the way we feel about our abilities and how we process success and failures has a high level of influence on our outcomes.
+  </p>
+  <p  class="hideInitailly">
+    For the students who are still with us, let's delve into the science of it all. When you practice activities or engage cognitively, you fire neurons in your brain. These neurons are fired in groups and the ones that are used often become stronger. When you next fire a neuron in the network you have created, you will stimulate the other ones as-well. The opposite is also true the one's you don't use get eliminated. Especially if it's new information.
+  </p>
+
+  <p class="hideInitailly">
+    Let's chuck a couple quotes at you:<br><strong><em>"Cells that fire together, Wire together"</strong></em>.<br><strong><em>"Practice makes permanent"</strong></em>.<br><strong><em>"Not everyone can be Einstein, but everyone can be smarter".</strong></em><br><strong><em>"Not Yet"</strong></em>.
+  </p>
+
+  <p class="hideInitailly">
+    Segways are cool, The growth mindset is too... You need to think hard and develop qualities through actions. Your abilities can be developed, through effort and difficulty you make the strongest connections. If you think your abilities are fixed then you will act in accordance to that. Looking to cheat, or to get gratification by finding someone worse than you. You'll keep running away from difficulty and be locked in an inevitable mindset. "Grow", it may not be what life is about, but it's a good way to live it. Enjoy your progress, think in yet or not yet. Encourage difficulty, understanding it's when your brain makes the strongest connections. Your talents are not fixed, I don't need to be a scientist to tell you that. Don't be afraid of squatting on the squat rack. Keep learning, from everyone, especially if you don't understand the content!
+  </p>
+
+  <p class="hideInitailly">
+    For me personally, the guy who's writing this. I found that understanding the science behind Neuroplasticity acts like another alarm clock in the morning. There's no reason to go out there and try to give it at least 102% compared to yesterday. Honestly, sometimes I feel like it's impossible, but it's those days that I'm wrong about my assumptions that really act as the ringtone for waking up. I'm taking away from this to be better, engage deeper not only try but try again when you fail, differently. I can't, won't give up easily. Not on learning, I've done it too many times already. Practice, be patient, learn from mistakes. You're not there yet.
+  </p>
+
+</body>
+</html>
