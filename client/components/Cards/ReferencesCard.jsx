@@ -41,7 +41,6 @@ export default function AboutCard(props) {
           <span className={classes.bullet}>• Don – Software Development Mentor</span>
           <span className={classes.bullet}>• Luke – Music Producer</span>
           <span className={classes.bullet}>• Kevin – CFO</span>
-          <span className={classes.bullet}>• Mika – Software Developer</span>
           <span className={classes.bullet}>• Paul – Credit Controller</span>
         </Typography>
         <Typography className={classes.pos} color="textSecondary">
