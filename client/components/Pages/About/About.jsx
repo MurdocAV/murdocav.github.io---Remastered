@@ -1,6 +1,5 @@
 import React from "react";
 import AboutCard from '../../Cards/AboutCard'
-import Example from './Example'
 
 class About extends React.Component {
     render() {
@@ -17,12 +16,11 @@ class About extends React.Component {
 
         return (
             <div className="mainComponent">
-              {/* <AboutCard 
+              <AboutCard 
               cardText={text}
               title={title}
               footerText={footer}
-              /> */}
-              <Example />
+              />
             </div>
         )
     }
