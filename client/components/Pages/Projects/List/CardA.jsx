@@ -25,7 +25,7 @@ export default function CardA() {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="/static/images/cards/contemplative-reptile.jpg"
+          image="/images/ReFlick.png"
           title="ReFlick"
         />
         <CardContent>

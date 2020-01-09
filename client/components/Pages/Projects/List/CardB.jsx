@@ -25,7 +25,7 @@ export default function CardB() {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="/images/PokeName.png"
+          image="/images/LukeMitchells.png"
           title="Luke Mitchels"
         />
         <CardContent>
