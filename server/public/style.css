@@ -318,13 +318,13 @@ body {
 }
 
 .projectsIcon.grow {
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all .215s ease-in-out;
+  transition: all .215s ease-in-out;
 }
 
 .projectsIcon.grow:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.65);
+          transform: scale(1.65);
 }
 
 .gitHubLogo {
