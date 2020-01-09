@@ -1,5 +1,5 @@
 import React from 'react'
-import ImageDrawer from '../../ImageDrawer'
+import CardsCombined from './List/CardsCombined'
 
 class Projects extends React.Component {
   render () {
@@ -16,7 +16,7 @@ class Projects extends React.Component {
         </div>
         </div>
         <div className='imageDrawer'>
-          <ImageDrawer></ImageDrawer>
+          <CardsCombined></CardsCombined>
         </div>
       </React.Fragment>
     )

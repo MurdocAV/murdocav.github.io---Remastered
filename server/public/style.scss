@@ -52,6 +52,22 @@ html {
   // background-color: $bgColor3;
 }
 
+.cardsCombined {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 32vw 32vw 32vw; /*Make the grid smaller than the container*/
+  grid-gap: 1vw;
+  padding: 1vw;
+}
+
+.cardExternal {
+  text-align: center;
+}
+
+.cardInternal {
+  margin: auto;
+}
+
 body {
   background-color: red;
   

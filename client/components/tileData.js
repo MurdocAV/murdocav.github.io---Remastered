@@ -3,8 +3,6 @@ const tileData = [
   img: '/images/ReFlick.png',
   title: 'ReFlick',
   author: 'Azaan Virk, Alice Gatland, John Tapsel, Struant Wall, Eve Henare',
-  cols: 2,
-  featured: true,
   url: 'https://github.com/MurdocAV/ReFlick'
   },
   {
@@ -24,8 +22,6 @@ const tileData = [
     img: '/images/LukeMitchells.png',
     title: 'Luke Mitchells',
     author: 'MurdocAV',
-    cols: 2,
-    featured: true,
     url: 'https://github.com/MurdocAV/Audio-Engineers-Portfolio-2019-Revisited'
   }
 ]

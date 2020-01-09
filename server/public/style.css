@@ -24,6 +24,27 @@ html {
   overflow-y: scroll;
 }
 
+.cardsCombined {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: 32vw 32vw 32vw;
+      grid-template-columns: 32vw 32vw 32vw;
+  /*Make the grid smaller than the container*/
+  grid-gap: 1vw;
+  padding: 1vw;
+}
+
+.cardExternal {
+  text-align: center;
+}
+
+.cardInternal {
+  margin: auto;
+}
+
 body {
   background-color: red;
   /* SVG fallback for IE 9 (could be data URI, or could use filter) */
