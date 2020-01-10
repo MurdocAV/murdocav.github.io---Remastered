@@ -235,6 +235,11 @@ body {
   // M U.I. Handles it completely.
 /* 3. Main component */
 
+.cardInternal {
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30),
+  0 15px 12px rgba(0, 0, 0, 0.22)
+}
+
 .mainComponent {
   grid-area: main;
 }
@@ -317,9 +322,9 @@ body {
   cursor: pointer;
   font-size: 60px;
   &.grow {
-    transition: all .25s ease-in-out;
+    transition: all .225s ease-in-out;
     &:hover {
-      transform: scale(2);
+      transform: scale(1.55);
     }
   }
 }

@@ -220,6 +220,11 @@ body {
 
 /* 2.1 Mobile Rendering */
 /* 3. Main component */
+.cardInternal {
+  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
 .mainComponent {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -318,13 +323,13 @@ body {
 }
 
 .projectsIcon.grow {
-  -webkit-transition: all .25s ease-in-out;
-  transition: all .25s ease-in-out;
+  -webkit-transition: all .225s ease-in-out;
+  transition: all .225s ease-in-out;
 }
 
 .projectsIcon.grow:hover {
-  -webkit-transform: scale(2);
-          transform: scale(2);
+  -webkit-transform: scale(1.55);
+          transform: scale(1.55);
 }
 
 .gitHubLogo {

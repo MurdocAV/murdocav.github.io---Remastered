@@ -22,21 +22,23 @@ export default function CardC() {
 
   return (
     <Card className={`${classes.card} cardInternal`}>
-      <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image="/images/PokeName.png"
-          title="PokeName"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            PokeName
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            A quick React project that allows users to enter their names and get a Pokemon version of their name displayed in real-time.
-          </Typography>
-        </CardContent>
-      </CardActionArea>
+      <a className='noDecoration aTag' href='https://github.com/MurdocAV/PokeName' key={'PokeName'} replace={true}>
+        <CardActionArea>
+          <CardMedia
+            className={classes.media}
+            image="/images/PokeName.png"
+            title="PokeName"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="h2">
+              PokeName
+            </Typography>
+            <Typography variant="body2" color="textSecondary" component="p">
+              A quick React project that allows users to enter their names and get a Pokemon version of their name displayed in real-time.
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+      </a>
     </Card>
   );
 }
