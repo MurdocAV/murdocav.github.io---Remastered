@@ -11,7 +11,6 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles({
   card: {
     maxWidth: 345,
-    height: 300,
   },
   media: {
     height: 140,
@@ -31,10 +30,10 @@ export default function CardC() {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Pokename
+            PokeName
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            A react based website that adds a cool little pokemon based addition to make your name a pokemon! (Not OC)
+            A quick React project that allows users to enter their names and get a Pokemon version of their name displayed in real-time.
           </Typography>
         </CardContent>
       </CardActionArea>

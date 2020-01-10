@@ -11,7 +11,6 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles({
   card: {
     maxWidth: 345,
-    height: 300,
   },
   media: {
     height: 140,
@@ -31,11 +30,10 @@ export default function CardA() {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Reflick
+            ReFlick
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Playable browser game, draw different colours and click on them to take you to a different page with another drawing.
-            Authors: Azaan Virk, Alice Gatland, John Tapsel, Struant Wall, Eve Henare
+            Built using React-Redux. Created for phones. A browser game that allows you draw different pages and link them together.
           </Typography>
         </CardContent>
       </CardActionArea>

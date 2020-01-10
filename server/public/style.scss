@@ -317,9 +317,9 @@ body {
   cursor: pointer;
   font-size: 60px;
   &.grow {
-    transition: all .215s ease-in-out;
+    transition: all .25s ease-in-out;
     &:hover {
-      transform: scale(1.65);
+      transform: scale(2);
     }
   }
 }

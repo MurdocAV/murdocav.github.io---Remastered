@@ -62,7 +62,11 @@ export default function DocumentationCard(props) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">What kind of car does a Jedi drive? A Toy-Yoda.</Button>
+        <a className='noDecoration aTag' href='https://www.rottentomatoes.com/m/star_wars_episode_iii_revenge_of_the_sith' key={'joke'} replace={true}>
+          <Button size="small">
+            What kind of car does a Jedi drive? A Toy-Yoda.
+          </Button>
+        </a>
       </CardActions>
     </Card>
   );

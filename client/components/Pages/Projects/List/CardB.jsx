@@ -11,7 +11,6 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles({
   card: {
     maxWidth: 345,
-    height: 300,
   },
   media: {
     height: 140,
@@ -34,8 +33,7 @@ export default function CardB() {
             Luke Mitchels
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Simple studio website for a group of music artists living in Ellerslie.
-            Autor: Azaan Virk
+            A website to showcase the music of a recording studio in Ellerslie, implementation of Spotify API and different front-end ideas like modals.
           </Typography>
         </CardContent>
       </CardActionArea>
