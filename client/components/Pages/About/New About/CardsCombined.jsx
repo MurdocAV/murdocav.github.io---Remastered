@@ -1,6 +1,6 @@
 import React from 'react'
-import CardA from './CardA'
-import CardB from './CardB'
+import StrengthsLimitations from './Values/StrengthsLimitations'
+import RoutineStructure from './Values/RoutineStructure'
 import CardC from './CardC'
 
 class CardsCombined extends React.Component {
@@ -13,8 +13,8 @@ class CardsCombined extends React.Component {
     return (
       <React.Fragment>
         <div className='cardsCombined'>
-          <div className="cardExternal cardA"><CardA></CardA></div>
-          <div className="cardExternal cardB"><CardB></CardB></div>
+          <div className="cardExternal cardA"><StrengthsLimitations></StrengthsLimitations></div>
+          <div className="cardExternal cardB"><RoutineStructure></RoutineStructure></div>
           <div className="cardExternal cardC"><CardC></CardC></div>
         </div>
       </React.Fragment>

@@ -33,34 +33,6 @@ export default function AboutCard(props) {
     <Card className={`classes.card cardMUI about`}>
       <CardContent>
         <Typography variant="h5" component="h2">
-        <strong className="strongTag">Strengths and Limitations</strong>
-        <br/>
-        My strengths are based on content that I'm not familiar with yet. I enjoy being an active learner so time-management
-        would be a big important technique in order to make sure it's a strength and not a limitation.
-        <br/>
-        <strong className="strongTag">Routine and Structure</strong>
-        <br/>
-        Working with others productively requires having manners, respect and effective concise communication.
-        I believe it's essentail to be able to get along with your peers if you are to be sucessful in any field.
-        <br/>
-        <strong className="strongTag">Getting Unstuck</strong>
-        <br/>
-        When it comes to asking for help, I don't like imposing an issue as a demand. Friendliness is a good way
-        to combat this problem. If someone seems agitated either offer a reasonable solution or leave that
-        person alone.
-        <br/>
-        <strong className="strongTag">Winding down</strong>
-        <br/>
-        Friends and family are an important commitment for me, needing dedicated time to outside work. I have
-        found that you can't get through all the content without breaks. It's important, essential to come at the
-        problem with a fresh set of eyes to gain insight that you didn't have previously.
-        <br/>
-        <strong className="strongTag">Attention and Emotional Intelligence</strong>
-        <br/>
-        Being able to be aware of, control, and express one's emotions is a great skill. You need to handle
-        interpersonal relationships judiciously and empathetically. To do this I find it helpful to be aware of
-        yourself, your body, your emotions, your presence. This can help you better organize your thoughts and
-        attention.
         <br/>
         <strong className="strongTag">Learning</strong>
         <br/>
