@@ -4,6 +4,7 @@ import {HashRouter, Route, Redirect} from 'react-router-dom'
 import background from './ThreeBg'
 
 import About from './Pages/About/About'
+import NewAbout from './Pages/About/NewAbout'
 import Documentation from './Pages/Documentation'
 import Email from './Pages/Email'
 import References from './Pages/References'
@@ -34,7 +35,7 @@ class App extends React.Component {
 
     if (width < 768) {
       return (
-        // Desktop sizes
+        // Mobile sizes
         <HashRouter>
           <Header />
           <Route exact path="/">
@@ -52,14 +53,14 @@ class App extends React.Component {
       )
     } else {
       return (
-        // Mobile sizes
+        // Desktop sizes
         <HashRouter>
           <Navigation />
           <Route exact path="/">
             <Redirect to="/Home"/>
           </Route>
           <Route exact path="/Home" component={Home} />
-          <Route exact path="/About" component={About} />
+          <Route exact path="/About" component={NewAbout} />
           <Route exact path="/Projects" component={Projects} />
           <Route exact path="/ExampleForm" component={Example} />
           <Route exact path="/References" component={References} />
