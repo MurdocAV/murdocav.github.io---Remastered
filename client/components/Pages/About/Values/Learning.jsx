@@ -14,7 +14,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function StrengthsLimitations() {
+export default function Learning() {
   const classes = useStyles();
 
   return (
@@ -25,8 +25,8 @@ export default function StrengthsLimitations() {
               Learning
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              My brain tends to change quick, quicker than others. Pracitce, engaging cognitively, improving your skills is essential for me.
-              I practice placing information in context with what I already possess. I develop abilities through effort and difficulty.
+              My brain tends to change quick, quicker than others. Pracitce, engaging cognitively and improving your skills is essential.
+              I place information in context with what I already possess. Developing abilities through effort and difficulty.
               My skills are not fixed, I have to not give up easily. Practice, be patient, learn from mistakes. I'm not there yet.
             </Typography>
           </CardContent>

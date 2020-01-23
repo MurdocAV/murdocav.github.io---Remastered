@@ -26,7 +26,7 @@ export default function WindingDown() {
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
               Friends and family are an important commitment for me, needing dedicated time to outside work. I have
-              found that you can't get through all the content without breaks. It's important, essential to come at the
+              found that you can't get through all the content without breaks. It's important, essential to come back to the
               problem with a fresh set of eyes to gain insight that you didn't have previously.
             </Typography>
           </CardContent>
