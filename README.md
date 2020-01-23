@@ -17,3 +17,4 @@ TODO: 08/01/20: Add a fliping-rotating animation for different focus every week/
 
 
 TODO!important: Change about me to new content. From public/about me.rtf
+TODO: Allow scrolling on mobile sizes & different views.
