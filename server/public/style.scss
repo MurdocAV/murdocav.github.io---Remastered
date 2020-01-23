@@ -553,7 +553,11 @@ body {
 }
 
 // Screen sizes smaller than 500px change styling for form.
-@media only screen and (max-width: 500px)  {
+@media only screen and (max-width: 550px)  {
+
+  html { 
+    overflow-y: scroll;
+  }
 
   .formMUIContainer {
     color: white;

@@ -595,7 +595,10 @@ body {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 550px) {
+  html {
+    overflow-y: scroll;
+  }
   .formMUIContainer {
     color: white;
     grid-area: projects;
