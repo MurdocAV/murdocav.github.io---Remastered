@@ -46,8 +46,11 @@ html {
 }
 
 .internalActionArea {
+  height: 240px;
+}
+
+.cardExternal {
   margin-bottom: 20px;
-  min-height: 232.5px;
 }
 
 body {
