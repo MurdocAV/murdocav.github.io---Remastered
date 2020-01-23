@@ -14,7 +14,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function RoutineStructure() {
+export default function StrengthsLimitations() {
   const classes = useStyles();
 
   return (
@@ -22,11 +22,11 @@ export default function RoutineStructure() {
         <CardActionArea>
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
-              Routine and Structure
+              Strengths and Limitations
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              Working with others productively requires having manners, respect and effective concise communication.
-              I believe it's essentail to be able to get along with your peers if you are to be sucessful in any field.
+              My strengths are based on content that I'm not familiar with yet. I enjoy being an active learner so time-management
+              would be a big important skill that needs mastery in order to make sure time is a strength and not a limitation.
             </Typography>
           </CardContent>
         </CardActionArea>

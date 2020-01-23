@@ -33,16 +33,6 @@ export default function AboutCard(props) {
     <Card className={`classes.card cardMUI about`}>
       <CardContent>
         <Typography variant="h5" component="h2">
-        <br/>
-        <strong className="strongTag">Learning</strong>
-        <br/>
-        We are constantly being changed by our experiences. You aren't hardwired to be specifically smart at a
-        set skill when you're born. Pracitce, engaging cognitively, improving your skills is vital. Put the
-        information you're learning in context with other informatino you already possess, build a foundation of
-        knowledge. Abilities are developed through effort and difficulty. Talents are not fixed, not giving up easily.
-        Practice, be patient, learn from mistakes. I'm not there yet.
-        </Typography>
-        <Typography variant="body2" component="p">
         </Typography>
       </CardContent>
       <CardActions>

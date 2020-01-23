@@ -1,12 +1,11 @@
 import React from 'react'
 import StrengthsLimitations from './Values/StrengthsLimitations'
 import RoutineStructure from './Values/RoutineStructure'
-import CardC from './CardC'
+import Learning from './Values/Learning'
 
-class CardsRowTwo extends React.Component {
+class ValuesTop extends React.Component {
   
   // Insert function to go through the tile data and out put useful stuff to each card bro.
-
 
   render () {
     
@@ -14,12 +13,12 @@ class CardsRowTwo extends React.Component {
       <React.Fragment>
         <div className='cardsCombined'>
           <div className="cardExternal cardA"><StrengthsLimitations></StrengthsLimitations></div>
-          <div className="cardExternal cardB"><RoutineStructure></RoutineStructure></div>
-          <div className="cardExternal cardC"><CardC></CardC></div>
+          <div className="cardExternal cardB"><Learning></Learning></div>
+          <div className="cardExternal cardC"><RoutineStructure></RoutineStructure></div>
         </div>
       </React.Fragment>
     )
   }
 }
 
-export default CardsRowTwo
+export default ValuesTop

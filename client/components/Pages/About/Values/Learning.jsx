@@ -14,7 +14,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function AttentionEmotionIntell() {
+export default function StrengthsLimitations() {
   const classes = useStyles();
 
   return (
@@ -22,14 +22,15 @@ export default function AttentionEmotionIntell() {
         <CardActionArea>
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
-              Attention and Emotional Intelligence            
+              Learning
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              Being able to be aware of, control, and express one's emotions is a great skill. You need to handle
-              interpersonal relationships judiciously and empathetically. To do this I find it helpful to be aware of
-              yourself, your body, your emotions, your presence. This can help you better organize your thoughts and
-              attention.
-          </Typography>
+              We are constantly being changed by our experiences. You aren't hardwired to be specifically smart at a
+              set skill when you're born. Pracitce, engaging cognitively, improving your skills is vital. Put the
+              information you're learning in context with other information you already possess, build a foundation of
+              knowledge. Abilities are developed through effort and difficulty. Talents are not fixed, not giving up easily.
+              Practice, be patient, learn from mistakes. I'm not there yet.
+            </Typography>
           </CardContent>
         </CardActionArea>
     </Card>

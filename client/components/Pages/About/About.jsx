@@ -1,12 +1,14 @@
 import React from "react";
-import AboutCard from '../../Cards/AboutCard'
+import ValuesTop from './ValuesTop'
+import ValuesBottom from './ValuesBottom'
+
 
 class About extends React.Component {
     render() {
-
         return (
             <div className="mainComponent">
-              <AboutCard />
+                <ValuesTop />
+                <ValuesBottom />
             </div>
         )
     }

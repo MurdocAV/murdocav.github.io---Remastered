@@ -14,7 +14,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function StrengthsLimitations() {
+export default function AttentionEI() {
   const classes = useStyles();
 
   return (
@@ -22,15 +22,14 @@ export default function StrengthsLimitations() {
         <CardActionArea>
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
-              Learning
+              Attention and Emotional Intelligence            
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              We are constantly being changed by our experiences. You aren't hardwired to be specifically smart at a
-              set skill when you're born. Pracitce, engaging cognitively, improving your skills is vital. Put the
-              information you're learning in context with other informatino you already possess, build a foundation of
-              knowledge. Abilities are developed through effort and difficulty. Talents are not fixed, not giving up easily.
-              Practice, be patient, learn from mistakes. I'm not there yet.
-            </Typography>
+              Being able to be aware of, control, and express one's emotions is a great skill. You need to handle
+              interpersonal relationships judiciously and empathetically. To do this I find it helpful to be aware of
+              yourself, your body, your emotions, your presence. This can help you better organize your thoughts and
+              attention.
+          </Typography>
           </CardContent>
         </CardActionArea>
     </Card>
