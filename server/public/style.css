@@ -45,6 +45,11 @@ html {
   margin: auto;
 }
 
+.internalActionArea {
+  margin-bottom: 20px;
+  min-height: 232.5px;
+}
+
 body {
   background-color: red;
   /* SVG fallback for IE 9 (could be data URI, or could use filter) */

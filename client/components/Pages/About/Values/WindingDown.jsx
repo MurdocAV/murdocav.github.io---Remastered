@@ -19,7 +19,7 @@ export default function WindingDown() {
 
   return (
     <Card className={`${classes.card} cardInternal`}>
-        <CardActionArea>
+        <CardActionArea className="internalActionArea">
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
               Winding down

@@ -10,7 +10,7 @@ const useStyles = makeStyles({
     maxWidth: 345,
   },
   media: {
-    height: 140,
+    minHeight: 140,
   },
 });
 
@@ -19,17 +19,15 @@ export default function StrengthsLimitations() {
 
   return (
     <Card className={`${classes.card} cardInternal`}>
-        <CardActionArea>
+        <CardActionArea className="internalActionArea">
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
               Learning
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              We are constantly being changed by our experiences. You aren't hardwired to be specifically smart at a
-              set skill when you're born. Pracitce, engaging cognitively, improving your skills is vital. Put the
-              information you're learning in context with other information you already possess, build a foundation of
-              knowledge. Abilities are developed through effort and difficulty. Talents are not fixed, not giving up easily.
-              Practice, be patient, learn from mistakes. I'm not there yet.
+              My brain tends to change quick, quicker than others. Pracitce, engaging cognitively, improving your skills is essential for me.
+              I practice placing information in context with what I already possess. I develop abilities through effort and difficulty.
+              My skills are not fixed, I have to not give up easily. Practice, be patient, learn from mistakes. I'm not there yet.
             </Typography>
           </CardContent>
         </CardActionArea>
