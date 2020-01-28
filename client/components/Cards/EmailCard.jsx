@@ -34,20 +34,18 @@ export default function EmailCard(props) {
     <Card className={`${classes.card} email cardMUI`}>
       <CardContent>
         <Typography className={classes.title} color="textSecondary" gutterBottom>
-          Email
+          Email:
         </Typography>
         <Typography variant="h5" component="h2">
           {props.cardText}
         </Typography>
         <Typography className={classes.pos} color="textSecondary">
-          {/* Summary */}
         </Typography>
         <Typography variant="body2" component="p">
         <VoicemailRounded></VoicemailRounded>
         </Typography>
       </CardContent>
       <CardActions>
-        {/* <Button size="small">More</Button> */}
       </CardActions>
     </Card>
   );

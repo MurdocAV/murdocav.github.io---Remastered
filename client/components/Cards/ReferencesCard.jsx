@@ -33,25 +33,23 @@ export default function AboutCard(props) {
     <Card className={`classes.card cardMUI references`}>
       <CardContent>
         <Typography className={classes.title} color="textSecondary" gutterBottom>
-          Available on Request
+          Information available on request.
         </Typography>
         <Typography variant="h5" component="h2">
           <span className={classes.bullet}>• Alice – Software/Web Developer</span>
-          <span className={classes.bullet}>• Barry – CFO</span>
+          <span className={classes.bullet}>• Barry – C.F.O.</span>
+          <span className={classes.bullet}>• Bryce – Software Development Teacher</span>
           <span className={classes.bullet}>• Don – Software Development Mentor</span>
           <span className={classes.bullet}>• Luke – Music Producer</span>
-          <span className={classes.bullet}>• Kevin – CFO</span>
+          <span className={classes.bullet}>• Kevin – C.F.O.</span>
           <span className={classes.bullet}>• Paul – Credit Controller</span>
         </Typography>
         <Typography className={classes.pos} color="textSecondary">
-          {/* Summary */}
         </Typography>
         <Typography variant="body2" component="p">
-          {/* Footer Text */}
         </Typography>
       </CardContent>
       <CardActions>
-        {/* <Button size="small">More</Button> */}
       </CardActions>
     </Card>
   );

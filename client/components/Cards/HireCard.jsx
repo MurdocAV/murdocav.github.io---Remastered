@@ -39,7 +39,6 @@ export default function HireCard(props) {
           {props.cardText}
         </Typography>
         <Typography className={classes.pos} color="textSecondary">
-          {/* Summary */}
         </Typography>
         <Typography variant="body2" component="p">
           All the best with your adventures.
