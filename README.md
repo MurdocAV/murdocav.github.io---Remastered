@@ -12,4 +12,4 @@ TODO: Blog post template. For upcomming blogs.
 TODO: 02/01/20: Reflick New image. --> Bonus: Use new project display format (Slider cards tray?)
 TODO: 08/01/20: Add a fliping-rotating? animation for different focus every week/month/season (choose 1). Display on web home.
 TODO: Allow scrolling on mobile sizes & different views.
-TODO: Reduce component bulk via using state for cards rather than new componenets. Lazy, not in a good way.
+TODO: Reduce component bulk via using state for cards rather than new componenets. Lazy, not in a good way.run 

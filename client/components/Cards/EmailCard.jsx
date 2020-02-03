@@ -4,7 +4,7 @@ import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
-import {VoicemailRounded} from '@material-ui/icons'
+import {EmailRounded} from '@material-ui/icons'
 
 
 const useStyles = makeStyles({
@@ -42,7 +42,7 @@ export default function EmailCard(props) {
         <Typography className={classes.pos} color="textSecondary">
         </Typography>
         <Typography variant="body2" component="p">
-        <VoicemailRounded></VoicemailRounded>
+        <EmailRounded></EmailRounded>
         </Typography>
       </CardContent>
       <CardActions>
