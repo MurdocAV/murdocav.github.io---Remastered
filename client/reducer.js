@@ -4,7 +4,7 @@ UPDATE_THEME
 } from './actions/index'
 
 const initialThemeState = {
-  theme: 'Vaporwave'
+  theme: 'NoTheme'
 }
 
 const themeReducer = (state = initialThemeState, action) => {
