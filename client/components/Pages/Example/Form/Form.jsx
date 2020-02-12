@@ -4,8 +4,7 @@ import React from 'react'
 import { makeStyles, createMuiTheme } from '@material-ui/core/styles'
 import { ThemeProvider } from '@material-ui/styles'
 import TextField from '@material-ui/core/TextField'
-import { pink, indigo } from '@material-ui/core/colors'
-import { black, white } from '@material-ui/core/colors/common'
+import { common, indigo } from '@material-ui/core/colors'
 import DialogSelect from './Select'
 import OutlinedButton from './Submit'
 
@@ -21,7 +20,7 @@ const useStyles = makeStyles(theme => ({
 
 const theme = createMuiTheme({
   palette: {
-    primary: white,
+    primary: common.white,
     secondary: indigo,
   },
 })
