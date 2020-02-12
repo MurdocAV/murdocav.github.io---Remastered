@@ -27,7 +27,7 @@ export default function Learning() {
             <Typography variant="body2" color="textSecondary" component="p">
               My brain tends to change quick, quicker than others. Pracitce, engaging cognitively and improving your skills is essential.
               I place information in context with what I already possess. Developing abilities through effort and difficulty.
-              My skills are not fixed, requiring commitment. Practice, be patient, learn from mistakes. I'm not there yet.
+              My skills are not fixed, requiring commitment. 'Practice, be patient, learn from mistakes. I'm not there yet.'
             </Typography>
           </CardContent>
         </CardActionArea>

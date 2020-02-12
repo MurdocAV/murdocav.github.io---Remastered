@@ -25,8 +25,7 @@ export default function StrengthsLimitations() {
               Strengths and Limitations
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              My strengths are based on content that I'm not familiar with yet. I enjoy being an active learner so time-management
-              would be a vital and important skill that needs mastery in order to ensure that time is not a limitation.
+              I enjoy being an active learner so time-management would be a vital and important skill that needs mastery in order to ensure that time is not a limitation.
             </Typography>
           </CardContent>
         </CardActionArea>
