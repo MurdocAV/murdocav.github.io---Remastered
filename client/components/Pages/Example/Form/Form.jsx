@@ -4,7 +4,7 @@ import React from 'react'
 import { makeStyles, createMuiTheme } from '@material-ui/core/styles'
 import { ThemeProvider } from '@material-ui/styles'
 import TextField from '@material-ui/core/TextField'
-import { green, common, indigo } from '@material-ui/core/colors'
+import { green, indigo } from '@material-ui/core/colors'
 import DialogSelect from './Select'
 import OutlinedButton from './Submit'
 

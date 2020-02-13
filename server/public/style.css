@@ -477,14 +477,14 @@ body {
     react components
 ============================== */
 .MuiInputBase-root {
-  color: #ff6ad5;
+  color: #FFE000;
   background-color: rgba(0, 0, 0, 0.75);
   border-radius: 5px;
   font-weight: bold;
 }
 
 .MuiFormLabel-root {
-  color: #ff6ad5;
+  color: #FFE000;
 }
 
 .MuiFocused {
