@@ -443,7 +443,7 @@ body {
 
 // Font color inside the form (focus)
 .MuiInputBase-root {
-  color: #FFE000;
+  color: $vapoWavePink;
   background-color: rgba(0,0,0,0.75);
   border-radius: 5px;
   font-weight: bold;
@@ -451,7 +451,7 @@ body {
 
 // Font color without focus
 .MuiFormLabel-root {
-  color: #FFE000;
+  color: $vapoWavePink;
 }
 
 .MuiFocused {
