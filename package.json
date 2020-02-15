@@ -49,6 +49,7 @@
     "react-material-ui-carousel": "^1.0.0",
     "react-router-dom": "^5.1.2",
     "three": "^0.112.1",
+    "animejs": "^3.1.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^24.7.1",
     "babel-loader": "^8.0.5",
