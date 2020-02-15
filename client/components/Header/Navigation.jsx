@@ -1,5 +1,6 @@
 import React from 'react'
 import {NavLink, IndexLink} from 'react-router-dom'
+import anime from 'animejs/lib/anime.es.js'
 
 class Navigation  extends React.Component {
 
@@ -10,10 +11,6 @@ class Navigation  extends React.Component {
             title: "Azaan Virk"
         }
     }
-
-    anime({
-        
-    })
 
     render() {
         return (
@@ -38,5 +35,19 @@ class Navigation  extends React.Component {
         )
     }
 }
+
+// let animateTitle = () => {
+//     anime({
+//         targets: '.title',
+//         translateX: [
+//             {value: 100, duration: 1000, delay: 0},
+//             {value: 0, duration: 1000, delay: 0}
+//         ],
+//         easing: 'linear',
+//         loop: true
+//     });
+// }
+
+// animateTitle()
 
 export default Navigation
