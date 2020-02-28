@@ -24,7 +24,8 @@ class Navigation  extends React.Component {
                     <NavLink
                         className="about Link grow"
                         activeClassName="active"
-                        to={'/About'}>About</NavLink>
+                        to={'/About'}>About
+                    </NavLink>
                     <NavLink className="projects Link grow" activeClassName="active" to={'/Projects'}>Projects</NavLink>
                     <NavLink className="exampleForm Link grow" activeClassName="active" to={'/ExampleForm'}>Example Form</NavLink>
                     <NavLink className="references Link grow" activeClassName="active" to={'/References'}>References</NavLink>
