@@ -1,6 +1,5 @@
 import React from 'react'
-import {NavLink, IndexLink} from 'react-router-dom'
-import anime from 'animejs/lib/anime.es.js'
+import {NavLink} from 'react-router-dom'
 
 class Navigation  extends React.Component {
 
