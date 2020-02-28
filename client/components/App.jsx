@@ -1,81 +1,120 @@
 import React from 'react'
-import { connect } from 'react-redux'
-import {HashRouter, Route, Redirect} from 'react-router-dom'
-import background from './ThreeBg'
-
-import About from './Pages/About/About'
+import {HashRouter, Route} from 'react-router-dom'
 import Documentation from './Pages/Documentation'
-import Email from './Pages/Email'
-import References from './Pages/References'
-import Home from './Pages/Home/Homepage'
-import Projects from './Pages/Projects/Projects'
-import Hiring from './Pages/Hiring'
-import Example from './Pages/Example/Example'
 import Navigation from './Header/Navigation'
-import Header from './Appbar/Header'
-
-import {activePage, goToPage} from '../actions/index'
+import anime from 'animejs/lib/anime.es.js';
 
 class App extends React.Component {
+  constructor () {
+    super ()
 
-  // Working for modifying state in the redux store but does not actually go to any pages.
-  switchPage = (pageName) =>  {
-    const {dispatch} = this.props
-    dispatch(goToPage(pageName))
+    this.state = {
+      example: 'Hello World',
+      moving: 'Move Around',
+      colorState: false,
+      color: '#FF69B4'
+    }
+  }
+
+  moveAroundHandler = (evt) => {
+    evt.preventDefault()
+
+    if (this.state.moving == 'Move Around') {
+      anime({
+        targets: '.postRenderedTag',
+        translateX: [
+          {value: -250, duration: 1000, delay: 0},
+          {value: 0, duration: 1000, delay: 0},        
+          {value: 250, duration: 1000, delay: 0},
+          {value: 0, duration: 1000, delay: 0}
+        ],
+        easing: 'linear',
+        loop: true
+      });
+
+      this.setState({
+        moving: 'Stop Moving'
+      })
+
+    } else if (this.state.moving != 'Move Around') {
+      anime.remove('.postRenderedTag')
+      
+      this.setState({
+        moving: 'Move Around'
+      })
+    }
+  }
+
+  changeLookHandler = (evt) => {
+    evt.preventDefault()
+
+    anime({
+      targets: '.postRenderedTag',
+      color: this.state.color,
+      easing: 'easeInOutQuad'
+    })
+
+    if (this.state.color == '#FF69B4') {
+      this.setState({color: '#000000'})
+    } else if (this.state.color != '#FF69B4') {
+      this.setState({
+        color: '#FF69B4'
+      })
+    }
+
+  }
+
+  changeWordingHandler = (evt) => {
+    evt.preventDefault()
+
+    if (this.state.example != 'Hello World') {
+      anime({
+        targets: '.postRenderedTag',
+        easing: 'linear',
+        update: this.setState({
+          example: 'Hello World'
+        })
+      })    
+    } else {
+      anime({
+        targets: '.postRenderedTag',
+        easing: 'linear',
+        update: this.setState({
+          example: 'You changed the World. Hello.'
+        })
+      })
+    }
+
+    // Setting state to something new.
   }
   
   render () {
-    // Ensures that the animation is always smooth, runnning everytime the render method is called.
-    background(0x839ce7, 0x000000)
-
-    // Following is conditional rendering for different screen sizes.
-
-    let width = window.innerWidth;
-
-    if (width < 768) {
-      return (
-        // Mobile sizes
-        <HashRouter>
-          <Header />
-          <Route exact path="/">
-            <Redirect to="/Home"/>
-          </Route>
-          <Route exact path="/Home" component={Home} />
-          <Route exact path="/About" component={About} />
-          <Route exact path="/Projects" component={Projects} />
-          <Route exact path="/ExampleForm" component={Example} />
-          <Route exact path="/References" component={References} />
-          <Route exact path="/Email" component={Email} />
-          <Route exact path="/Hiring" component={Hiring} />
-          <Route exact path="/Documentation" component={Documentation} />
-        </HashRouter>
-      )
-    } else {
-      return (
-        // Desktop sizes
-        <HashRouter>
-          <Navigation />
-          <Route exact path="/">
-            <Redirect to="/Home"/>
-          </Route>
-          <Route exact path="/Home" component={Home} />
-          <Route exact path="/About" component={About} />
-          <Route exact path="/Projects" component={Projects} />
-          <Route exact path="/ExampleForm" component={Example} />
-          <Route exact path="/References" component={References} />
-          <Route exact path="/Email" component={Email} />
-          <Route exact path="/Hiring" component={Hiring} />
-          <Route exact path="/Documentation" component={Documentation} />
-        </HashRouter>
-      )
-    }
+    return (
+      <HashRouter>
+        <Navigation></Navigation>
+        <div className="wrapperDiv">
+          <h1>AnimeJS On Text</h1>
+          <button className="moving"
+            onClick={this.moveAroundHandler}
+          >{this.state.moving}
+          </button>
+          <br></br>
+          <button className="" onClick={this.changeLookHandler}>
+            Change look
+          </button>
+          <button className="" onClick={this.changeWordingHandler}>
+            Change wording
+          </button>
+          <div className="innerDiv">
+            <div className="animationDiv"></div>
+          </div>
+        </div>
+        <br/>
+        <p className="postRenderedTag">{this.state.example}</p>
+        <Route exact path="/Documentation" component={Documentation} /> 
+      </HashRouter>
+    )
   }
-}
+}         
 
-const mapStateToProps = (state) => {
-  return {
-    page: state.page
-  }
-}
-
-export default connect (mapStateToProps)(App)
+export default App
