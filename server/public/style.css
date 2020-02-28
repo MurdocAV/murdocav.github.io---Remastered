@@ -186,7 +186,7 @@ body {
 }
 
 .active {
-  color: pink;
+  color: #ff6ad5;
 }
 
 .Link.grow {
@@ -197,7 +197,7 @@ body {
 .Link.grow.active {
   -webkit-transform: scale(1.15);
           transform: scale(1.15);
-  color: #000000;
+  color: #ff6ad5;
 }
 
 .Link:hover {
@@ -327,6 +327,7 @@ body {
 }
 
 .projectsIcon {
+  color: #ff6ad5;
   cursor: pointer;
   font-size: 60px;
 }
