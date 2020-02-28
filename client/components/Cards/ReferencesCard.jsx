@@ -33,7 +33,7 @@ export default function AboutCard(props) {
     <Card className={`classes.card cardMUI references`}>
       <CardContent>
         <Typography className={classes.title} color="textSecondary" gutterBottom>
-          Information available on request.
+          {/*Title here*/}
         </Typography>
         <Typography variant="h5" component="h2">
           {/* <span className={classes.bullet}>• Alice – Software/Web Developer</span> */}
