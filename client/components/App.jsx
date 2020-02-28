@@ -26,7 +26,7 @@ class App extends React.Component {
   
   render () {
     // Ensures that the animation is always smooth, runnning everytime the render method is called.
-    background(0x839ce7, 0x000000)
+    background(0x839ce7, 0xffffff)
 
     // Following is conditional rendering for different screen sizes.
 

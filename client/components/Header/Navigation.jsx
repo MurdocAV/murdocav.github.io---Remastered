@@ -10,11 +10,12 @@ class Navigation  extends React.Component {
         this.state = {
             title: "Azaan Virk"
         }
+
     }
 
     render() {
         return (
-            <div className="header">
+            <div className="header navigation">
                 <div className="title">
                     <h1 className="titleHeader">{this.state.title}</h1>
                 </div>
@@ -36,18 +37,5 @@ class Navigation  extends React.Component {
     }
 }
 
-// let animateTitle = () => {
-//     anime({
-//         targets: '.title',
-//         translateX: [
-//             {value: 100, duration: 1000, delay: 0},
-//             {value: 0, duration: 1000, delay: 0}
-//         ],
-//         easing: 'linear',
-//         loop: true
-//     });
-// }
-
-// animateTitle()
 
 export default Navigation
