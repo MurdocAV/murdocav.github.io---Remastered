@@ -259,7 +259,7 @@ body {
 
 .typewriter {
   font-family: 'Press Start 2P', cursive;
-  color: pink;
+  color: #fff;
   padding: 0px;
   font-size: 2em;
   margin: 1em;
@@ -352,6 +352,7 @@ body {
 }
 
 .cvLogo {
+  color: white;
   width: 120px; /* you can use % */
   height: auto;
   &.grow {
