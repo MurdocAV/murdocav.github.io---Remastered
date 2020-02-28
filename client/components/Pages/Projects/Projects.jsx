@@ -1,5 +1,5 @@
 import React from 'react'
-import CardsCombined from './List/CardsCombined'
+import CardsCombined from './Cards/CardsCombined'
 
 class Projects extends React.Component {
   render () {

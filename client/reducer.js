@@ -4,7 +4,7 @@ UPDATE_THEME
 } from './actions/index'
 
 const initialThemeState = {
-  theme: 'NoTheme'
+  theme: 'No Theme'
 }
 
 const themeReducer = (state = initialThemeState, action) => {
@@ -14,8 +14,6 @@ const themeReducer = (state = initialThemeState, action) => {
         theme: state.theme
       }
     case UPDATE_THEME:
-      
-    
     return {
         theme: action.theme
         }
