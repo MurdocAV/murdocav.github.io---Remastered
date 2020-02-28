@@ -343,6 +343,8 @@ body {
 }
 
 .gitHubLogo {
+  -webkit-filter: invert(100);
+          filter: invert(100);
   width: 240px;
   /* you can use % */
   height: auto;
@@ -359,7 +361,8 @@ body {
 }
 
 .cvLogo {
-  color: white;
+  -webkit-filter: invert(100);
+          filter: invert(100);
   width: 120px;
   /* you can use % */
   height: auto;

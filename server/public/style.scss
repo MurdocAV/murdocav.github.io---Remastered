@@ -340,6 +340,7 @@ body {
 }
 
 .gitHubLogo {
+  filter: invert(100);
   width: 240px; /* you can use % */
   height: auto;
   &.grow {
@@ -352,7 +353,7 @@ body {
 }
 
 .cvLogo {
-  color: white;
+  filter: invert(100);
   width: 120px; /* you can use % */
   height: auto;
   &.grow {
