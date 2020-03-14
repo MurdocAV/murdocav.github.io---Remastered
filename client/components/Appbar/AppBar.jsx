@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import { makeStyles, createMuiTheme } from '@material-ui/core/styles'
-import { red,pink, indigo } from '@material-ui/core/colors'
+import { red, indigo } from '@material-ui/core/colors'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'

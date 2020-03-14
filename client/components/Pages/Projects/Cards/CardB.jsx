@@ -22,19 +22,19 @@ export default function CardB() {
 
   return (
     <Card className={`${classes.card} cardInternal`}>
-      <a className='noDecoration aTag' href='https://github.com/MurdocAV/Audio-Engineers-Portfolio-2019-Revisited' key={'PokeName'} replace={true}>
+      <a className='noDecoration aTag' href='https://github.com/MurdocAV/ReFlick' key={'PokeName'} replace={true}>
         <CardActionArea>
           <CardMedia
             className={classes.media}
-            image="/images/LukeMitchells.png"
-            title="Luke Mitchels"
+            image="/images/ReFlick.png"
+            title="ReFlick"
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
-              Luke Mitchels
+              ReFlick
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              A website to showcase the music of a recording studio in Ellerslie, implementation of Spotify API and different front-end ideas like modals.
+              Built using React-Redux. Created for phones. A browser game that allows you draw different pages and link them together.
             </Typography>
           </CardContent>
         </CardActionArea>

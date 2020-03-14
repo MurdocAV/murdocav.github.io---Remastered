@@ -77,25 +77,25 @@ html {
 }
 
 body {
-  background-color: red;
+  background-color: black;
   
   /* SVG fallback for IE 9 (could be data URI, or could use filter) */
   background-image: url(fallback-gradient.svg);
   
   /* Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0 */
-  background-image: -webkit-gradient(linear, left top, right top, from(red), to(#f06d06));
+  background-image: -webkit-gradient(linear, left top, right top, from(black), to(black));
   
   /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
-  background-image: -webkit-linear-gradient(left, red, #f06d06);
+  background-image: -webkit-linear-gradient(left, black, black);
   
   /* Firefox 3.6 - 15 */
-  background-image: -moz-linear-gradient(left, red, #f06d06);
+  background-image: -moz-linear-gradient(left, black, black);
   
   /* Opera 11.1 - 12 */
-  background-image: -o-linear-gradient(left, red, #f06d06);
+  background-image: -o-linear-gradient(left, black, black);
   
   /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
-  background-image: linear-gradient(to right, red, #f06d06);
+  background-image: linear-gradient(to right, black, black);
   margin: 0px;
   overflow: hidden;
 }
@@ -202,7 +202,7 @@ body {
 }
 
 .active {
-  color: #000000;
+  color: $vapoWavePink;
 }
 
 .Link {
@@ -210,7 +210,7 @@ body {
     transition: all .2s ease-in-out;
     &.active {
       transform: scale(1.15);
-      color: #000000;
+      color: $vapoWavePink;
     }
   }
   &:hover {
@@ -226,7 +226,7 @@ body {
 .titleHeader {
   float: left;
   margin-left: 2.0vw;
-  color: #000000;
+  color: #fff;
   text-transform: uppercase;
 }
 
@@ -259,6 +259,7 @@ body {
 
 .typewriter {
   font-family: 'Press Start 2P', cursive;
+  color: #fff;
   padding: 0px;
   font-size: 2em;
   margin: 1em;
@@ -288,6 +289,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+  height: 152.5px;
   align-content: center;
 }
 
@@ -310,7 +312,7 @@ body {
 .cardMUI.documentation {
   margin-left: auto;
   margin-right: auto;
-  width: 85%;
+  width: 100%;
   align-content: center;
 }
 
@@ -327,6 +329,7 @@ body {
 
 // Icon for projects link.
 .projectsIcon {
+  color: $vapoWavePink;
   cursor: pointer;
   font-size: 60px;
   &.grow {
@@ -338,6 +341,7 @@ body {
 }
 
 .gitHubLogo {
+  filter: invert(100);
   width: 240px; /* you can use % */
   height: auto;
   &.grow {
@@ -350,6 +354,7 @@ body {
 }
 
 .cvLogo {
+  filter: invert(100);
   width: 120px; /* you can use % */
   height: auto;
   &.grow {
@@ -444,7 +449,7 @@ body {
 // Font color inside the form (focus)
 .MuiInputBase-root {
   color: $vapoWavePink;
-  background-color: rgba(0,0,0,0.75);
+  background-color: rgba(255,255,255,0.025);
   border-radius: 5px;
   font-weight: bold;
 }

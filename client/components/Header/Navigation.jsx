@@ -1,6 +1,5 @@
 import React from 'react'
-import {NavLink, IndexLink} from 'react-router-dom'
-import anime from 'animejs/lib/anime.es.js'
+import {NavLink} from 'react-router-dom'
 
 class Navigation  extends React.Component {
 
@@ -10,11 +9,12 @@ class Navigation  extends React.Component {
         this.state = {
             title: "Azaan Virk"
         }
+
     }
 
     render() {
         return (
-            <div className="header">
+            <div className="header navigation">
                 <div className="title">
                     <h1 className="titleHeader">{this.state.title}</h1>
                 </div>
@@ -23,7 +23,8 @@ class Navigation  extends React.Component {
                     <NavLink
                         className="about Link grow"
                         activeClassName="active"
-                        to={'/About'}>About</NavLink>
+                        to={'/About'}>About
+                    </NavLink>
                     <NavLink className="projects Link grow" activeClassName="active" to={'/Projects'}>Projects</NavLink>
                     <NavLink className="exampleForm Link grow" activeClassName="active" to={'/ExampleForm'}>Example Form</NavLink>
                     <NavLink className="references Link grow" activeClassName="active" to={'/References'}>References</NavLink>
@@ -36,18 +37,5 @@ class Navigation  extends React.Component {
     }
 }
 
-// let animateTitle = () => {
-//     anime({
-//         targets: '.title',
-//         translateX: [
-//             {value: 100, duration: 1000, delay: 0},
-//             {value: 0, duration: 1000, delay: 0}
-//         ],
-//         easing: 'linear',
-//         loop: true
-//     });
-// }
-
-// animateTitle()
 
 export default Navigation

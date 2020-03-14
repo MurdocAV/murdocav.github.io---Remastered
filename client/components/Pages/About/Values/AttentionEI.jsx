@@ -26,7 +26,7 @@ export default function AttentionEI() {
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
               Being able to be aware of, control, and express one's emotions is a great skill. You need to handle
-              interpersonal relationships judiciously and empathetically.I find it helpful to be aware of
+              interpersonal relationships judiciously and empathetically. I find it helpful to be aware of
               yourself, your body, your emotions, your presence. This can help you better organize your thoughts and
               attention.
           </Typography>

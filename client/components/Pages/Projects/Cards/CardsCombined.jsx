@@ -5,11 +5,7 @@ import CardC from './CardC'
 
 class CardsCombined extends React.Component {
   
-  // Insert function to go through the tile data and out put useful stuff to each card bro.
-
-
   render () {
-    
     return (
       <React.Fragment>
         <div className='cardsCombined'>

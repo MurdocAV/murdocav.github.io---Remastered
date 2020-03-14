@@ -39,32 +39,37 @@ export default function DocumentationCard(props) {
         </Typography>
         <Typography variant="h5" component="h2">
           <div className='documentationContatiner'>
-              <strong>Front-End: </strong>React, Redux, React-bootstrap<br/>
-              Material-U.I.<br/>
+              <strong>Front-End: </strong>
+                React, Redux, React-bootstrap<br/>
+                Material-U.I.<br/>
+                Anime.js<br />
               <Divider variant="middle" />
-              <strong>Middleware: </strong>Node.js, Express, Knex<br/>
+                <strong>Middleware: </strong>
+                node, Express, Knex<br/>
               <Divider variant="middle" />
-              <strong>Principals: </strong>  Authentication, Representational State Transfer/REST Paradigms for APIs, JWT<br/>
+                <strong>Microskills: </strong>
+                Authentication, Representational state transfer, API creation/implementaion, JWT.<br/>
               <Divider variant="middle" />
-              <strong>Design:</strong>
-              CSS3 – Grid & Flexbox, Sass, ThreeJS, Bootstrap<br/>
+                <strong>Design:</strong>
+                css3, Sass, ThreeJS, Bootstrap.<br/>
               <Divider variant="middle" />
-              <strong>Back-end & Basics: </strong>Python and Javascript-ES6, Typescript, C, Java, SQL, SQLite, NoSQLDB's<br/>
-              HTML, Linux/MacOS terminal, LAMP, GoLang, Ruby, PHP.
+              <strong>Back-end & Basics: </strong>
+                Python, Javascript, ES6, Typescript, C, Java, SQL, SQLite, .Net, C++<br/>
+                HTML, Linux/MacOS terminal, GoLang, Ruby, PHP.
             </div>
         </Typography>
         <Typography className={classes.pos} color="textSecondary">
-            Teamwork: Peer Programming, Feedback, Active Listening, Git, GitHub - Projects, Pulls, Terminal.<br/>
-            Agile: Scrum, Stand ups, Retrospectives.
+            Peer Programming, Feedback, Active Listening, Git, GitHub - Projects, Pulls, Terminal,<br/>
+            Agile: Scrum, Retrospectives.
         </Typography>
         <Typography variant="body2" component="p">
-          And growing by the day
+          
         </Typography>
       </CardContent>
       <CardActions>
         <a className='noDecoration aTag' href='https://www.rottentomatoes.com/m/star_wars_episode_iii_revenge_of_the_sith' key={'joke'} replace={true}>
           <Button size="small">
-            What kind of car does a Jedi drive? A Toy-Yoda.
+            What kind of car does a Jedi drive? A Toy-Yoda. 
           </Button>
         </a>
       </CardActions>
