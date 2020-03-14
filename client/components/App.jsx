@@ -11,8 +11,7 @@ import Home from './Pages/Home/Homepage'
 import Projects from './Pages/Projects/Projects'
 import Hiring from './Pages/Hiring'
 import Example from './Pages/Example/Example'
-import Navigation from './Header/Navigation'
-import Header from './Appbar/Header'
+import Navigation from './Mobile/Navigation'
 
 import {activePage, goToPage} from '../actions/index'
 
@@ -33,26 +32,7 @@ class App extends React.Component {
     let width = window.innerWidth;
 
     if (width < 768) {
-      return (
         // Mobile sizes
-        <HashRouter>
-          <Header />
-          <Route exact path="/">
-            <Redirect to="/Home"/>
-          </Route>
-          <Route exact path="/Home" component={Home} />
-          <Route exact path="/About" component={About} />
-          <Route exact path="/Projects" component={Projects} />
-          <Route exact path="/ExampleForm" component={Example} />
-          <Route exact path="/References" component={References} />
-          <Route exact path="/Email" component={Email} />
-          <Route exact path="/Hiring" component={Hiring} />
-          <Route exact path="/Documentation" component={Documentation} />
-        </HashRouter>
-      )
-    } else {
-      return (
-        // Desktop sizes
         <HashRouter>
           <Navigation />
           <Route exact path="/">
@@ -67,7 +47,6 @@ class App extends React.Component {
           <Route exact path="/Hiring" component={Hiring} />
           <Route exact path="/Documentation" component={Documentation} />
         </HashRouter>
-      )
     }
   }
 }
