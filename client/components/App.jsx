@@ -25,17 +25,11 @@ class App extends React.Component {
   
   render () {
     // Ensures that the animation is always smooth, runnning everytime the render method is called.
-    background(0x839ce7, 0xffffff)
-
-    // Following is conditional rendering for different screen sizes.
-
-    let width = window.innerWidth;
-
-    if (width < 768) {
-        // Mobile sizes
+    // background(0x839ce7, 0xffffff)
+      return (
         <HashRouter>
           <Navigation />
-          <Route exact path="/">
+          {/* <Route exact path="/">
             <Redirect to="/Home"/>
           </Route>
           <Route exact path="/Home" component={Home} />
@@ -45,9 +39,9 @@ class App extends React.Component {
           <Route exact path="/References" component={References} />
           <Route exact path="/Email" component={Email} />
           <Route exact path="/Hiring" component={Hiring} />
-          <Route exact path="/Documentation" component={Documentation} />
+          <Route exact path="/Documentation" component={Documentation} /> */}
         </HashRouter>
-    }
+    )
   }
 }
 
