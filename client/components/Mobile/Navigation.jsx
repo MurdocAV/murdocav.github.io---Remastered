@@ -22,7 +22,7 @@ export default function Navigation() {
   };
 
   return (
-    <BottomNavigation value={value} onChange={handleChange} className={classes.root}>
+    <BottomNavigation value={value} onChange={handleChange} className={classes.root 'Na'}>
       <BottomNavigationAction label="Recents" value="recents" icon={<RestoreIcon />} />
       <BottomNavigationAction label="Favorites" value="favorites" icon={<FavoriteIcon />} />
       <BottomNavigationAction label="Nearby" value="nearby" icon={<LocationOnIcon />} />
