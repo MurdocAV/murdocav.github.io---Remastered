@@ -15,3 +15,6 @@ TODO: Allow scrolling on mobile sizes & different views.
 TODO: Reduce component bulk via using state for cards rather than new componenets. Lazy, not in a good way.run 
 
 TODO: Remove Redux as it is un-necessary in the current state.
+
+Coronavirus update:
+  Working from home as nothing to do.
