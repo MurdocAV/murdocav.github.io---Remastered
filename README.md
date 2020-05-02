@@ -1,1 +1,3 @@
 This branch is to re-do all changes in the mobile version of the website which is outdated to Material's default with no sliding interaction -_-. Look for more react specific mobile targeted node modules or snips of code dude. Love you stay safe, drink lot of water.
+
+Covid 19 - Due to the current epidemic we can't deliver the same ammount of pixels to you for the same usage. So we've implemented a contactless pixel exchange program. Coming to your local 9/11.
