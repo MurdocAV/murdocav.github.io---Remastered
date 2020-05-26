@@ -1,1 +1,3 @@
-Covid 19 - Due to the current pandemic we can't deliver the same ammount of pixels to you for the same usage. So we've implemented a contactless pixel exchange program. Coming to your local 9/11.
+Docmentation Overhaul page.
+
+Try using something fresh for a new page. Idk, Material U.I. has a dated aesthetic now.
