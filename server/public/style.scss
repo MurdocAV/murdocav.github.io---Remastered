@@ -43,6 +43,15 @@ $Super-Gradient-1-5-rgba: rgba(216,27,10, 1);
 
 /* 1. Globals */
 
+
+canvas {
+  position: absolute;
+  top:0;
+  left:0;
+  z-index:-1;
+  // opacity: 0.5;
+}
+
 html {
   text-align: center;
   font-family: 'Ma Shan Zheng', cursive;
@@ -596,12 +605,4 @@ body {
     }
   }
 
-}
-
-canvas {
-  position: absolute;
-  top:0;
-  left:0;
-  z-index:-1;
-  // opacity: 0.5;
 }
