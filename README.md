@@ -6,7 +6,7 @@ Testing density, breadcrumbs, mobile first responsiveness and drawer components
 This is the developer branch, all offical deployments are on the live on murdocav.github.io
 Branch: https://github.com/MurdocAV/murdocav.github.io
 
-Possible theme name: WavesOfVapor?
+Theme name: WavesOfVapor?
 
 TODO: Change projects page to include support for 1366 x 768 resolution. (CSS3)
 
