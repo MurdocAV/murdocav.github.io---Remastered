@@ -14,6 +14,7 @@ const themeReducer = (state = initialThemeState, action) => {
         theme: state.theme
       }
     case UPDATE_THEME:
+    // Sets the returned theme object property to the active theme.
     return {
         theme: action.theme
         }
