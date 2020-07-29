@@ -1,3 +1,13 @@
+
+
+
+
+
+
+
+
+
+
 import * as THREE from 'three'
 
 function background (bgColor, shapeColor) { // Hex values only for params
@@ -28,7 +38,7 @@ function background (bgColor, shapeColor) { // Hex values only for params
 
     particles = new Array();
 
-    // Sphere shape made of verticies inside a cube
+    // Sphere shape made of verticies inside a cube (!!DO NOT REMOVE!!)
     const verticesOfCube = [
     -1, -1, -1,    1, -1, -1,    1,  1, -1,    -1,  1, -1,
     -1, -1,  1,    1, -1,  1,    1,  1,  1,    -1,  1,  1,

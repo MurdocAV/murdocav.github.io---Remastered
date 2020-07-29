@@ -11,6 +11,7 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles({
   card: {
     minWidth: 275,
+    
   },
   bullet: {
     display: 'inline-block',
@@ -47,7 +48,7 @@ export default function DocumentationCard(props) {
                 <strong>Middleware: </strong>
                 node, Express, Knex<br/>
               <Divider variant="middle" />
-                <strong>Microskills: </strong>
+                <strong>Concepts</strong>
                 Authentication, Representational state transfer, API creation/implementaion, JWT.<br/>
               <Divider variant="middle" />
                 <strong>Design:</strong>
