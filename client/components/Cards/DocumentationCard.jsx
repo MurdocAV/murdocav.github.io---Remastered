@@ -49,7 +49,7 @@ export default function DocumentationCard(props) {
                 node, Express, Knex<br/>
               <Divider variant="middle" />
                 <strong>Concepts</strong>
-                Authentication, Representational state transfer, API creation/implementaion, JWT.<br/>
+                Authentication, j                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Representational state transfer, API creation/implementaion, JWT.<br/>
               <Divider variant="middle" />
                 <strong>Design:</strong>
                 css3, Sass, ThreeJS, Bootstrap.<br/>

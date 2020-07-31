@@ -1,13 +1,3 @@
-
-
-
-
-
-
-
-
-
-
 import * as THREE from 'three'
 
 function background (bgColor, shapeColor) { // Hex values only for params
