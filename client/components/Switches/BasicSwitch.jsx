@@ -15,7 +15,8 @@ export default function Switches() {
     <div 
       style={{
         backgroundColor: 'white',
-        height: '100px'
+        margin: 'auto',
+        width: '50%'
       }}
     >
       <Switch
