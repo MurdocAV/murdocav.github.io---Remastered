@@ -12,7 +12,12 @@ export default function Switches() {
   };
 
   return (
-    <div>
+    <div 
+      style={{
+        backgroundColor: 'white',
+        height: '100px'
+      }}
+    >
       <Switch
         checked={state.checkedA}
         onChange={handleChange}
@@ -28,7 +33,7 @@ export default function Switches() {
       />
       <Switch inputProps={{ 'aria-label': 'primary checkbox' }} />
       <Switch inputProps={{ 'aria-label': 'checkbox' }} />
-      <Switch checked inputProps={{ 'aria-label': 'primary checkbox' }} />
+      <Switch inputProps={{ 'aria-label': 'primary checkbox' }} />
       <Switch
         defaultChecked
         color="default"
