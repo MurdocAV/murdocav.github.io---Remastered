@@ -31,7 +31,7 @@ class Navigation  extends React.Component {
                     <NavLink className="email Link grow" activeClassName="active" to={'/Email'}>Email</NavLink>
                     <NavLink className="hiring Link grow" activeClassName="active" to={'/Hiring'}>Hiring</NavLink>
                     <NavLink className="documentation Link grow" activeClassName="active" to={'/Documentation'}>Documentation</NavLink>
-                    <NavLink className="documentation Link grow" activeClassName="active" to={'/Documentation'}>Documentation</NavLink>                    
+                    <NavLink className="switches Link grow" activeClassName="active" to={'/Switches'}>Switches</NavLink>                    
                 </div>
             </div>
         )
