@@ -13,6 +13,7 @@ import Hiring from './Pages/Hiring'
 import Example from './Pages/Example/Example'
 import Navigation from './Header/Navigation'
 import Header from './Appbar/Header'
+import Switch from './Switchs/BasicSwitch'
 
 import {activePage, goToPage} from '../actions/index'
 
@@ -48,6 +49,8 @@ class App extends React.Component {
           <Route exact path="/Email" component={Email} />
           <Route exact path="/Hiring" component={Hiring} />
           <Route exact path="/Documentation" component={Documentation} />
+          <Route exact path="/Switch" component={Switch} /> 
+          {/* This component is testing */}
         </HashRouter>
       )
     } else {
