@@ -53,7 +53,10 @@ export default class Switches extends React.Component {
           <h2 color='orange'>Orange Sherbet</h2> 
         </div>
         <div className='Herbal Meadows'>
-          <Switch inputProps={{ 'aria-label': 'primary checkbox' }} onChange={(e) => { this.handleChange(e) }}/>
+          <Switch inputProps={{ 'aria-label': 'primary checkbox' }}
+          checked={this.state.checkedC}
+          onChange={(e) => { this.handleChange(e) }}/>
+
           <h2 color='orange'>Herbal Meadows</h2> 
         </div>
       </div>
