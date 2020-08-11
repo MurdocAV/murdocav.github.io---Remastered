@@ -49,7 +49,7 @@ class App extends React.Component {
           <Route exact path="/Email" component={Email} />
           <Route exact path="/Hiring" component={Hiring} />
           <Route exact path="/Documentation" component={Documentation} />
-          <Route exact path="/Switches" component={Switches} /> 
+          <Route exact path="/Theme" component={Switches} /> 
         </HashRouter>
       )
     } else {
@@ -68,7 +68,7 @@ class App extends React.Component {
           <Route exact path="/Email" component={Email} />
           <Route exact path="/Hiring" component={Hiring} />
           <Route exact path="/Documentation" component={Documentation} />
-          <Route exact path="/Switches" component={Switches} />
+          <Route exact path="/Theme" component={Switches} />
         </HashRouter>
       )
     }

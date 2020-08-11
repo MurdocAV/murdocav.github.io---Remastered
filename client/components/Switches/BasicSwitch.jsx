@@ -10,11 +10,23 @@ export default class Switches extends React.Component {
   }
 
   handleChange (event) {
+    // This is also gonna flick all other themes off
+    this.setStateFalse()
     this.setState({ [event.target.name]: event.target.checked });
   };
 
+  setStateFalse () {
+    this.setState(
+      {    
+        checkedA: true,
+        checkedB: false,
+        checkedC: false
+      }
+    );
+  }
   
   render() {
+    this.automaticThemeToggle()
     return (
       <div 
         style={{
